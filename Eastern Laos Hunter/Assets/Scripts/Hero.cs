@@ -6,6 +6,7 @@ public class Hero : MonoBehaviour
 {
     
     [SerializeField] float speed=5f;
+    private bool facingRight=true;
     
     void Start()
     {
@@ -14,11 +15,16 @@ public class Hero : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        float movex = Input.GetAxisRaw("Horizontal");
-        float movey = Input.GetAxisRaw("Vertical");
-        Vector3 vector3 = new Vector3(movex, movey, 0);
-        transform.position += vector3*speed*Time.deltaTime;
-        
+    {       
+        transform.position += JoystickControl.direct*speed*Time.deltaTime;
+        if (JoystickControl.direct.x>0&&!facingRight)
+        {
+            facingRight = !facingRight;
+            transform.Rotate(0, 180f, 0);
+        }else if (JoystickControl.direct.x < 0&&facingRight)
+        {
+            facingRight = !facingRight;
+            transform.Rotate(0, 180f, 0);
+        }
     }
 }
