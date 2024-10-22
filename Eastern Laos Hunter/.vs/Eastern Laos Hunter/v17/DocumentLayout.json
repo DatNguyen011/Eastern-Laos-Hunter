@@ -3,11 +3,7 @@
   "WorkspaceRootPath": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|e:\\unity\\eastern-laos-hunter\\eastern laos hunter\\assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|e:\\unity\\eastern-laos-hunter\\eastern laos hunter\\assets\\scripts\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -17,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\singleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\singleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|e:\\unity\\eastern-laos-hunter\\eastern laos hunter\\assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,24 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "UIManager.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\UIManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UIManager.cs",
               "ToolTip": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\UIManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\UIManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBwAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T18:28:55.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Singleton.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Singleton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Singleton.cs",
@@ -51,30 +51,31 @@
               "RelativeToolTip": "Assets\\Scripts\\Singleton.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T17:47:01.025Z"
+              "WhenOpened": "2024-10-17T17:47:01.025Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "JoystickControl.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\JoystickPack\\Scripts\\JoystickControl.cs",
               "RelativeDocumentMoniker": "Assets\\JoystickPack\\Scripts\\JoystickControl.cs",
               "ToolTip": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\JoystickPack\\Scripts\\JoystickControl.cs",
               "RelativeToolTip": "Assets\\JoystickPack\\Scripts\\JoystickControl.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAA9wC4AAAAOAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAADwvy4AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T17:44:13.965Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Hero.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Hero.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Hero.cs",
               "ToolTip": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Hero.cs",
               "RelativeToolTip": "Assets\\Scripts\\Hero.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACYAAAAaAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAYwEEAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T18:18:59.315Z",
               "EditorCaption": ""

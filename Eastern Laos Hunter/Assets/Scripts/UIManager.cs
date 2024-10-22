@@ -11,17 +11,22 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         btnAttack.onClick.AddListener(() => Attack());
-        btnFlash.onClick.AddListener(() => Flash());
+        btnFlash.onClick.AddListener(() => Dash());
     }
 
     private void Attack()
     {
-        Hero.Instance.ChangeAnim("Attack");
+        Hero.Instance.Attack();
+        
     }
 
-    private void Flash()
-    {
+   
 
+    
+
+    private void Dash()
+    {
+        Hero.Instance.Dash();
     }
 
     // Update is called once per frame
