@@ -10,10 +10,19 @@ public class SlimeBot : Bot
         
     }
 
+    private void Awake()
+    {
+        healthBar.SetHealth(100f, 10f);
+    }
+
     // Update is called once per frame
     void Update()
     {
-        
+        FindPlayer();
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            healthBar.SetHealth(100f, 10f);
+        }
     }
 
     public override void OnInit()
