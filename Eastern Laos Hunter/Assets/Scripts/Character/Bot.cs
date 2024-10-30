@@ -13,15 +13,17 @@ public class Bot : AtractBot
     private float speed = 4f;
     private float distance;
     public HealthBar healthBar;
-    private float hp=10f;
-    private float maxHp=100f;
+    public float hp = 100f;
+    public float maxHp = 100f;
     // Start is called before the first frame update
 
-    
+
     void Start()
     {
         
     }
+
+    
 
     // Update is called once per frame
     void Update()
@@ -33,11 +35,12 @@ public class Bot : AtractBot
     public void FindPlayer()
     {
         distance = Vector2.Distance(player.transform.position, transform.position);
+        float stopDistance = distance+1f;
         Vector2 direction = player.transform.position - transform.position;
         direction=direction.normalized;
         // tinh goc giua vector(x,y) va truc Ox
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        //Debug.Log(angle);
+        
 
 
         if (angle >= -90 && angle <= 90)
@@ -50,10 +53,22 @@ public class Bot : AtractBot
             transform.localScale = new Vector3(4, 4, 4);
 
         }
+        
         if (distance < 5f)
         {
+
+            if (distance <= 1.2f)
+            {
+                return;
+            }
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
         }
+    }
+
+    public void ReduceHp(float dame)
+    {
+        hp -= dame;
+        healthBar.SetHealth(maxHp, hp);
     }
 
     private void ChangeAnim(string animName)

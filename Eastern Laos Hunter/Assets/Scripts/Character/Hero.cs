@@ -13,9 +13,10 @@ public class Hero : Singleton<Hero>
     public float countDownDash = 5f;
     public float dashTime = 0.3f;
     public CounterTime couterTime=new CounterTime();
+    public GameObject attackArea;
     void Start()
     {
-
+        
     }
 
     //Joystick
@@ -88,6 +89,7 @@ public class Hero : Singleton<Hero>
     {
         if (isAttack == false)
         {
+            attackArea.SetActive(true);
             ChangeAnim("Attack");
             isAttack = true;
             StartCoroutine(ReturnIdle());
@@ -99,6 +101,7 @@ public class Hero : Singleton<Hero>
     {
         yield return new WaitForSeconds(.5f);
         isAttack = false;
+        attackArea.SetActive(false);
     }
 
     public void Dash()

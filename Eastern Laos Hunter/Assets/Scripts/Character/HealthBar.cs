@@ -8,7 +8,8 @@ public class HealthBar : MonoBehaviour
     public Slider slider;
     public Color low = Color.red;
     public Color high = Color.green;
-
+    //public Image fill;
+    //public Gradient gradient;
     public Vector3 offset;
 
     private void Update()
@@ -18,10 +19,11 @@ public class HealthBar : MonoBehaviour
 
     public void SetHealth(float maxHp, float hp)
     {
-       
+        
         slider.gameObject.SetActive(hp<maxHp);
         slider.maxValue = maxHp;
         slider.value = hp;
+        //fill.color = gradient.Evaluate(slider.normalizedValue);
         slider.fillRect.GetComponentInChildren<Image>().color = Color.Lerp(low,high,slider.normalizedValue);
         
     }
