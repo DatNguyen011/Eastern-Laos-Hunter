@@ -703,7 +703,7 @@ GameObject:
   - component: {fileID: 669147790}
   - component: {fileID: 669147789}
   - component: {fileID: 669147794}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Slime_Bot
   m_TagString: Bot
   m_Icon: {fileID: 0}
@@ -3175,9 +3175,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.3698573, y: 0.52788764}
-      - {x: -0.09562826, y: -0.0980719}
-      - {x: -0.47211218, y: -0.5278877}
+    - - {x: -0.59705305, y: 0.6758292}
+      - {x: -0.7455144, y: -0.034668386}
+      - {x: -0.66760635, y: -0.7603673}
       - {x: 0.10626745, y: -0.676622}
       - {x: 0.32802534, y: -0.4721123}
       - {x: 0.44887257, y: -0.028352663}
@@ -3556,9 +3556,25 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 466621705207295460, guid: 5d67a68f57ad97344bce34737f28343a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4072524264928640036, guid: 5d67a68f57ad97344bce34737f28343a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4694057172631196718, guid: 5d67a68f57ad97344bce34737f28343a, type: 3}
       propertyPath: m_Name
       value: HealthBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694057172631196718, guid: 5d67a68f57ad97344bce34737f28343a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901620821248780867, guid: 5d67a68f57ad97344bce34737f28343a, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5464459949515154635, guid: 5d67a68f57ad97344bce34737f28343a, type: 3}
       propertyPath: m_Pivot.x
@@ -3639,6 +3655,10 @@ PrefabInstance:
     - target: {fileID: 5464459949515154635, guid: 5d67a68f57ad97344bce34737f28343a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6540179866834889886, guid: 5d67a68f57ad97344bce34737f28343a, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

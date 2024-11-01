@@ -9,6 +9,7 @@ public class SlimeBot : Bot
     void Start()
     {
         OnInit();
+        Moving();
     }
 
 

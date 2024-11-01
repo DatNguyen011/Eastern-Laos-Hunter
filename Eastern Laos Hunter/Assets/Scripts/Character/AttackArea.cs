@@ -4,17 +4,14 @@ using UnityEngine;
 
 public class AttackArea : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+   
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag =="Bot")
+        if (collision.CompareTag("Bot"))
         {
+            Debug.Log("Bot");
             collision.GetComponent<Bot>().ReduceHp(20f);
         }
     }
+
 }
