@@ -15,7 +15,7 @@ public class Bot : AtractBot
     public HealthBar healthBar;
     public float hp = 100f;
     public float maxHp = 100f;
-    public IState iState;
+    public IState<Bot> currentState;
     // Start is called before the first frame update
 
 
@@ -78,18 +78,31 @@ public class Bot : AtractBot
     public void Moving()
     {
         //ChangeAnim("Hit");
-        Vector2 randomPosition= new Vector2(Random.Range(1,10), Random.Range(1,10));
+        //Vector2 randomPosition= new Vector2(Random.Range(1,10), Random.Range(1,10));
         
-        Vector2 direction = randomPosition - (Vector2)transform.position;
-        transform.position = Vector2.MoveTowards(this.transform.position, direction, speed*Time.deltaTime);
+        //Vector2 direction = randomPosition - (Vector2)transform.position;
+        //transform.position = Vector2.MoveTowards(this.transform.position, direction, speed*Time.deltaTime);
     }
-    private void ChangeAnim(string animName)
+    public void ChangeAnim(string animName)
     {
         if (currentAnim != animName)
         {
             anim.ResetTrigger(animName);
             currentAnim = animName;
             anim.SetTrigger(currentAnim);
+        }
+    }
+
+    public void ChangeState(IState<Bot> newState)
+    {
+        if(currentState != null)
+        {
+            currentState.OnExit(this);
+        }
+        currentState = newState;
+        if(currentState != null)
+        {
+            currentState.OnEnter(this);
         }
     }
 

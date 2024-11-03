@@ -2,21 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IdleState : IState
+public class IdleState : IState<Bot>
 {
+    float time = 0;
     public void OnEnter(Bot bot)
     {
-        throw new System.NotImplementedException();
+        bot.ChangeAnim("Idle");
     }
 
     public void OnExecute(Bot bot)
     {
-        throw new System.NotImplementedException();
+        time += Time.deltaTime;
+        if (time > 1f)
+        {
+            bot.ChangeState(new RuningState());
+        }
     }
 
     public void OnExit(Bot bot)
     {
-        throw new System.NotImplementedException();
+       
     }
 
     // Start is called before the first frame update
