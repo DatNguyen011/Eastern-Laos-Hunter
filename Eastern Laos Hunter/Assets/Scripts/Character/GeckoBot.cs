@@ -8,13 +8,16 @@ public class GeckoBot : Bot
     void Start()
     {
         OnInit();
-        Moving();
+        
+        //Moving();
     }
 
     // Update is called once per frame
     void Update()
     {
-        FindPlayer();
+       
+        //FindPlayer();
+        UpdateState();
     }
 
     public override void OnInit()

@@ -8,6 +8,8 @@ public class IdleState : IState<Bot>
     public void OnEnter(Bot bot)
     {
         bot.ChangeAnim("Idle");
+        //this.OnExecute(bot);
+        //Debug.Log("idle state");
     }
 
     public void OnExecute(Bot bot)
@@ -15,7 +17,8 @@ public class IdleState : IState<Bot>
         time += Time.deltaTime;
         if (time > 1f)
         {
-            bot.ChangeState(new RuningState());
+            //Debug.Log(time);
+            bot.ChangeState(new PatrolState());
         }
     }
 
