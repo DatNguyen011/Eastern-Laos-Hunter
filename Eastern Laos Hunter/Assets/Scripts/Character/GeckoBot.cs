@@ -22,7 +22,7 @@ public class GeckoBot : Bot
 
     public override void OnInit()
     {
-        healthBar.SetHealth(maxHp, hp);
+        HealthBar.Instance.SetHealth(maxHp, hp);
         base.OnInit();
     }
 

@@ -14,9 +14,11 @@ public class Hero : Singleton<Hero>
     public float dashTime = 0.3f;
     public CounterTime couterTime=new CounterTime();
     public GameObject attackArea;
+    //public HealthBar healthBar;
     void Start()
     {
-        
+        HealthBar.Instance.SetHealthByImage(100f, 50f);
+        HealthBar.Instance.SetManaByImage(100f, 85f);
     }
 
     //Joystick

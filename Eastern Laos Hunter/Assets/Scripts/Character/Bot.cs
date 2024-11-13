@@ -12,12 +12,13 @@ public class Bot : AtractBot
     public Animator anim;
     private float speed = 4f;
     public float distance;
-    public HealthBar healthBar;
+    //public HealthBar healthBar;
     public float hp = 100f;
     public float maxHp = 100f;
     public IState<Bot> currentState;
     public bool isDead = false;
     public Rigidbody2D rb;
+    
     // Start is called before the first frame update
 
     void Start()
@@ -76,7 +77,7 @@ public class Bot : AtractBot
     public void ReduceHp(float dame)
     {
         hp -= dame;
-        healthBar.SetHealth(maxHp, hp);
+        HealthBar.Instance.SetHealth(maxHp, hp);
     }
 
     public void ChangeAnim(string animName)
@@ -121,9 +122,11 @@ public class Bot : AtractBot
 
     public void SetDestination(Vector3 des)
     {
-        Vector3 direction = transform.position - des;
-        direction.Normalize();
-        float angle = Mathf.Atan2(direction.x, direction.y)*Mathf.Rad2Deg;
+        transform.position = Vector3.MoveTowards(transform.position, des, 0.02f);
+        Vector3 direction = des-transform.position;
+        direction = direction.normalized;
+        float angle = Mathf.Atan2(direction.y, direction.x)*Mathf.Rad2Deg;
+        Debug.Log(angle);
         if (angle >= -90 && angle <= 90)
         {
             transform.localScale = new Vector3(-4, 4, 4);
@@ -133,7 +136,7 @@ public class Bot : AtractBot
             transform.localScale = new Vector3(4, 4, 4);
         }
         
-        transform.position = Vector3.MoveTowards(transform.position, des, 0.02f);
+        
         
     }
 }
