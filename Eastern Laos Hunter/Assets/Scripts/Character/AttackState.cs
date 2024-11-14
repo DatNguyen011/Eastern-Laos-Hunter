@@ -4,30 +4,29 @@ using UnityEngine;
 
 public class AttackState : IState<Bot>
 {
+    float time = 0;
     public void OnEnter(Bot bot)
     {
-        throw new System.NotImplementedException();
+        bot.ChangeAnim("Attack");
+
     }
 
     public void OnExecute(Bot bot)
     {
-        throw new System.NotImplementedException();
+        //        Debug.Log("Attack State");
+        time += Time.deltaTime;
+        if (time > .5)
+        {
+            bot.ChangeState(new IdleState());
+            Hero.Instance.ReduceHp(10f);
+            bot.haveTarget = false;
+        }
+
     }
 
     public void OnExit(Bot bot)
     {
-        throw new System.NotImplementedException();
+
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

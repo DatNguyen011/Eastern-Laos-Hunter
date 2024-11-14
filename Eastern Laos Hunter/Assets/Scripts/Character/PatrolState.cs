@@ -15,13 +15,14 @@ public class PatrolState : IState<Bot>
     public void OnExecute(Bot bot)
     {
         
-        if (Vector2.Distance(bot.transform.position, pos) < 0.1f)
+        if (Vector2.Distance(bot.transform.position, pos) < 0.01f)
         {
             bot.ChangeState(new IdleState());
         }
         else if(Vector2.Distance(bot.player.transform.position, bot.transform.position)<=5f)
         {
             bot.FindPlayer();
+            
         }
         else
         {

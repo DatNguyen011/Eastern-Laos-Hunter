@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.TextCore.Text;
+using UnityEngine.UIElements;
 
 public class Bot : AtractBot
 {
@@ -18,6 +19,7 @@ public class Bot : AtractBot
     public IState<Bot> currentState;
     public bool isDead = false;
     public Rigidbody2D rb;
+    public bool haveTarget = false;
     
     // Start is called before the first frame update
 
@@ -64,6 +66,7 @@ public class Bot : AtractBot
 
             if (distance <= 1.2f)
             {
+                ChangeState(new IdleState());
                 return;
             }
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
@@ -126,7 +129,7 @@ public class Bot : AtractBot
         Vector3 direction = des-transform.position;
         direction = direction.normalized;
         float angle = Mathf.Atan2(direction.y, direction.x)*Mathf.Rad2Deg;
-        Debug.Log(angle);
+        //Debug.Log(angle);
         if (angle >= -90 && angle <= 90)
         {
             transform.localScale = new Vector3(-4, 4, 4);
@@ -138,5 +141,13 @@ public class Bot : AtractBot
         
         
         
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Hero"))
+        {
+            haveTarget = true;
+        }
     }
 }

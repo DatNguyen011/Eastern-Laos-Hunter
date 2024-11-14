@@ -14,11 +14,13 @@ public class Hero : Singleton<Hero>
     public float dashTime = 0.3f;
     public CounterTime couterTime=new CounterTime();
     public GameObject attackArea;
+    public float maxHp = 100f;
+    public float hp = 100f;
     //public HealthBar healthBar;
     void Start()
     {
-        HealthBar.Instance.SetHealthByImage(100f, 50f);
-        HealthBar.Instance.SetManaByImage(100f, 85f);
+        //HealthBar.Instance.SetHealthByImage(100f, 50f);
+        //HealthBar.Instance.SetManaByImage(100f, 85f);
     }
 
     //Joystick
@@ -85,6 +87,12 @@ public class Hero : Singleton<Hero>
 
         }
 
+    }
+
+    public void ReduceHp(float hp)
+    {
+        this.hp -= hp;
+        HealthBar.Instance.SetHealthByImage(maxHp, this.hp);
     }
 
     public void Attack()

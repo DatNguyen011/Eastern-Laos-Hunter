@@ -20,6 +20,11 @@ public class IdleState : IState<Bot>
             //Debug.Log(time);
             bot.ChangeState(new PatrolState());
         }
+        if (bot.haveTarget==true)
+        {
+            //Debug.Log("Idle Change At");
+            bot.ChangeState(new AttackState());
+        }
     }
 
     public void OnExit(Bot bot)
