@@ -8,8 +8,6 @@ public class IdleState : IState<Bot>
     public void OnEnter(Bot bot)
     {
         bot.ChangeAnim("Idle");
-        //this.OnExecute(bot);
-        //Debug.Log("idle state");
     }
 
     public void OnExecute(Bot bot)

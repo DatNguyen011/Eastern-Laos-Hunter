@@ -64,23 +64,27 @@ public class Bot : AtractBot
         if (distance < 5f)
         {
 
-            if (distance <= 1.2f)
+            if (distance <= 1.5f)
             {
                 ChangeState(new IdleState());
-                return;
+                
             }
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
-        }
-        else
-        {
-
         }
     }
 
     public void ReduceHp(float dame)
     {
+        ChangeState(new HitState());
+        StartCoroutine(DisableHitState());
         hp -= dame;
         HealthBar.Instance.SetHealth(maxHp, hp);
+    }
+
+    IEnumerator DisableHitState()
+    {
+        yield return new WaitForSeconds(.4f);
+        ChangeState(new IdleState());
     }
 
     public void ChangeAnim(string animName)
@@ -145,7 +149,7 @@ public class Bot : AtractBot
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Hero"))
+        if (collision.tag=="Hero")
         {
             haveTarget = true;
         }

@@ -21,6 +21,7 @@ public class Hero : Singleton<Hero>
     {
         //HealthBar.Instance.SetHealthByImage(100f, 50f);
         //HealthBar.Instance.SetManaByImage(100f, 85f);
+        attackArea.SetActive(false);
     }
 
     //Joystick
@@ -97,21 +98,20 @@ public class Hero : Singleton<Hero>
 
     public void Attack()
     {
-        if (isAttack == false)
-        {
-            attackArea.SetActive(true);
-            ChangeAnim("Attack");
-            isAttack = true;
-            StartCoroutine(ReturnIdle());
-        }
-
+        ChangeAnim("Attack");
+        isAttack = true;
+        attackArea.SetActive(true);
+        StartCoroutine(ReturnIdle());
     }
+
 
     IEnumerator ReturnIdle()
     {
-        yield return new WaitForSeconds(.5f);
-        isAttack = false;
+        yield return new WaitForSeconds(.4f);
+        ChangeAnim("Idle");
+        yield return new WaitForSeconds(.2f);
         attackArea.SetActive(false);
+        isAttack=false;
     }
 
     public void Dash()

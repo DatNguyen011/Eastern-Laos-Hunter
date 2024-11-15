@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RuningState : IState<Bot>
+public class HitState : IState<Bot>
 {
     public void OnEnter(Bot bot)
     {
-        bot.ChangeAnim("Run");
+        bot.ChangeAnim("Hit");
     }
 
     public void OnExecute(Bot bot)
