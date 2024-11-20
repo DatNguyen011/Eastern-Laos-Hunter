@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HitState : IState<Bot>
 {
+    float time=0;
     public void OnEnter(Bot bot)
     {
         bot.ChangeAnim("Hit");
@@ -11,7 +12,8 @@ public class HitState : IState<Bot>
 
     public void OnExecute(Bot bot)
     {
-        
+        time += Time.deltaTime;
+        bot.ChangeState(new IdleState());
     }
 
     public void OnExit(Bot bot)

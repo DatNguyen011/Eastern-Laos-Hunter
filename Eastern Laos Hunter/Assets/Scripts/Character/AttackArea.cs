@@ -11,7 +11,7 @@ public class AttackArea : MonoBehaviour
         Debug.Log(collision.tag);
         if (collision.gameObject.tag=="Bot")
         {
-            Debug.Log("dame");
+            //Debug.Log("dame");
             collision.GetComponent<Bot>().ReduceHp(20f);
         }
     }

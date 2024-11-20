@@ -23,7 +23,7 @@ public class GeckoBot : Bot
 
     public override void OnInit()
     {
-        HealthBar.Instance.SetHealth(maxHp, hp);
+        healthBar.SetHealth(maxHp, hp);
         base.OnInit();
     }
 
@@ -34,8 +34,7 @@ public class GeckoBot : Bot
 
     public override void OnAttack()
     {
-        //geckoCollider.SetActive(true);
-        //ChangeAnim("Attack");
+        
         base.OnAttack();
     }
     IEnumerator AttackCountDown()

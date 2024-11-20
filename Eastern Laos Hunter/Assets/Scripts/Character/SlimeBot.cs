@@ -23,7 +23,7 @@ public class SlimeBot : Bot
 
     public override void OnInit()
     {
-        HealthBar.Instance.SetHealth(maxHp, hp);
+        healthBar.SetHealth(maxHp, hp);
         base.OnInit();
     }
 

@@ -13,7 +13,7 @@ public class Bot : AtractBot
     public Animator anim;
     private float speed = 4f;
     public float distance;
-    //public HealthBar healthBar;
+    public HealthBar healthBar;
     public float hp = 100f;
     public float maxHp = 100f;
     public IState<Bot> currentState;
@@ -78,7 +78,12 @@ public class Bot : AtractBot
         ChangeState(new HitState());
         StartCoroutine(DisableHitState());
         hp -= dame;
-        HealthBar.Instance.SetHealth(maxHp, hp);
+        healthBar.SetHealth(maxHp, hp);
+        if(hp <= 0)
+        {
+            isDead = true;
+            OnDead();
+        }
     }
 
     IEnumerator DisableHitState()
@@ -119,7 +124,7 @@ public class Bot : AtractBot
 
     public override void OnDead()
     {
-
+        Destroy(gameObject);
     }
 
     public override void OnInit()
@@ -149,7 +154,7 @@ public class Bot : AtractBot
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag=="Hero")
+        if (collision.gameObject.CompareTag("HeroAttack"))
         {
             haveTarget = true;
         }

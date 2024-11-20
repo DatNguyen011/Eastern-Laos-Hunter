@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Hero
   - Bot
+  - HeroAttack
   layers:
   - Default
   - TransparentFX

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthBar : Singleton<HealthBar>
+public class HealthBar : MonoBehaviour
 {
     public Slider slider;
     public Color low = Color.red;
@@ -16,7 +16,10 @@ public class HealthBar : Singleton<HealthBar>
 
     private void Update()
     {
-        slider.transform.position = Camera.main.WorldToScreenPoint(transform.parent.position+offset);
+        if (slider != null)
+        {
+            slider.transform.position = Camera.main.WorldToScreenPoint(transform.parent.position+offset);
+        }
     }
 
     public void SetHealth(float maxHp, float hp)
@@ -27,6 +30,7 @@ public class HealthBar : Singleton<HealthBar>
         slider.value = hp;
         //fill.color = gradient.Evaluate(slider.normalizedValue);
         slider.fillRect.GetComponentInChildren<Image>().color = Color.Lerp(low,high,slider.normalizedValue);
+        
         
     }
 

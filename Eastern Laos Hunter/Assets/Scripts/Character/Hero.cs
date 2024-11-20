@@ -16,6 +16,8 @@ public class Hero : Singleton<Hero>
     public GameObject attackArea;
     public float maxHp = 100f;
     public float hp = 100f;
+    public float attackCountDown = 0;
+    public HealthBar healthBar;
     //public HealthBar healthBar;
     void Start()
     {
@@ -77,9 +79,14 @@ public class Hero : Singleton<Hero>
                     transform.Rotate(0, 180f, 0);
                 }
             }
+            attackCountDown += Time.deltaTime;
             if(Input.GetKeyDown(KeyCode.J))
             {
-                Attack();
+                //StartCoroutine(AttackCountDown());
+                if(attackCountDown > .2) {
+                    Attack();
+                }
+                
             }
             else if (Input.GetKeyDown(KeyCode.K))
             {
@@ -90,10 +97,11 @@ public class Hero : Singleton<Hero>
 
     }
 
+
     public void ReduceHp(float hp)
     {
         this.hp -= hp;
-        HealthBar.Instance.SetHealthByImage(maxHp, this.hp);
+        healthBar.SetHealthByImage(maxHp, this.hp);
     }
 
     public void Attack()
@@ -112,6 +120,7 @@ public class Hero : Singleton<Hero>
         yield return new WaitForSeconds(.2f);
         attackArea.SetActive(false);
         isAttack=false;
+        attackCountDown = 0;
     }
 
     public void Dash()
