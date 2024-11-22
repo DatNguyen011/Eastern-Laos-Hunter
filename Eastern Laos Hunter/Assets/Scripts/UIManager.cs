@@ -1,37 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UIManager : Singleton<UIManager>
 {
-    public Button btnAttack;
-    public Button btnFlash;
-    // Start is called before the first frame update
+    public TextMeshProUGUI gold;
+    
     void Start()
     {
-        btnAttack.onClick.AddListener(() => Attack());
-        btnFlash.onClick.AddListener(() => Dash());
+        InitGold();
     }
 
-    private void Attack()
+    public void InitGold()
     {
-        Hero.Instance.Attack();
-        
+            gold.text = PlayerPrefs.GetString("gold");    
     }
 
-   
-
-    
-
-    private void Dash()
-    {
-        Hero.Instance.Dash();
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

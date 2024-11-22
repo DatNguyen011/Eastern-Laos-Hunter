@@ -124,6 +124,7 @@ public class Bot : AtractBot
 
     public override void OnDead()
     {
+        GameController.Instance.GainGold(10f);
         Destroy(gameObject);
     }
 
@@ -154,7 +155,7 @@ public class Bot : AtractBot
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("HeroAttack"))
+        if (collision.gameObject.CompareTag("Hero"))
         {
             haveTarget = true;
         }

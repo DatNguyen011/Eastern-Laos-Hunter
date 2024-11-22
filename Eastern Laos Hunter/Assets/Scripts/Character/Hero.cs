@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Hero : Singleton<Hero>
 {
@@ -18,6 +19,8 @@ public class Hero : Singleton<Hero>
     public float hp = 100f;
     public float attackCountDown = 0;
     public HealthBar healthBar;
+    public GameObject checkPoint;
+    
     //public HealthBar healthBar;
     void Start()
     {
@@ -100,8 +103,16 @@ public class Hero : Singleton<Hero>
 
     public void ReduceHp(float hp)
     {
-        this.hp -= hp;
-        healthBar.SetHealthByImage(maxHp, this.hp);
+        
+        if (this.hp <= 0)
+        {
+            OnDead();
+        }
+        else
+        {
+            this.hp -= hp;
+            healthBar.SetHealthByImage(maxHp, this.hp);
+        }
     }
 
     public void Attack()
@@ -126,7 +137,7 @@ public class Hero : Singleton<Hero>
     public void Dash()
     {
         speed = speed + 5f;
-        UIManager.Instance.btnFlash.interactable = false;
+        
         StartCoroutine(Dashing());
         StartCoroutine(CountdownDashTime());
     }
@@ -140,7 +151,21 @@ public class Hero : Singleton<Hero>
     IEnumerator CountdownDashTime()
     {
         yield return new WaitForSeconds(countDownDash);
-        UIManager.Instance.btnFlash.interactable = true;
+        
+    }
+
+    public void OnDead()
+    {
+        Debug.Log("dead");
+        gameObject.SetActive(false);
+        StartCoroutine(SpawnHero());
+    }
+
+    IEnumerator SpawnHero()
+    {
+        yield return new WaitForSeconds(5f);
+        gameObject.transform.position = checkPoint.transform.position;
+        gameObject.SetActive(true);
     }
 
     public void ChangeAnim(string animName)
