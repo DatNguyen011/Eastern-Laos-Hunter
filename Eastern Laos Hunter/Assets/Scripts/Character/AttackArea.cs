@@ -12,6 +12,10 @@ public class AttackArea : MonoBehaviour
             //Debug.Log("dame");
             collision.GetComponent<Bot>().ReduceHp(20f);
         }
+        //else if (collision.gameObject.tag == "SavePoint")
+        //{
+        //    collision.GetComponent<Hero>().SavePoint();
+        //}
     }
 
 }

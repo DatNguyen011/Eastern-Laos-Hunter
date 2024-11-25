@@ -19,7 +19,9 @@ public class Hero : Singleton<Hero>
     public float hp = 100f;
     public float attackCountDown = 0;
     public HealthBar healthBar;
-    public GameObject checkPoint;
+    //public GameObject checkPoint;
+    private Vector3 savePoint;
+    //public List<Vector2> checkPoints = new List<Vector2>();
     
     //public HealthBar healthBar;
     void Start()
@@ -27,6 +29,7 @@ public class Hero : Singleton<Hero>
         //HealthBar.Instance.SetHealthByImage(100f, 50f);
         //HealthBar.Instance.SetManaByImage(100f, 85f);
         attackArea.SetActive(false);
+        OnInit();
     }
 
     //Joystick
@@ -103,16 +106,28 @@ public class Hero : Singleton<Hero>
 
     public void ReduceHp(float hp)
     {
-        
-        if (this.hp <= 0)
-        {
-            OnDead();
-        }
-        else
-        {
+
             this.hp -= hp;
             healthBar.SetHealthByImage(maxHp, this.hp);
-        }
+            if (this.hp <= 0)
+            {
+                OnDead();
+
+            }
+        
+    }
+
+    public void OnInit()
+    {
+        
+        healthBar.SetHealthByImage(maxHp, 100);
+        transform.position = savePoint;
+        SavePoint();
+    }
+
+    internal void SavePoint()
+    {
+        savePoint = transform.position;
     }
 
     public void Attack()
@@ -156,16 +171,14 @@ public class Hero : Singleton<Hero>
 
     public void OnDead()
     {
-        Debug.Log("dead");
-        gameObject.SetActive(false);
+        Debug.Log("Dead");
         StartCoroutine(SpawnHero());
     }
 
     IEnumerator SpawnHero()
     {
-        yield return new WaitForSeconds(5f);
-        gameObject.transform.position = checkPoint.transform.position;
-        gameObject.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        OnInit();
     }
 
     public void ChangeAnim(string animName)
