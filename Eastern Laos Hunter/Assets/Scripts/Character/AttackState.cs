@@ -13,13 +13,11 @@ public class AttackState : IState<Bot>
 
     public void OnExecute(Bot bot)
     {
-        //        Debug.Log("Attack State");
         time += Time.deltaTime;
         if (time > .5)
         {
+            Hero.Instance.ReduceHp(20f);
             bot.ChangeState(new IdleState());
-            Hero.Instance.ReduceHp(30f);
-            bot.haveTarget = false;
         }
 
     }

@@ -155,9 +155,35 @@ public class Bot : AtractBot
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Hero"))
+        if (collision.tag == "Hero")
         {
             haveTarget = true;
+            //ChangeState(new AttackState());
+            StartCoroutine(AttackWait());
         }
+    }
+
+
+    IEnumerator AttackWait()
+    {
+        if(haveTarget==true)
+        {
+            ChangeState(new AttackState());
+            yield return new WaitForSeconds(5f);
+            Debug.Log("triggerenter");
+            StartCoroutine(AttackWait());
+        }
+        
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Hero")
+        {
+            haveTarget = false;
+            
+            ChangeState(new IdleState());
+        }
+
     }
 }

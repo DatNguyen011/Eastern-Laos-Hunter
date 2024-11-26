@@ -1,35 +1,38 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class CounterTime 
+public class CounterTime
 {
     UnityAction playerAction;
-    private float time;
-
-    public void Start(UnityAction playerAction, float time)
+    float time;
+    public void OnStart(UnityAction playerAction, float time)
     {
         this.playerAction = playerAction;
         this.time = time;
     }
 
-    public void Execute()
+    public void OnExecute()
     {
         if (time > 0)
         {
             time -= Time.deltaTime;
             if (time < 0)
             {
-                Exit();
+                OnExit();
             }
         }
     }
-    public void Exit()
+
+    public void OnExit()
     {
         playerAction?.Invoke();
     }
-    public void Cancel()
+
+    public void OnCancel()
     {
         playerAction = null;
     }

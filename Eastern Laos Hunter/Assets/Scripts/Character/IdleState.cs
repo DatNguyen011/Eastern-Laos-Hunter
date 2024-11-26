@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
-public class IdleState : IState<Bot>
+public class IdleState : IState<Bot>    
 {
     float time = 0;
     public void OnEnter(Bot bot)
@@ -15,30 +16,27 @@ public class IdleState : IState<Bot>
         time += Time.deltaTime;
         if (time > 1f)
         {
-            //Debug.Log(time);
+            Debug.Log("Patrol");
             bot.ChangeState(new PatrolState());
         }
-        if (bot.haveTarget==true)
-        {
-            //Debug.Log("Idle Change At");
-            bot.ChangeState(new AttackState());
-        }
+        //else if (bot.haveTarget == true)
+        //{
+        //    Debug.Log("Idle Change At");
+        //    if(time > 2f)
+        //    {
+        //        bot.ChangeState(new AttackState());
+        //        time = 0f;
+        //        bot.ChangeState(new IdleState());
+        //    }   
+            
+        //}
     }
+
+    
 
     public void OnExit(Bot bot)
     {
        
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

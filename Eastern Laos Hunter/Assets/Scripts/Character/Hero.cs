@@ -11,24 +11,22 @@ public class Hero : Singleton<Hero>
     public Animator animator;
     private string currentAnim;
     private bool isAttack = false;
+    private bool isDead = false;
     public float countDownDash = 5f;
     public float dashTime = 0.3f;
-    public CounterTime couterTime=new CounterTime();
+    public CounterTime couterTime = new CounterTime();
     public GameObject attackArea;
     public float maxHp = 100f;
     public float hp = 100f;
-    public float attackCountDown = 0;
     public HealthBar healthBar;
     //public GameObject checkPoint;
     private Vector3 savePoint;
     //public List<Vector2> checkPoints = new List<Vector2>();
-    
+
     //public HealthBar healthBar;
     void Start()
     {
-        //HealthBar.Instance.SetHealthByImage(100f, 50f);
-        //HealthBar.Instance.SetManaByImage(100f, 85f);
-        attackArea.SetActive(false);
+        
         OnInit();
     }
 
@@ -60,19 +58,20 @@ public class Hero : Singleton<Hero>
     //AWDS
     void Update()
     {
-        if (isAttack == false)
+        if (isAttack==false&&isDead==false)
         {
             float moveX = Input.GetAxis("Horizontal");
             float moveY = Input.GetAxis("Vertical");
             Vector3 move = new Vector3(moveX, moveY, 0).normalized;
             transform.position += move * speed * Time.deltaTime;
-            if(move == Vector3.zero)
+            if (move == Vector3.zero)
             {
                 ChangeAnim("Idle");
             }
-            
+
             if (move != Vector3.zero)
             {
+                couterTime.OnCancel();
                 ChangeAnim("Run");
                 if (move.x > 0 && !facingRight)
                 {
@@ -85,42 +84,41 @@ public class Hero : Singleton<Hero>
                     transform.Rotate(0, 180f, 0);
                 }
             }
-            attackCountDown += Time.deltaTime;
-            if(Input.GetKeyDown(KeyCode.J))
+            
+            if (Input.GetKeyDown(KeyCode.J) && isAttack == false)
             {
-                //StartCoroutine(AttackCountDown());
-                if(attackCountDown > .2) {
-                    Attack();
-                }
-                
+                couterTime.OnExecute();
+                Attack();
             }
             else if (Input.GetKeyDown(KeyCode.K))
             {
+
+                couterTime.OnCancel();
                 Dash();
             }
-
         }
-
     }
 
 
     public void ReduceHp(float hp)
     {
 
-            this.hp -= hp;
-            healthBar.SetHealthByImage(maxHp, this.hp);
-            if (this.hp <= 0)
-            {
-                OnDead();
+        this.hp -= hp;
+        healthBar.SetHealthByImage(maxHp, this.hp);
+        if (this.hp <= 0)
+        {
+            OnDead();
 
-            }
-        
+        }
+
     }
 
     public void OnInit()
     {
-        
-        healthBar.SetHealthByImage(maxHp, 100);
+        isDead = false;
+        this.hp = 100f;
+        attackArea.SetActive(false);
+        healthBar.SetHealthByImage(maxHp, hp);
         transform.position = savePoint;
         SavePoint();
     }
@@ -132,6 +130,7 @@ public class Hero : Singleton<Hero>
 
     public void Attack()
     {
+
         ChangeAnim("Attack");
         isAttack = true;
         attackArea.SetActive(true);
@@ -141,12 +140,13 @@ public class Hero : Singleton<Hero>
 
     IEnumerator ReturnIdle()
     {
+        couterTime.OnStart(Attack, .6f);
         yield return new WaitForSeconds(.4f);
         ChangeAnim("Idle");
         yield return new WaitForSeconds(.2f);
         attackArea.SetActive(false);
-        isAttack=false;
-        attackCountDown = 0;
+        isAttack = false;
+        //attackCountDown = 0;
     }
 
     public void Dash()
@@ -166,17 +166,19 @@ public class Hero : Singleton<Hero>
     IEnumerator CountdownDashTime()
     {
         yield return new WaitForSeconds(countDownDash);
-        
+
     }
 
     public void OnDead()
     {
-        Debug.Log("Dead");
+        isDead = true;
+        couterTime.OnCancel();
         StartCoroutine(SpawnHero());
     }
 
     IEnumerator SpawnHero()
     {
+        //isAttack = true;
         yield return new WaitForSeconds(2f);
         OnInit();
     }
