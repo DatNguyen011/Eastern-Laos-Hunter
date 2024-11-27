@@ -21,7 +21,9 @@ public class Hero : Singleton<Hero>
     public HealthBar healthBar;
     //public GameObject checkPoint;
     private Vector3 savePoint;
-    //public List<Vector2> checkPoints = new List<Vector2>();
+    public GameObject bullet;
+    public Transform bullerPos;
+    public bool isHolding=false;    //public List<Vector2> checkPoints = new List<Vector2>();
 
     //public HealthBar healthBar;
     void Start()
@@ -96,7 +98,38 @@ public class Hero : Singleton<Hero>
                 couterTime.OnCancel();
                 Dash();
             }
+            else if(Input.GetKeyDown(KeyCode.H))
+            {
+                isHolding = true;
+                
+                //InitBullet();
+
+            }
+            else if (isHolding&&Input.GetKey(KeyCode.H))
+            {
+
+            }
+            else if (Input.GetKeyUp(KeyCode.H))
+            {
+                
+                isHolding = false;
+                ThrowBullet();
+            }
         }
+    }
+
+    public void InitBullet()
+    {
+        //Instantiate(bullet, bullerPos.position, bullerPos.rotation, bullerPos);
+    }
+
+    public void ThrowBullet()
+    {
+        //Vector3 direction = ()
+        GameObject newBullet = Instantiate(bullet, bullerPos.position, bullerPos.rotation);
+        newBullet.GetComponent<Rigidbody2D>().AddForce(Vector2.right*20f, ForceMode2D.Impulse);
+        
+        Destroy(newBullet, 2f);
     }
 
 
