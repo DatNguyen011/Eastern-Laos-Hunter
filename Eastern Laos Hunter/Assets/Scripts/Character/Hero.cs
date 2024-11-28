@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,7 +25,14 @@ public class Hero : Singleton<Hero>
     public GameObject bullet;
     public Transform bullerPos;
     public bool isHolding=false;    //public List<Vector2> checkPoints = new List<Vector2>();
-
+    private GameObject newBullet;
+    private GameObject oldBullet;
+    public GameObject pointRotation;
+    private float angle;
+    private float totalAngle;
+    private float maxAngle=60f;
+    private float directionRotation=1f;
+    private float sum = 0;
     //public HealthBar healthBar;
     void Start()
     {
@@ -102,33 +110,62 @@ public class Hero : Singleton<Hero>
             {
                 isHolding = true;
                 
-                //InitBullet();
+                InitBullet();
 
             }
             else if (isHolding&&Input.GetKey(KeyCode.H))
             {
-
+                ShootAngle();
             }
             else if (Input.GetKeyUp(KeyCode.H))
             {
                 
                 isHolding = false;
+                angle = 0f;
                 ThrowBullet();
             }
         }
     }
 
+    public void ShootAngle()
+    {
+        
+        angle = 90f * Time.deltaTime * directionRotation;
+        
+        oldBullet.transform.RotateAround(pointRotation.transform.position, Vector3.forward, angle);
+        
+        totalAngle += Math.Abs(angle);
+        if (totalAngle >= maxAngle)
+        {
+            
+            sum += 1;
+            directionRotation *= -1;
+            totalAngle = 0;
+            if (sum <= 1)
+            {
+                maxAngle *= 2;
+            }
+        }
+    }
     public void InitBullet()
     {
-        //Instantiate(bullet, bullerPos.position, bullerPos.rotation, bullerPos);
+        oldBullet=Instantiate(bullet, bullerPos.position, bullerPos.rotation, bullerPos);
     }
 
     public void ThrowBullet()
     {
-        //Vector3 direction = ()
-        GameObject newBullet = Instantiate(bullet, bullerPos.position, bullerPos.rotation);
-        newBullet.GetComponent<Rigidbody2D>().AddForce(Vector2.right*20f, ForceMode2D.Impulse);
-        
+        newBullet = Instantiate(bullet, bullerPos.position, bullerPos.rotation);
+        if(facingRight)
+        {
+
+            newBullet.GetComponent<Rigidbody2D>().AddForce(Vector2.right * 10f, ForceMode2D.Impulse);
+        }
+        else
+        {
+            newBullet.GetComponent<Rigidbody2D>().AddForce(Vector2.left * 10f, ForceMode2D.Impulse);
+        }
+       
+        Destroy(oldBullet);
         Destroy(newBullet, 2f);
     }
 
