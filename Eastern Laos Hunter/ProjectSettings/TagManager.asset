@@ -8,6 +8,7 @@ TagManager:
   - Bot
   - HeroAttack
   - SavePoint
+  - ThrowAngle
   layers:
   - Default
   - TransparentFX

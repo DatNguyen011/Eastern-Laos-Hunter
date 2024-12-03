@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,16 +23,16 @@ public class Hero : Singleton<Hero>
     //public GameObject checkPoint;
     private Vector3 savePoint;
     public GameObject bullet;
+    public GameObject arrow;
     public Transform bullerPos;
     public bool isHolding=false;    //public List<Vector2> checkPoints = new List<Vector2>();
     private GameObject newBullet;
     private GameObject oldBullet;
-    public GameObject pointRotation;
+    public Transform pointRotation;
     private float angle;
     private float totalAngle;
-    private float maxAngle=60f;
+    //private float maxAngle=60f;
     private float directionRotation=1f;
-    private float sum = 0;
     //public HealthBar healthBar;
     void Start()
     {
@@ -70,10 +70,13 @@ public class Hero : Singleton<Hero>
     {
         if (isAttack==false&&isDead==false)
         {
+            
             float moveX = Input.GetAxis("Horizontal");
             float moveY = Input.GetAxis("Vertical");
             Vector3 move = new Vector3(moveX, moveY, 0).normalized;
             transform.position += move * speed * Time.deltaTime;
+
+                 
             if (move == Vector3.zero)
             {
                 ChangeAnim("Idle");
@@ -115,54 +118,52 @@ public class Hero : Singleton<Hero>
             }
             else if (isHolding&&Input.GetKey(KeyCode.H))
             {
+                
                 ShootAngle();
             }
             else if (Input.GetKeyUp(KeyCode.H))
             {
                 
                 isHolding = false;
-                angle = 0f;
+                
                 ThrowBullet();
             }
         }
     }
 
+    public void ReverseDirection()
+    {
+        directionRotation *= -1;
+    }
+
     public void ShootAngle()
     {
-        
         angle = 90f * Time.deltaTime * directionRotation;
+        oldBullet.transform.RotateAround(pointRotation.position, Vector3.forward, angle);
+        totalAngle += angle;
         
-        oldBullet.transform.RotateAround(pointRotation.transform.position, Vector3.forward, angle);
-        
-        totalAngle += Math.Abs(angle);
-        if (totalAngle >= maxAngle)
-        {
-            
-            sum += 1;
-            directionRotation *= -1;
-            totalAngle = 0;
-            if (sum <= 1)
-            {
-                maxAngle *= 2;
-            }
-        }
     }
     public void InitBullet()
     {
-        oldBullet=Instantiate(bullet, bullerPos.position, bullerPos.rotation, bullerPos);
+        oldBullet=Instantiate(arrow, bullerPos.position, bullerPos.rotation , bullerPos);
     }
 
     public void ThrowBullet()
     {
+        // Chuyển từ độ sang radian
+        float angleInRadians = totalAngle * Mathf.Deg2Rad;
+        Vector2 direction = new Vector2(Mathf.Cos(angleInRadians), Mathf.Sin(angleInRadians)).normalized;
         newBullet = Instantiate(bullet, bullerPos.position, bullerPos.rotation);
-        if(facingRight)
+        Debug.Log(direction);   
+        if (facingRight)
         {
-
-            newBullet.GetComponent<Rigidbody2D>().AddForce(Vector2.right * 10f, ForceMode2D.Impulse);
+            newBullet.GetComponent<Rigidbody2D>().AddForce(direction * 10f, ForceMode2D.Impulse);
+            totalAngle = 0f;
         }
         else
         {
-            newBullet.GetComponent<Rigidbody2D>().AddForce(Vector2.left * 10f, ForceMode2D.Impulse);
+            newBullet.GetComponent<Rigidbody2D>().AddForce(direction * 10f *-1f, ForceMode2D.Impulse);
+            totalAngle = 0f;
         }
        
         Destroy(oldBullet);

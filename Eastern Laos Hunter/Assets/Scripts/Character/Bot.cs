@@ -125,6 +125,7 @@ public class Bot : AtractBot
     public override void OnDead()
     {
         GameController.Instance.GainGold(10f);
+        
         Destroy(gameObject);
     }
 
@@ -139,7 +140,6 @@ public class Bot : AtractBot
         Vector3 direction = des-transform.position;
         direction = direction.normalized;
         float angle = Mathf.Atan2(direction.y, direction.x)*Mathf.Rad2Deg;
-        //Debug.Log(angle);
         if (angle >= -90 && angle <= 90)
         {
             transform.localScale = new Vector3(-4, 4, 4);
@@ -148,9 +148,6 @@ public class Bot : AtractBot
         {
             transform.localScale = new Vector3(4, 4, 4);
         }
-        
-        
-        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

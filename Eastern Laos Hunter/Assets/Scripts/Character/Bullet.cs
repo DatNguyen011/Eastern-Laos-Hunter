@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    
+    private void Update()
     {
-        
+        transform.Rotate(0,0,360f*Time.deltaTime);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.tag == "Bot")
+        {
+            collision.GetComponent<Bot>().ReduceHp(30f);
+        }
     }
 }
