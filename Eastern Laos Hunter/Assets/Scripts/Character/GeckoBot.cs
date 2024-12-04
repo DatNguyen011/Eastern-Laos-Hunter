@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GeckoBot : Bot
 {
-    public GameObject geckoCollider;
+    //public GameObject geckoCollider;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +40,7 @@ public class GeckoBot : Bot
     IEnumerator AttackCountDown()
     {
         yield return new WaitForSeconds(1f);
-        geckoCollider.SetActive(false);
+        //geckoCollider.SetActive(false);
         ChangeAnim("Idle");
     }
 }

@@ -18,14 +18,16 @@ public class Hero : Singleton<Hero>
     public CounterTime couterTime = new CounterTime();
     public GameObject attackArea;
     public float maxHp = 100f;
+    public float maxMp = 100f;
     public float hp = 100f;
+    public float mp = 100f;
     public HealthBar healthBar;
     //public GameObject checkPoint;
     private Vector3 savePoint;
     public GameObject bullet;
     public GameObject arrow;
     public Transform bullerPos;
-    public bool isHolding=false;    //public List<Vector2> checkPoints = new List<Vector2>();
+    private bool isHolding=false;    //public List<Vector2> checkPoints = new List<Vector2>();
     private GameObject newBullet;
     private GameObject oldBullet;
     public Transform pointRotation;
@@ -33,6 +35,7 @@ public class Hero : Singleton<Hero>
     private float totalAngle;
     //private float maxAngle=60f;
     private float directionRotation=1f;
+    private bool overMana=false;
     //public HealthBar healthBar;
     void Start()
     {
@@ -109,19 +112,19 @@ public class Hero : Singleton<Hero>
                 couterTime.OnCancel();
                 Dash();
             }
-            else if(Input.GetKeyDown(KeyCode.H))
+            else if(Input.GetKeyDown(KeyCode.H)&&!overMana)
             {
                 isHolding = true;
                 
                 InitBullet();
 
             }
-            else if (isHolding&&Input.GetKey(KeyCode.H))
+            else if (isHolding&&Input.GetKey(KeyCode.H) && !overMana)
             {
                 
                 ShootAngle();
             }
-            else if (Input.GetKeyUp(KeyCode.H))
+            else if (Input.GetKeyUp(KeyCode.H) && !overMana)
             {
                 
                 isHolding = false;
@@ -138,7 +141,7 @@ public class Hero : Singleton<Hero>
 
     public void ShootAngle()
     {
-        angle = 90f * Time.deltaTime * directionRotation;
+        angle = 50f * Time.deltaTime * directionRotation;
         oldBullet.transform.RotateAround(pointRotation.position, Vector3.forward, angle);
         totalAngle += angle;
         
@@ -153,8 +156,7 @@ public class Hero : Singleton<Hero>
         // Chuyển từ độ sang radian
         float angleInRadians = totalAngle * Mathf.Deg2Rad;
         Vector2 direction = new Vector2(Mathf.Cos(angleInRadians), Mathf.Sin(angleInRadians)).normalized;
-        newBullet = Instantiate(bullet, bullerPos.position, bullerPos.rotation);
-        Debug.Log(direction);   
+        newBullet = Instantiate(bullet, bullerPos.position, bullerPos.rotation); 
         if (facingRight)
         {
             newBullet.GetComponent<Rigidbody2D>().AddForce(direction * 10f, ForceMode2D.Impulse);
@@ -165,7 +167,7 @@ public class Hero : Singleton<Hero>
             newBullet.GetComponent<Rigidbody2D>().AddForce(direction * 10f *-1f, ForceMode2D.Impulse);
             totalAngle = 0f;
         }
-       
+        ReduceMp(10f);
         Destroy(oldBullet);
         Destroy(newBullet, 2f);
     }
@@ -173,14 +175,47 @@ public class Hero : Singleton<Hero>
 
     public void ReduceHp(float hp)
     {
-
         this.hp -= hp;
         healthBar.SetHealthByImage(maxHp, this.hp);
         if (this.hp <= 0)
         {
             OnDead();
-
         }
+    }
+
+    public void ReduceMp(float mp)
+    {
+
+        this.mp -= mp;
+        healthBar.SetManaByImage(maxMp, this.mp);
+        if(this.mp < mp) {
+            overMana = true;
+        }
+    }
+    public void AddMp(float mp)
+    {
+        
+        this.mp += mp;
+        if (this.mp > maxMp)
+        {
+            this.mp = maxMp;
+        }
+        if (this.mp > 10f)
+        {
+            overMana=false;
+        }
+        healthBar.SetManaByImage(maxMp, this.mp);
+
+    }
+    public void AddHp(float hp)
+    {
+        
+        this.hp += hp;
+        if (this.hp > maxHp)
+        {
+            this.hp = maxHp;
+        }
+        healthBar.SetHealthByImage(maxHp, this.hp);
 
     }
 
@@ -261,6 +296,28 @@ public class Hero : Singleton<Hero>
             animator.ResetTrigger(animName);
             currentAnim = animName;
             animator.SetTrigger(currentAnim);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "HealthBottle")
+        {
+            float randomHp = UnityEngine.Random.Range(10f, 30f);
+            AddHp(randomHp);
+            Destroy(collision.gameObject);
+        }
+        else if (collision.tag == "ManaBottle")
+        {
+            float randomMp = UnityEngine.Random.Range(10f, 30f);
+            AddMp(randomMp);
+            Destroy(collision.gameObject);
+        }
+        else if(collision.tag == "Gold")
+        {
+            float randomGold= UnityEngine.Random.Range(5, 10);
+            GameController.Instance.GainGold(randomGold);
+            Destroy(collision.gameObject);
         }
     }
 }

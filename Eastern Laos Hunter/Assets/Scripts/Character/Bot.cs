@@ -20,7 +20,9 @@ public class Bot : AtractBot
     public bool isDead = false;
     public Rigidbody2D rb;
     public bool haveTarget = false;
-    
+    public GameObject bloodBottle;
+    public GameObject manaBottle;
+    public GameObject goldOject;
     // Start is called before the first frame update
 
     void Start()
@@ -47,9 +49,6 @@ public class Bot : AtractBot
         direction = direction.normalized;
         // tinh goc giua vector(x,y) va truc Ox
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-
-
-
         if (angle >= -90 && angle <= 90)
         {
             transform.localScale = new Vector3(-4, 4, 4);
@@ -124,7 +123,20 @@ public class Bot : AtractBot
 
     public override void OnDead()
     {
-        GameController.Instance.GainGold(10f);
+        //GameController.Instance.GainGold(10f);
+        float randomNumber = Random.Range(1, 4);
+        if (randomNumber ==1 )
+        {
+            GameObject newBloodBottle = Instantiate(bloodBottle, transform.position, transform.rotation);
+        }
+        else if (randomNumber ==2 )
+        {
+            GameObject newManaBottle = Instantiate(manaBottle, transform.position, transform.rotation);
+        }
+        else if (randomNumber ==3 )
+        {
+            GameObject newGold = Instantiate(goldOject, transform.position, transform.rotation);
+        }
         
         Destroy(gameObject);
     }
@@ -167,7 +179,6 @@ public class Bot : AtractBot
         {
             ChangeState(new AttackState());
             yield return new WaitForSeconds(5f);
-            Debug.Log("triggerenter");
             StartCoroutine(AttackWait());
         }
         
