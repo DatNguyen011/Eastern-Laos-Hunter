@@ -15,7 +15,7 @@ E:/Unity/Eastern-Laos-Hunter/Eastern Laos Hunter
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-64973
+60412
 Successfully changed project path to: E:/Unity/Eastern-Laos-Hunter/Eastern Laos Hunter
 E:/Unity/Eastern-Laos-Hunter/Eastern Laos Hunter
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ E:/Unity/Eastern-Laos-Hunter/Eastern Laos Hunter
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [38856] Host "[IP] 169.254.83.107 [Port] 0 [Flags] 2 [Guid] 1192456334 [EditorId] 1192456334 [Version] 1048832 [Id] WindowsEditor(7,Admin) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [22644] Host "[IP] 169.254.83.107 [Port] 0 [Flags] 2 [Guid] 20002763 [EditorId] 20002763 [Version] 1048832 [Id] WindowsEditor(7,Admin) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [38856] Host "[IP] 169.254.83.107 [Port] 0 [Flags] 2 [Guid] 1192456334 [EditorId] 1192456334 [Version] 1048832 [Id] WindowsEditor(7,Admin) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [22644] Host "[IP] 169.254.83.107 [Port] 0 [Flags] 2 [Guid] 20002763 [EditorId] 20002763 [Version] 1048832 [Id] WindowsEditor(7,Admin) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 697.95 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 491.63 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.24f1 (334eb2a0b267)
 [Subsystems] Discovering subsystems at path D:/unity/Install Unity/2022.3.24f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'D:/unity/Install Unity/2022.3.24f1/Editor/Data/Managed'
 Mono path[1] = 'D:/unity/Install Unity/2022.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/unity/Install Unity/2022.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56308
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56800
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/unity/Install Unity/2022.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004651 seconds.
-- Loaded All Assemblies, in  1.523 seconds
+Registered in 0.036529 seconds.
+- Loaded All Assemblies, in  2.814 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.330 seconds
-Domain Reload Profiling: 1853ms
-	BeginReloadAssembly (165ms)
+- Finished resetting the current domain, in  0.597 seconds
+Domain Reload Profiling: 3411ms
+	BeginReloadAssembly (694ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (420ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (62ms)
-	LoadAllAssembliesAndSetupDomain (863ms)
-		LoadAssemblies (164ms)
+	RebuildCommonClasses (488ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (178ms)
+	LoadAllAssembliesAndSetupDomain (1436ms)
+		LoadAssemblies (694ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (861ms)
-			TypeCache.Refresh (860ms)
-				TypeCache.ScanAssembly (503ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
+		AnalyzeDomain (1434ms)
+			TypeCache.Refresh (1432ms)
+				TypeCache.ScanAssembly (1015ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (330ms)
+	FinalizeReload (598ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (262ms)
+		SetupLoadedEditorAssemblies (518ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (9ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (178ms)
-			ProcessInitializeOnLoadMethodAttributes (64ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (273ms)
+			ProcessInitializeOnLoadMethodAttributes (223ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,986 +115,56 @@ Domain Reload Profiling: 1853ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  3.567 seconds
-Refreshing native plugins compatible for Editor in 4.29 ms, found 4 plugins.
+- Loaded All Assemblies, in 10.768 seconds
+Refreshing native plugins compatible for Editor in 3.89 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.868 seconds
-Domain Reload Profiling: 4433ms
-	BeginReloadAssembly (200ms)
+- Finished resetting the current domain, in  1.085 seconds
+Domain Reload Profiling: 11852ms
+	BeginReloadAssembly (178ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (43ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (3257ms)
-		LoadAssemblies (2226ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (10491ms)
+		LoadAssemblies (10187ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1148ms)
-			TypeCache.Refresh (1114ms)
-				TypeCache.ScanAssembly (175ms)
-			ScanForSourceGeneratedMonoScriptInfo (26ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (868ms)
+		AnalyzeDomain (410ms)
+			TypeCache.Refresh (377ms)
+				TypeCache.ScanAssembly (158ms)
+			ScanForSourceGeneratedMonoScriptInfo (24ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1086ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (677ms)
+		SetupLoadedEditorAssemblies (891ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (4ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (86ms)
-			ProcessInitializeOnLoadAttributes (530ms)
-			ProcessInitializeOnLoadMethodAttributes (49ms)
+			BeforeProcessingInitializeOnLoad (74ms)
+			ProcessInitializeOnLoadAttributes (760ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (8ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
-Refreshing native plugins compatible for Editor in 5.14 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.44 seconds
+Refreshing native plugins compatible for Editor in 3.70 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4110 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 70 unused Assets / (245.4 KB). Loaded Objects now: 4587.
+Unloading 70 unused Assets / (245.5 KB). Loaded Objects now: 4587.
 Memory consumption went from 164.4 MB to 164.2 MB.
-Total: 7.059100 ms (FindLiveObjects: 0.380200 ms CreateObjectMapping: 0.325400 ms MarkObjects: 5.685500 ms  DeleteObjects: 0.667000 ms)
+Total: 4.669100 ms (FindLiveObjects: 0.339800 ms CreateObjectMapping: 0.349800 ms MarkObjects: 3.717600 ms  DeleteObjects: 0.261100 ms)
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 873184.000567 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Plant - Grass 15.prefab
-  artifactKey: Guid(bf462882706828c44a4465986b6fb8d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Plant - Grass 15.prefab using Guid(bf462882706828c44a4465986b6fb8d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25a4961470673511baf61add76c02506') in 0.428488 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Brick T2.prefab
-  artifactKey: Guid(5d42979a3c318c341b37b4b1f2c85750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Brick T2.prefab using Guid(5d42979a3c318c341b37b4b1f2c85750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5bc0db0f61788663db9a494ccc4ac33') in 0.019150 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Pot C.prefab
-  artifactKey: Guid(f3cc2373308c11848977b28d974a9de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Pot C.prefab using Guid(f3cc2373308c11848977b28d974a9de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a19121f6b500d3613faea88ba59b02c1') in 0.018306 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Plant - Grass 10.prefab
-  artifactKey: Guid(dbeab85cbe3b90b41a444794aab794ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Plant - Grass 10.prefab using Guid(dbeab85cbe3b90b41a444794aab794ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd83521b641767ef58bbf59fe30aa27a') in 0.012868 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Plant - Grass 13.prefab
-  artifactKey: Guid(c5c395a83c3338d46bd52e936cf46245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Plant - Grass 13.prefab using Guid(c5c395a83c3338d46bd52e936cf46245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c62ae85da3ffadd647218358bbd2757a') in 0.012855 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Tileset Grass.png
-  artifactKey: Guid(1c9ed9d1200c29d4cbfd2071028c1cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Tileset Grass.png using Guid(1c9ed9d1200c29d4cbfd2071028c1cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16166e97d867fbd55cab24615b8cf78f') in 0.139487 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 66
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Statue.prefab
-  artifactKey: Guid(d730038d263986f4dac93230e1dd62b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Statue.prefab using Guid(d730038d263986f4dac93230e1dd62b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1cdf217e1ddd1d6cce66918dbd85a39') in 0.014611 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Brick T1.prefab
-  artifactKey: Guid(ebdc6ef285e0bf542bed7e9c1bfb9923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Brick T1.prefab using Guid(ebdc6ef285e0bf542bed7e9c1bfb9923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa75795123e65f246fe67b55305906df') in 0.014037 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stair R.prefab
-  artifactKey: Guid(df420ddd0ffda274cba2d4807d8987bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stair R.prefab using Guid(df420ddd0ffda274cba2d4807d8987bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7769cedca98a571a9542d67e707fee47') in 0.014266 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 28
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stair M.prefab
-  artifactKey: Guid(78e9efbdf9b33994da8dfbe530f65e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stair M.prefab using Guid(78e9efbdf9b33994da8dfbe530f65e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd2e6e726252f0dc822b04b12964f24a') in 0.013445 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 28
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Animation/AM Player E.anim
-  artifactKey: Guid(9c9b80278bafb8846947b902bf348003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Animation/AM Player E.anim using Guid(9c9b80278bafb8846947b902bf348003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc6e78f4357255f60a5b29401d7ad277') in 0.001095 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Tileset Wall.png
-  artifactKey: Guid(9f8f114589864b6489859a58fbb6baf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Tileset Wall.png using Guid(9f8f114589864b6489859a58fbb6baf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '129946b5e9b1c52d3f703f577eb1cd98') in 0.107187 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 63
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Gravestone C.prefab
-  artifactKey: Guid(3fcd8726c7cd53345947949baefbab35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Gravestone C.prefab using Guid(3fcd8726c7cd53345947949baefbab35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ff25663a8931c3da24b16f655f941e6') in 0.014088 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Plant - Bush 04.prefab
-  artifactKey: Guid(4bd7b41600416b54395bf9936a05dc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Plant - Bush 04.prefab using Guid(4bd7b41600416b54395bf9936a05dc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4386e4395bb11bc88b620e6f4854dc39') in 0.015054 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Altar.prefab
-  artifactKey: Guid(c5bdca1933fde624698bb8c6d6daa44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Altar.prefab using Guid(c5bdca1933fde624698bb8c6d6daa44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e7aa89fa4b19409bd04781f3efaaee3') in 0.014649 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 35
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Brick T3.prefab
-  artifactKey: Guid(92a9322ee3bba184f91fbebe53b69bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Brick T3.prefab using Guid(92a9322ee3bba184f91fbebe53b69bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddb2d606ce8f8b707d5a07278d882a52') in 0.015239 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Pot B.prefab
-  artifactKey: Guid(63ee4b6a40c55fd429759b807832ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Pot B.prefab using Guid(63ee4b6a40c55fd429759b807832ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4b05202faeeb8cb1989c482e38c224a') in 0.015297 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Plant.png
-  artifactKey: Guid(c3a40e1c46727b94e959990527f8e7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Plant.png using Guid(c3a40e1c46727b94e959990527f8e7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a409b9e09d29f9f776008bb6444fd59c') in 0.081176 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 30
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Plant - Grass 05.prefab
-  artifactKey: Guid(019ab1af1d7a4b742a982c009534c058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Plant - Grass 05.prefab using Guid(019ab1af1d7a4b742a982c009534c058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb28117ebd1e1cfab188baf3e44f48ab') in 0.015188 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Plant - Grass 06.prefab
-  artifactKey: Guid(84d669757910f1f488023c92e71fcad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Plant - Grass 06.prefab using Guid(84d669757910f1f488023c92e71fcad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '459e1e1888b3f314b3d56c14f7ee988e') in 0.013414 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Plant - Bush 05.prefab
-  artifactKey: Guid(9fb66d8c9d3b5194a82e9eed65a54afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Plant - Bush 05.prefab using Guid(9fb66d8c9d3b5194a82e9eed65a54afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54e7fe1a9fe98df1be27b2f58f0d8d16') in 0.014905 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Pillar.prefab
-  artifactKey: Guid(41ea6afb203377e42995d7d016ea5907) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Pillar.prefab using Guid(41ea6afb203377e42995d7d016ea5907) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b1b86c99cc364e62eb06a3dc1904874') in 0.014061 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Road Sign E.prefab
-  artifactKey: Guid(b823debd04fd63f4d8e579210fe0ff20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Road Sign E.prefab using Guid(b823debd04fd63f4d8e579210fe0ff20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98d5c3492f6008e23f87d1303b00c93f') in 0.014999 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Player/PF Player.prefab
-  artifactKey: Guid(ef67ba864d1ecc042b5f4cf48455c0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Player/PF Player.prefab using Guid(ef67ba864d1ecc042b5f4cf48455c0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a486eabeea607e1d5d46e58bdbf0fd89') in 0.019180 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 41
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Pot A.prefab
-  artifactKey: Guid(ac719b1d0f58391469cc19fd947ca44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Pot A.prefab using Guid(ac719b1d0f58391469cc19fd947ca44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '141241fa4f5c0c6c614300fc74941362') in 0.015264 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Plant - Tree 03.prefab
-  artifactKey: Guid(9e7797bb065982d4497d030f065d6e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Plant - Tree 03.prefab using Guid(9e7797bb065982d4497d030f065d6e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bb352c5c3355b9d24d6ab3d31a7eeec') in 0.014653 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Shadow Plant.png
-  artifactKey: Guid(8501e10b1eafde34586080ba342fdc0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Shadow Plant.png using Guid(8501e10b1eafde34586080ba342fdc0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dca32cca975582f7432d49d088444fb1') in 0.040527 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Player.png
-  artifactKey: Guid(ec47f75fe8aff1644ac73998f4ad31b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Player.png using Guid(ec47f75fe8aff1644ac73998f4ad31b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae75971c674fcb02bc8d5d278094382c') in 0.032022 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Shadow.png
-  artifactKey: Guid(ed7554aeefd5da44a9fe1ee9b93afe77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Shadow.png using Guid(ed7554aeefd5da44a9fe1ee9b93afe77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f39a0aa71ec17daa01cfc756ea141c81') in 0.120747 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 45
-========================================================================
-Received Import Request.
-  Time since last request: 32.050248 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 3.asset
-  artifactKey: Guid(6a5be8683b2bb5c4cafdd9a8407e5654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 3.asset using Guid(6a5be8683b2bb5c4cafdd9a8407e5654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68af84793d27b1daf3071275eadb253a') in 0.016715 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 9.asset
-  artifactKey: Guid(1d9b2716edff8d7418583a4c52cba7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 9.asset using Guid(1d9b2716edff8d7418583a4c52cba7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '735e60ed590c9d0b1ed2badcaf94f09d') in 0.014188 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 8.asset
-  artifactKey: Guid(5451d01092d6a0947a1059da45c09ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 8.asset using Guid(5451d01092d6a0947a1059da45c09ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc45227fa0b51eb375d31b746fe72079') in 0.010490 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass Flower 1.asset
-  artifactKey: Guid(abe9370c58435f244a894542a9d0f78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass Flower 1.asset using Guid(abe9370c58435f244a894542a9d0f78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '925bc695a90e11c755dc5d3ba1d66a59') in 0.010698 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass Flower 5.asset
-  artifactKey: Guid(fedd651a42c94b044bf92e0da3bb53df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass Flower 5.asset using Guid(fedd651a42c94b044bf92e0da3bb53df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af212373d191c85c14891495c6f09c72') in 0.010617 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 11.asset
-  artifactKey: Guid(aa14e442c407b164a9e0bba1fd35004d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 11.asset using Guid(aa14e442c407b164a9e0bba1fd35004d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab25c8fcac6842d8c1a0490ec4283636') in 0.011825 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 13.asset
-  artifactKey: Guid(8143e435c2ff5f342951e4e9991c11ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 13.asset using Guid(8143e435c2ff5f342951e4e9991c11ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c58896f726be51d85ea28d0bf1fbf5c5') in 0.010400 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 5.asset
-  artifactKey: Guid(54b6893f2afe6354ebdccde3f53a6a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 5.asset using Guid(54b6893f2afe6354ebdccde3f53a6a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c2ceb2d989beb7e232e902260c30d4c') in 0.012846 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass Flower 13.asset
-  artifactKey: Guid(57824cd7e1612d14090d617a256eca53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass Flower 13.asset using Guid(57824cd7e1612d14090d617a256eca53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68e3d38415edaaa236ee0f0bcc6446c2') in 0.011297 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1.979921 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_2.asset
-  artifactKey: Guid(fabd18c6472405245b20eef7cb5ee3bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_2.asset using Guid(fabd18c6472405245b20eef7cb5ee3bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d031921964661765afc81191808df0a') in 0.009438 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_5.asset
-  artifactKey: Guid(53fda45759d8fbc4db96e92c16c04b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_5.asset using Guid(53fda45759d8fbc4db96e92c16c04b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbddccbb01d2954d035ae7968fa9d7e9') in 0.028579 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_26.asset
-  artifactKey: Guid(2074032077ed0f24da0353a406726e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_26.asset using Guid(2074032077ed0f24da0353a406726e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a4b50a077899072e23d8417b3e1a398') in 0.014400 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_16.asset
-  artifactKey: Guid(9adc64847915fb44dbb13ed54821f7f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_16.asset using Guid(9adc64847915fb44dbb13ed54821f7f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2c510db17ffc6f0cd72503e37fb2ba1') in 0.014940 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_20.asset
-  artifactKey: Guid(d711f37f575c12a4daf5c03e58309fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_20.asset using Guid(d711f37f575c12a4daf5c03e58309fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9970e6ec4640733253fb1c6f8181732d') in 0.012258 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_4.asset
-  artifactKey: Guid(9ddec2508ba86d049ad1a5db035fccd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_4.asset using Guid(9ddec2508ba86d049ad1a5db035fccd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '426384538e7170d75b7931a911a964d0') in 0.011299 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_24.asset
-  artifactKey: Guid(8aa304b3e853f0248a0a03c60f4de4be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_24.asset using Guid(8aa304b3e853f0248a0a03c60f4de4be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b4122386940a82d7fda3b4893f82558') in 0.010133 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_13.asset
-  artifactKey: Guid(9c5fb1582d999bc4b83efb5c4bd7b71b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_13.asset using Guid(9c5fb1582d999bc4b83efb5c4bd7b71b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9845d29190f52b2a31040a176d2f183b') in 0.009778 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_14.asset
-  artifactKey: Guid(694c62b9b4b97814187f4b31011fc63f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_14.asset using Guid(694c62b9b4b97814187f4b31011fc63f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f83a724e8023d6808c91253a72e1cfe4') in 0.010623 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_7.asset
-  artifactKey: Guid(7ce0e64acc4968343b4d0742ee6963a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_7.asset using Guid(7ce0e64acc4968343b4d0742ee6963a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4948315c221640917e44806b2a0db117') in 0.020172 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_29.asset
-  artifactKey: Guid(e706b680d839ef84e932174b016e9598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_29.asset using Guid(e706b680d839ef84e932174b016e9598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc65607deb17100b84b62725a2cdfbf3') in 0.010575 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1.257061 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Shadow Tileset Wall 3.asset
-  artifactKey: Guid(74fb019e61cfa1144910a53906988a6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Shadow Tileset Wall 3.asset using Guid(74fb019e61cfa1144910a53906988a6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d695a46fcd27d0fc5e9406ea7de5633') in 0.014290 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_23.asset
-  artifactKey: Guid(4eda2498ff988b547a51a6ed8b86529e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_23.asset using Guid(4eda2498ff988b547a51a6ed8b86529e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0225108e26b66f0149a98c5aeb9b0ec6') in 0.019144 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_0.asset
-  artifactKey: Guid(adf1e302fb349784ba09184eb69dfd8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_0.asset using Guid(adf1e302fb349784ba09184eb69dfd8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd18ac9d70de8bb28e86f498a36ea3ab7') in 0.013986 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_5.asset
-  artifactKey: Guid(4e1e2fa91134aaf47a8d4022b0d0a6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_5.asset using Guid(4e1e2fa91134aaf47a8d4022b0d0a6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be9a4db3c2a412eaf9aae8e2b91622c7') in 0.011627 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_15.asset
-  artifactKey: Guid(c0f664a74aa88e144b91be61242700c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_15.asset using Guid(c0f664a74aa88e144b91be61242700c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efb6b59ec35878df4887ee3191e30710') in 0.017579 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_22.asset
-  artifactKey: Guid(2af854022baea474ba380cc6be59d552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_22.asset using Guid(2af854022baea474ba380cc6be59d552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c0a9685d6b7c08e4b612529dcdf46f8') in 0.013032 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_12.asset
-  artifactKey: Guid(6320326b04ba6144f9e518073c3a753d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_12.asset using Guid(6320326b04ba6144f9e518073c3a753d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e423f45e73465e697246936d5be357a8') in 0.012963 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_20.asset
-  artifactKey: Guid(ed50a80c6ba59cf428ffc19f53876b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_20.asset using Guid(ed50a80c6ba59cf428ffc19f53876b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa40977fa36f0ff243f6c2baf9284459') in 0.014798 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_18.asset
-  artifactKey: Guid(de17a1cff7186dc4e81bd03c2256da56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_18.asset using Guid(de17a1cff7186dc4e81bd03c2256da56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '299db57a13edfdd216ee1728cdbedece') in 0.015254 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_17.asset
-  artifactKey: Guid(91cb03f8c22d3984389f65d131eeb946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_17.asset using Guid(91cb03f8c22d3984389f65d131eeb946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c47bc2ec95ccd791d39ff1b70e8939f7') in 0.012722 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1.045238 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_29.asset
-  artifactKey: Guid(5cb2704116eff4443b949135e9fe07f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_29.asset using Guid(5cb2704116eff4443b949135e9fe07f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1991d3d5fd469f3f3338e17105125d3') in 0.027407 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_36.asset
-  artifactKey: Guid(0f39ce13cb3663f47aa017b24e28c59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_36.asset using Guid(0f39ce13cb3663f47aa017b24e28c59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1af960314316c1435bee7f7c67eb882a') in 0.013987 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_55.asset
-  artifactKey: Guid(74d33214d8663e14a9ff6f916f417124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_55.asset using Guid(74d33214d8663e14a9ff6f916f417124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c34b532ff7b420e3090cdaa3d7942de') in 0.012283 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_53.asset
-  artifactKey: Guid(60fe87e379223bd4ca197f2113bf4448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_53.asset using Guid(60fe87e379223bd4ca197f2113bf4448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43d2f14257903819088c94653f980d30') in 0.012059 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_46.asset
-  artifactKey: Guid(ca8588300bdb03149a3be05ab743ed56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_46.asset using Guid(ca8588300bdb03149a3be05ab743ed56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daa14829f9f8ef734026022d307d3da5') in 0.010492 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_35.asset
-  artifactKey: Guid(6008c5e0b4430914e81e97e42cb887da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_35.asset using Guid(6008c5e0b4430914e81e97e42cb887da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37ae213086b3c19c294b24fdb92ff50c') in 0.011487 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_52.asset
-  artifactKey: Guid(057832b6b41e7b54697628c449199e86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_52.asset using Guid(057832b6b41e7b54697628c449199e86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd41ba47cfdd767fe6c5fcefb20dfcd77') in 0.012365 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_30.asset
-  artifactKey: Guid(5c0720cf3f2e0fd40ab1e12cd776ccdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_30.asset using Guid(5c0720cf3f2e0fd40ab1e12cd776ccdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f51581760981cfff3b40d08aff5191d0') in 0.011242 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_40.asset
-  artifactKey: Guid(f0efd6c3ea0abaa4c906ce6de5e78168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_40.asset using Guid(f0efd6c3ea0abaa4c906ce6de5e78168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aa95e3ac9ea83cd83ff644eed3c525f') in 0.012656 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_44.asset
-  artifactKey: Guid(6f6e5fa7aced9ba499e35a5f79839641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_44.asset using Guid(6f6e5fa7aced9ba499e35a5f79839641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f423112aed4ac1ba48897ef8a7930ea') in 0.012165 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.264277 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_59.asset
-  artifactKey: Guid(d1b36f97a21780343bae80aa0501ed33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_59.asset using Guid(d1b36f97a21780343bae80aa0501ed33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbfa9b3ab16955ef757506016f16dec3') in 0.012097 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 21.308537 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stone Bench W.prefab
-  artifactKey: Guid(8eb546cfc24c8c24196899cee5797135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stone Bench W.prefab using Guid(8eb546cfc24c8c24196899cee5797135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '272c69742456c6c91745109a6714d329') in 0.021622 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stone T6.prefab
-  artifactKey: Guid(d5762f992ea3bd544bb8287f66e8f844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stone T6.prefab using Guid(d5762f992ea3bd544bb8287f66e8f844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe465d54315554a87a0ba6e210297358') in 0.013827 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stone T5.prefab
-  artifactKey: Guid(139b2d65b3145ad45bc13b6d111199de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stone T5.prefab using Guid(139b2d65b3145ad45bc13b6d111199de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eca4a93916fec6e66eee8f72becde49d') in 0.015659 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stone T1.prefab
-  artifactKey: Guid(6d69371a87148ee4dac7b2b814437ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stone T1.prefab using Guid(6d69371a87148ee4dac7b2b814437ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20df56242bdd5ff3f7e81fa311819bbb') in 0.014909 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Well.prefab
-  artifactKey: Guid(91afc0649ae41a64c860a5d49f05ff40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Well.prefab using Guid(91afc0649ae41a64c860a5d49f05ff40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5091580cc2ca787b56fe46145818b049') in 0.015904 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.507 seconds
-Refreshing native plugins compatible for Editor in 2.98 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.421 seconds
-Domain Reload Profiling: 1928ms
-	BeginReloadAssembly (182ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (12ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (46ms)
-	RebuildCommonClasses (37ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (246ms)
-		LoadAssemblies (323ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (18ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1422ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (777ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (7ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (163ms)
-			ProcessInitializeOnLoadAttributes (545ms)
-			ProcessInitializeOnLoadMethodAttributes (49ms)
-			AfterProcessingInitializeOnLoad (4ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (17ms)
-Refreshing native plugins compatible for Editor in 3.67 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4089 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 42 unused Assets / (218.8 KB). Loaded Objects now: 4705.
-Memory consumption went from 165.9 MB to 165.7 MB.
-Total: 4.098800 ms (FindLiveObjects: 0.336100 ms CreateObjectMapping: 0.312600 ms MarkObjects: 3.256300 ms  DeleteObjects: 0.193000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 409.308214 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground.prefab
-  artifactKey: Guid(d4e83863d09313942bd8054738fe5a22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground.prefab using Guid(d4e83863d09313942bd8054738fe5a22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc91ab1303d86eb8926f279c794c504f') in 0.091378 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 111
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall.prefab
-  artifactKey: Guid(8d8700121f1eb2c4abda7e8a3dafab76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall.prefab using Guid(8d8700121f1eb2c4abda7e8a3dafab76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50a7e9078df011ff0f32b1612fbf3950') in 0.083380 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 142
-========================================================================
-Received Import Request.
-  Time since last request: 16.085758 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_32.asset
-  artifactKey: Guid(770daa95abe070045950c08ee0afadc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_32.asset using Guid(770daa95abe070045950c08ee0afadc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29c81017df694c9ae1cbfdb259475db6') in 0.028256 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_40.asset
-  artifactKey: Guid(2ac4fa2270a94754983309b20b7796ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_40.asset using Guid(2ac4fa2270a94754983309b20b7796ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc923ff68fe84dd2797028aa0ce48f55') in 0.015968 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_34.asset
-  artifactKey: Guid(1bc9cef8934d54d46ae8d49dfeeeb02c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_34.asset using Guid(1bc9cef8934d54d46ae8d49dfeeeb02c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '102a01839bb88780a860f72904c4c993') in 0.015907 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_35.asset
-  artifactKey: Guid(009f3593fa7376e41a0729c7f4181615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_35.asset using Guid(009f3593fa7376e41a0729c7f4181615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73d5be2401b490d1fb4ed221f9096076') in 0.016304 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_38.asset
-  artifactKey: Guid(ebc7e2cba71b00c4bb3606151d6c45ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_38.asset using Guid(ebc7e2cba71b00c4bb3606151d6c45ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d6f78c597251126b6a131778a06e9c9') in 0.017509 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.516047 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_42.asset
-  artifactKey: Guid(0da41aee1c6ad1947ae6c8b7e23130ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_42.asset using Guid(0da41aee1c6ad1947ae6c8b7e23130ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2818aaab72af23888ede26d5030551d2') in 0.011599 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_45.asset
-  artifactKey: Guid(a959b762bdf49ed4ebbf171ad48d89df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_45.asset using Guid(a959b762bdf49ed4ebbf171ad48d89df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1208fd94631d387d6d56fc22bf69f63') in 0.011474 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_46.asset
-  artifactKey: Guid(34c4a150aba65a2479c36b372053f984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_46.asset using Guid(34c4a150aba65a2479c36b372053f984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09fdccee8ee6b66ccac6f9beb06e87d0') in 0.012173 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_47.asset
-  artifactKey: Guid(9740ac1ac84e1b542b6a265280e94631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_47.asset using Guid(9740ac1ac84e1b542b6a265280e94631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd867e13d5b1965688d2e5bd2da397480') in 0.011397 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_44.asset
-  artifactKey: Guid(f1c4920ad7c362d43bab5a55f8ba298c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_44.asset using Guid(f1c4920ad7c362d43bab5a55f8ba298c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20d936123927d39f9a5d47bf0002b7af') in 0.011925 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 3.857952 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass Pavement 0.asset
-  artifactKey: Guid(b52eb31537a3c0f4d9b909925745af72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass Pavement 0.asset using Guid(b52eb31537a3c0f4d9b909925745af72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adcaf05a16cbd5464c9e9f598b3aa1eb') in 0.010569 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass Pavement 5.asset
-  artifactKey: Guid(9d261fa57a186304eb7c71bcd3920f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass Pavement 5.asset using Guid(9d261fa57a186304eb7c71bcd3920f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0590d959d12ec28442713955147940a0') in 0.031179 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass Pavement 6.asset
-  artifactKey: Guid(1eb88b0997574584f9e6103018404c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass Pavement 6.asset using Guid(1eb88b0997574584f9e6103018404c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5978d8c4cef155fb5d18085124e6c58') in 0.011988 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass Pavement 4.asset
-  artifactKey: Guid(d3860dc7511661042a0e40d8d53db3a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass Pavement 4.asset using Guid(d3860dc7511661042a0e40d8d53db3a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb6d0cad869500dc677e393cdbbe86e7') in 0.010698 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 6.326429 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_36.asset
-  artifactKey: Guid(25c92bd1a1b2eda46b08a2414b277305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_36.asset using Guid(25c92bd1a1b2eda46b08a2414b277305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4baba15c02f95c7696a076061e17efee') in 0.011624 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_54.asset
-  artifactKey: Guid(adff4849f9e61d242bac11b47989a904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_54.asset using Guid(adff4849f9e61d242bac11b47989a904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3c7095162acddd1f2e3b29c998572cd') in 0.011783 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_43.asset
-  artifactKey: Guid(c144af5afd6ab544390bce2a0d1ce972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_43.asset using Guid(c144af5afd6ab544390bce2a0d1ce972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d45d87f7010b8df88fc377d3619b5b0') in 0.011286 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_47.asset
-  artifactKey: Guid(d12fbd8400e101840be29555508b9a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_47.asset using Guid(d12fbd8400e101840be29555508b9a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb8de7103670c043eefa18a6e8f7f63a') in 0.010091 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_50.asset
-  artifactKey: Guid(fc84b2b02e60d1546a8a75ba64b5d5f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_50.asset using Guid(fc84b2b02e60d1546a8a75ba64b5d5f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b77d0ec498bac911bf4a3896cceb915a') in 0.012108 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_59.asset
-  artifactKey: Guid(cdf8801e81d05d149ac589cebd5e1dd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_59.asset using Guid(cdf8801e81d05d149ac589cebd5e1dd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43ac835c7fe5177bb9df49ac62cc766d') in 0.012930 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_60.asset
-  artifactKey: Guid(80d878f99cb4c7943b5c46bf5c1a6785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_60.asset using Guid(80d878f99cb4c7943b5c46bf5c1a6785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f94d661638f56282b0586303047098cf') in 0.011453 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1.120641 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_62.asset
-  artifactKey: Guid(fa699176380f55f42a54abdfa1c53794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_62.asset using Guid(fa699176380f55f42a54abdfa1c53794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac1ffded5c3f3a5ea1d7e134cab94115') in 0.011701 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 895.100375 seconds.
-  path: Assets/Tilemap/New Palette.prefab
-  artifactKey: Guid(136d9a98bda75714dac52fce2ac0a169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/New Palette.prefab using Guid(136d9a98bda75714dac52fce2ac0a169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c78e766e13816872eb086b6d345277b') in 2.187050 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 377
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  3.309 seconds
-Refreshing native plugins compatible for Editor in 6.11 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 16.882 seconds
-Domain Reload Profiling: 20191ms
-	BeginReloadAssembly (222ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (13ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (53ms)
-	RebuildCommonClasses (144ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (30ms)
-	LoadAllAssembliesAndSetupDomain (2901ms)
-		LoadAssemblies (2997ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (29ms)
-			TypeCache.Refresh (12ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (16882ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (647ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (7ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (93ms)
-			ProcessInitializeOnLoadAttributes (495ms)
-			ProcessInitializeOnLoadMethodAttributes (41ms)
-			AfterProcessingInitializeOnLoad (4ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (17ms)
-Refreshing native plugins compatible for Editor in 4.14 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4089 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 42 unused Assets / (218.6 KB). Loaded Objects now: 4710.
-Memory consumption went from 168.0 MB to 167.8 MB.
-Total: 4.649000 ms (FindLiveObjects: 0.485100 ms CreateObjectMapping: 0.315500 ms MarkObjects: 3.614600 ms  DeleteObjects: 0.232200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
