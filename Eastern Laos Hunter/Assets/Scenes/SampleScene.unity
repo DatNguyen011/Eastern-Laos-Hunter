@@ -16802,7 +16802,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1831598612
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16849,7 +16849,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad61eb07897f2bb41a287426b1193587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogBox: {fileID: 1831598611}
   textLabel: {fileID: 2067571474}
+  TestDialog: {fileID: 11400000, guid: 62313affca00bdd4697cfcaf73e6de26, type: 2}
 --- !u!1 &1842979882
 GameObject:
   m_ObjectHideFlags: 0
@@ -17226,8 +17228,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1934187172}
   - component: {fileID: 1934187171}
-  - component: {fileID: 1934187176}
   - component: {fileID: 1934187175}
+  - component: {fileID: 1934187176}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Hero
@@ -17261,6 +17263,8 @@ MonoBehaviour:
   arrow: {fileID: 5038789081558355704, guid: 2262b784058c6c54b883daf481074998, type: 3}
   bullerPos: {fileID: 2081975366}
   pointRotation: {fileID: 1750174857}
+  dialogBox: {fileID: 1831598611}
+  rb: {fileID: 1934187175}
 --- !u!4 &1934187172
 Transform:
   m_ObjectHideFlags: 0
@@ -17306,8 +17310,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &1934187176
-CapsuleCollider2D:
+--- !u!61 &1934187176
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -17338,9 +17342,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.20923698, y: -0.01711762}
-  m_Size: {x: 1.3373401, y: 1.8585193}
-  m_Direction: 0
+  m_Offset: {x: -0.1568284, y: -0.42247587}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0320058, y: 0.9743954}
+  m_EdgeRadius: 0
 --- !u!4 &1966973352 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2055102311959635375, guid: 9fb66d8c9d3b5194a82e9eed65a54afb,

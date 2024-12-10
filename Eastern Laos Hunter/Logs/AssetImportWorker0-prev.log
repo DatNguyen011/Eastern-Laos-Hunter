@@ -15,7 +15,7 @@ E:/Unity/Eastern-Laos-Hunter/Eastern Laos Hunter
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60412
+52953
 Successfully changed project path to: E:/Unity/Eastern-Laos-Hunter/Eastern Laos Hunter
 E:/Unity/Eastern-Laos-Hunter/Eastern Laos Hunter
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ E:/Unity/Eastern-Laos-Hunter/Eastern Laos Hunter
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [24404] Host "[IP] 169.254.83.107 [Port] 0 [Flags] 2 [Guid] 2828633817 [EditorId] 2828633817 [Version] 1048832 [Id] WindowsEditor(7,Admin) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [12076] Host "[IP] 169.254.83.107 [Port] 0 [Flags] 2 [Guid] 2858662077 [EditorId] 2858662077 [Version] 1048832 [Id] WindowsEditor(7,Admin) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [24404] Host "[IP] 169.254.83.107 [Port] 0 [Flags] 2 [Guid] 2828633817 [EditorId] 2828633817 [Version] 1048832 [Id] WindowsEditor(7,Admin) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [12076] Host "[IP] 169.254.83.107 [Port] 0 [Flags] 2 [Guid] 2858662077 [EditorId] 2858662077 [Version] 1048832 [Id] WindowsEditor(7,Admin) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 492.19 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 11.49 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.24f1 (334eb2a0b267)
 [Subsystems] Discovering subsystems at path D:/unity/Install Unity/2022.3.24f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'D:/unity/Install Unity/2022.3.24f1/Editor/Data/Managed'
 Mono path[1] = 'D:/unity/Install Unity/2022.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/unity/Install Unity/2022.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56708
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56980
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/unity/Install Unity/2022.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.037198 seconds.
-- Loaded All Assemblies, in  2.813 seconds
+Registered in 0.010519 seconds.
+- Loaded All Assemblies, in  0.729 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.599 seconds
-Domain Reload Profiling: 3413ms
-	BeginReloadAssembly (694ms)
+- Finished resetting the current domain, in  0.541 seconds
+Domain Reload Profiling: 1270ms
+	BeginReloadAssembly (215ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (489ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (178ms)
-	LoadAllAssembliesAndSetupDomain (1436ms)
-		LoadAssemblies (693ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (82ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (126ms)
+	LoadAllAssembliesAndSetupDomain (282ms)
+		LoadAssemblies (212ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1433ms)
-			TypeCache.Refresh (1431ms)
-				TypeCache.ScanAssembly (1015ms)
+		AnalyzeDomain (279ms)
+			TypeCache.Refresh (277ms)
+				TypeCache.ScanAssembly (254ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (600ms)
+	FinalizeReload (542ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (518ms)
+		SetupLoadedEditorAssemblies (432ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (9ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (23ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (273ms)
-			ProcessInitializeOnLoadMethodAttributes (222ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (317ms)
+			ProcessInitializeOnLoadMethodAttributes (72ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,55 +115,55 @@ Domain Reload Profiling: 3413ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in 10.768 seconds
-Refreshing native plugins compatible for Editor in 3.48 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.006 seconds
+Refreshing native plugins compatible for Editor in 4.05 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.088 seconds
-Domain Reload Profiling: 11856ms
-	BeginReloadAssembly (180ms)
+- Finished resetting the current domain, in  1.123 seconds
+Domain Reload Profiling: 2128ms
+	BeginReloadAssembly (242ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (25ms)
-	RebuildCommonClasses (39ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (46ms)
-	LoadAllAssembliesAndSetupDomain (10490ms)
-		LoadAssemblies (10189ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (57ms)
+	LoadAllAssembliesAndSetupDomain (634ms)
+		LoadAssemblies (492ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (408ms)
-			TypeCache.Refresh (376ms)
-				TypeCache.ScanAssembly (159ms)
-			ScanForSourceGeneratedMonoScriptInfo (24ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (1089ms)
+		AnalyzeDomain (283ms)
+			TypeCache.Refresh (240ms)
+				TypeCache.ScanAssembly (214ms)
+			ScanForSourceGeneratedMonoScriptInfo (30ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1123ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (882ms)
+		SetupLoadedEditorAssemblies (829ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (6ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (77ms)
-			ProcessInitializeOnLoadAttributes (749ms)
-			ProcessInitializeOnLoadMethodAttributes (42ms)
-			AfterProcessingInitializeOnLoad (3ms)
+			BeforeProcessingInitializeOnLoad (99ms)
+			ProcessInitializeOnLoadAttributes (653ms)
+			ProcessInitializeOnLoadMethodAttributes (59ms)
+			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.44 seconds
-Refreshing native plugins compatible for Editor in 3.44 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (14ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.66 seconds
+Refreshing native plugins compatible for Editor in 6.37 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4110 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 70 unused Assets / (245.0 KB). Loaded Objects now: 4587.
-Memory consumption went from 164.3 MB to 164.1 MB.
-Total: 4.643400 ms (FindLiveObjects: 0.344400 ms CreateObjectMapping: 0.300900 ms MarkObjects: 3.760100 ms  DeleteObjects: 0.237000 ms)
+Unloading 70 unused Assets / (245.4 KB). Loaded Objects now: 4587.
+Memory consumption went from 164.3 MB to 164.0 MB.
+Total: 6.556400 ms (FindLiveObjects: 0.557900 ms CreateObjectMapping: 0.600300 ms MarkObjects: 4.984500 ms  DeleteObjects: 0.412300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -180,9 +180,118 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1131686.982539 seconds.
-  path: Assets/Pixel Adventure 2/Assets/Cube/Beach.png
-  artifactKey: Guid(fed57bbce509b6d48a75d61f6adcfd88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Adventure 2/Assets/Cube/Beach.png using Guid(fed57bbce509b6d48a75d61f6adcfd88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '516ae19e001c67c4bc1695a59cdf7568') in 0.189005 seconds
+  Time since last request: 1214070.582858 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs M L 1.asset
+  artifactKey: Guid(d5900315a878d2644b1a0348cf80946c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs M L 1.asset using Guid(d5900315a878d2644b1a0348cf80946c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '443c0750d6000b37bfeb11bb929d6370') in 0.141265 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Struct Gate T1 T.asset
+  artifactKey: Guid(612b5f7d80832dc45b78d69c2d9a5777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Struct Gate T1 T.asset using Guid(612b5f7d80832dc45b78d69c2d9a5777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c0479ee3757cb15debaecff703e9323') in 0.013518 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs L M.asset
+  artifactKey: Guid(d0a4a4ee1ad6b07448938f8619454901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs L M.asset using Guid(d0a4a4ee1ad6b07448938f8619454901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88b6866b7b102269e11c7b944a477c34') in 0.014211 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs M M 1.asset
+  artifactKey: Guid(2fcb3b31317f0584f96644f47713f802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs M M 1.asset using Guid(2fcb3b31317f0584f96644f47713f802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5032949c7082ab6b9a4a8134eefdd4ea') in 0.014697 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs R L.asset
+  artifactKey: Guid(86a616903ee90a447b6a4f5e29df9690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs R L.asset using Guid(86a616903ee90a447b6a4f5e29df9690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4af20eebebbbd940bc9762cabed203f5') in 0.005630 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Struct Gate T2 B 1.asset
+  artifactKey: Guid(82c171c8b558c4740b598774980a48d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Struct Gate T2 B 1.asset using Guid(82c171c8b558c4740b598774980a48d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a9b0d00f627a3d57dcb02dc34fef7a1') in 0.012164 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Struct Gate T1 T 1.asset
+  artifactKey: Guid(37e81a13862fe2f41b19eb0abed5e462) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Struct Gate T1 T 1.asset using Guid(37e81a13862fe2f41b19eb0abed5e462) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d82ccef08d04ed00be0cfb2f0b41e6f') in 0.005538 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs M M.asset
+  artifactKey: Guid(1572182eb951baa4a8ee64753ef52acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs M M.asset using Guid(1572182eb951baa4a8ee64753ef52acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b858961a708eb230ef117c7ec51de33') in 0.005451 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs M R 1.asset
+  artifactKey: Guid(1ce984cfe0274044fb87f9328d5c52e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs M R 1.asset using Guid(1ce984cfe0274044fb87f9328d5c52e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb40b3865abb2f46f9745d7926b1762c') in 0.005972 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs Broken R M.asset
+  artifactKey: Guid(546035615ee211d4c95bb1eced28f94f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs Broken R M.asset using Guid(546035615ee211d4c95bb1eced28f94f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '261508bcc83e8037659ec8a8323063c3') in 0.004897 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 10.173289 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs Broken L R.asset
+  artifactKey: Guid(74de05fbb36f1b24f9f17dc1cbbf5c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs Broken L R.asset using Guid(74de05fbb36f1b24f9f17dc1cbbf5c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83be56c1471b33492bc4b5ef18c2d8c8') in 0.033277 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs Broken R L.asset
+  artifactKey: Guid(0b617720c0797b446b081b68aefe3742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs Broken R L.asset using Guid(0b617720c0797b446b081b68aefe3742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70081e8b86631ba1ec624755a6dd48aa') in 0.008075 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs Broken M M.asset
+  artifactKey: Guid(1162c9bdf040faf4ca60f4420a61116e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs Broken M M.asset using Guid(1162c9bdf040faf4ca60f4420a61116e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0da3baa2e6f976cb95b87d9db8c1a17') in 0.042205 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs Broken M M 1.asset
+  artifactKey: Guid(d0cf3da74aa5c374b8f538ab84b04f28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TX Stairs Broken M M 1.asset using Guid(d0cf3da74aa5c374b8f538ab84b04f28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43e5257cc73453ac01167e9475e9d249') in 0.006255 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

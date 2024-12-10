@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class Hero : Singleton<Hero>
 {
-
     [SerializeField] float speed = 5f;
     private bool facingRight = true;
     public Animator animator;
@@ -36,6 +35,9 @@ public class Hero : Singleton<Hero>
     //private float maxAngle=60f;
     private float directionRotation=1f;
     private bool overMana=false;
+    public GameObject dialogBox;
+    public Rigidbody2D rb;
+
     //public HealthBar healthBar;
     void Start()
     {
@@ -71,21 +73,21 @@ public class Hero : Singleton<Hero>
     //AWDS
     void Update()
     {
-        if (isAttack==false&&isDead==false)
+        if (isAttack==false&&isDead==false&&dialogBox.activeSelf==false)
         {
-            
+            rb = GetComponent<Rigidbody2D>();
             float moveX = Input.GetAxis("Horizontal");
             float moveY = Input.GetAxis("Vertical");
-            Vector3 move = new Vector3(moveX, moveY, 0).normalized;
-            transform.position += move * speed * Time.deltaTime;
+            Vector2 move = new Vector2(moveX, moveY);
+            rb.velocity = move * speed;
+       
 
-                 
-            if (move == Vector3.zero)
+            if (move == Vector2.zero)
             {
                 ChangeAnim("Idle");
             }
 
-            if (move != Vector3.zero)
+            if (move != Vector2.zero&&isHolding==false)
             {
                 couterTime.OnCancel();
                 ChangeAnim("Run");
@@ -101,9 +103,10 @@ public class Hero : Singleton<Hero>
                 }
             }
             
-            if (Input.GetKeyDown(KeyCode.J) && isAttack == false)
+            if (Input.GetKeyDown(KeyCode.J))
             {
                 couterTime.OnExecute();
+                rb.velocity = Vector2.zero;
                 Attack();
             }
             else if (Input.GetKeyDown(KeyCode.K))
@@ -115,13 +118,14 @@ public class Hero : Singleton<Hero>
             else if(Input.GetKeyDown(KeyCode.H)&&!overMana)
             {
                 isHolding = true;
-                
+                rb.velocity = Vector2.zero;
+                ChangeAnim("Idle");
                 InitBullet();
 
             }
             else if (isHolding&&Input.GetKey(KeyCode.H) && !overMana)
             {
-                
+                rb.velocity = Vector2.zero;
                 ShootAngle();
             }
             else if (Input.GetKeyUp(KeyCode.H) && !overMana)
@@ -141,6 +145,7 @@ public class Hero : Singleton<Hero>
 
     public void ShootAngle()
     {
+        
         angle = 50f * Time.deltaTime * directionRotation;
         oldBullet.transform.RotateAround(pointRotation.position, Vector3.forward, angle);
         totalAngle += angle;
@@ -149,6 +154,7 @@ public class Hero : Singleton<Hero>
     public void InitBullet()
     {
         oldBullet=Instantiate(arrow, bullerPos.position, bullerPos.rotation , bullerPos);
+        
     }
 
     public void ThrowBullet()
@@ -240,6 +246,7 @@ public class Hero : Singleton<Hero>
         ChangeAnim("Attack");
         isAttack = true;
         attackArea.SetActive(true);
+        
         StartCoroutine(ReturnIdle());
     }
 
