@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ThrowAngle
+  - HeroAttack
+  - Hero
+  - SavePoint
+  - Box
+  - HealthBottle
+  - ManaBottle
+  - Gold
   layers:
   - Default
   - TransparentFX

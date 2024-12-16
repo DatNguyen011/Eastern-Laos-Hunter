@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,7 @@ public class Hero : Singleton<Hero>
     public Animator animator;
     private string currentAnim;
     private bool isAttack = false;
+    private bool isDash = false;
     private bool isDead = false;
     public float countDownDash = 5f;
     public float dashTime = 0.3f;
@@ -37,6 +39,9 @@ public class Hero : Singleton<Hero>
     private bool overMana=false;
     public GameObject dialogBox;
     public Rigidbody2D rb;
+    private Vector2 move;
+    private Vector2 targetPosition;
+    private int atkNumber=1;
 
     //public HealthBar healthBar;
     void Start()
@@ -73,12 +78,12 @@ public class Hero : Singleton<Hero>
     //AWDS
     void Update()
     {
-        if (isAttack==false&&isDead==false&&dialogBox.activeSelf==false)
+        if (isAttack==false&&isDead==false&&dialogBox.activeSelf==false&&isDash==false)
         {
             rb = GetComponent<Rigidbody2D>();
             float moveX = Input.GetAxis("Horizontal");
             float moveY = Input.GetAxis("Vertical");
-            Vector2 move = new Vector2(moveX, moveY);
+            move = new Vector2(moveX, moveY).normalized;
             rb.velocity = move * speed;
        
 
@@ -111,7 +116,6 @@ public class Hero : Singleton<Hero>
             }
             else if (Input.GetKeyDown(KeyCode.K))
             {
-
                 couterTime.OnCancel();
                 Dash();
             }
@@ -227,6 +231,7 @@ public class Hero : Singleton<Hero>
 
     public void OnInit()
     {
+        rb=GetComponent<Rigidbody2D>();
         isDead = false;
         this.hp = 100f;
         attackArea.SetActive(false);
@@ -242,8 +247,12 @@ public class Hero : Singleton<Hero>
 
     public void Attack()
     {
-
-        ChangeAnim("Attack");
+        if (atkNumber > 3)
+        {
+            atkNumber = 1;
+        }
+        ChangeAnim("Attack"+atkNumber);
+        atkNumber++;
         isAttack = true;
         attackArea.SetActive(true);
         
@@ -264,23 +273,23 @@ public class Hero : Singleton<Hero>
 
     public void Dash()
     {
-        speed = speed + 5f;
+        ChangeAnim("Tele1");
+        isDash = true;
         
         StartCoroutine(Dashing());
-        StartCoroutine(CountdownDashTime());
+        
     }
 
     IEnumerator Dashing()
     {
-        yield return new WaitForSeconds(dashTime);
-        speed = 5f;
+        yield return new WaitForSeconds(.5f);
+        targetPosition = (Vector2)transform.position + move * 3f;
+        rb.position = targetPosition;
+        ChangeAnim("Tele2");
+        yield return new WaitForSeconds(.5f);
+        isDash = false;
     }
 
-    IEnumerator CountdownDashTime()
-    {
-        yield return new WaitForSeconds(countDownDash);
-
-    }
 
     public void OnDead()
     {

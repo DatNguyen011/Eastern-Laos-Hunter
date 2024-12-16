@@ -11,6 +11,10 @@ public class AttackArea : MonoBehaviour
         {
             collision.GetComponent<Bot>().ReduceHp(20f);
         }
+        if (collision.gameObject.tag=="Box")
+        {
+            collision.GetComponent<Box>().DestroyBox();
+        }
 
     }
 
