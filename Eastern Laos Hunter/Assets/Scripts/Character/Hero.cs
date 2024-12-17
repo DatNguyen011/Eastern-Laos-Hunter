@@ -121,7 +121,9 @@ public class Hero : Singleton<Hero>
             }
             else if(Input.GetKeyDown(KeyCode.H)&&!overMana)
             {
+                couterTime.OnCancel();
                 isHolding = true;
+                
                 rb.velocity = Vector2.zero;
                 ChangeAnim("Idle");
                 InitBullet();
@@ -129,15 +131,18 @@ public class Hero : Singleton<Hero>
             }
             else if (isHolding&&Input.GetKey(KeyCode.H) && !overMana)
             {
+                couterTime.OnCancel();
                 rb.velocity = Vector2.zero;
                 ShootAngle();
             }
             else if (Input.GetKeyUp(KeyCode.H) && !overMana)
             {
-                
+                couterTime.OnCancel();
+                isAttack=true;
                 isHolding = false;
-                
+                ChangeAnim("Throw");
                 ThrowBullet();
+                //isAttack = false;
             }
         }
     }
@@ -180,8 +185,15 @@ public class Hero : Singleton<Hero>
         ReduceMp(10f);
         Destroy(oldBullet);
         Destroy(newBullet, 2f);
+        StartCoroutine(ThrowAttack());
+        
     }
 
+    public IEnumerator ThrowAttack()
+    {
+        yield return new WaitForSeconds(.5f);
+        isAttack = false;
+    }
 
     public void ReduceHp(float hp)
     {
@@ -252,6 +264,7 @@ public class Hero : Singleton<Hero>
             atkNumber = 1;
         }
         ChangeAnim("Attack"+atkNumber);
+        
         atkNumber++;
         isAttack = true;
         attackArea.SetActive(true);

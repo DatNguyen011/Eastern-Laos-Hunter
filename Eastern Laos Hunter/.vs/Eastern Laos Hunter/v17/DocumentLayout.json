@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|e:\\unity\\eastern-laos-hunter\\eastern laos hunter\\assets\\scripts\\environment\\box.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\environment\\box.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\environment\\box.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -130,8 +130,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Environment\\Box.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAQwBMAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T18:03:50.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T18:03:50.075Z"
             },
             {
               "$type": "Document",
@@ -275,8 +274,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Character\\Bot.cs",
               "ViewState": "AQIAAHcAAAAAAAAAAAAAABcAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T17:23:11.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T17:23:11.53Z"
             },
             {
               "$type": "Document",
@@ -300,8 +298,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Character\\AttackArea.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T16:48:28.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T16:48:28.855Z"
             },
             {
               "$type": "Document",
@@ -313,8 +310,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Character\\GeckoBot.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T16:25:07.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T16:25:07.758Z"
             },
             {
               "$type": "Document",
@@ -326,8 +322,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Character\\SlimeBot.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAASwBkAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T17:54:47.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T17:54:47.658Z"
             },
             {
               "$type": "Document",
@@ -337,7 +332,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Hero.cs",
               "ToolTip": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\Hero.cs",
               "RelativeToolTip": "Assets\\Scripts\\Character\\Hero.cs",
-              "ViewState": "AQIAADIBAAAAAAAAAAAAADcBAAAMAAAA",
+              "ViewState": "AQIAALcAAAAAAAAAAAAYwH8AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T18:20:20.043Z",
               "EditorCaption": ""
