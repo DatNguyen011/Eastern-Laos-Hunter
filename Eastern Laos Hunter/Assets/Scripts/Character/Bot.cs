@@ -8,10 +8,9 @@ using UnityEngine.UIElements;
 
 public class Bot : AtractBot
 {
-    public GameObject player;
     private string currentAnim;
     public Animator anim;
-    private float speed = 4f;
+    private float speed = 3f;
     public float distance;
     public HealthBar healthBar;
     public float hp = 100f;
@@ -23,40 +22,37 @@ public class Bot : AtractBot
     public GameObject bloodBottle;
     public GameObject manaBottle;
     public GameObject goldOject;
-    // Start is called before the first frame update
 
     void Start()
     {
-
         ChangeAnim("Idle");
-
+        rb = GetComponent<Rigidbody2D>();
     }
 
     public void UpdateState()
     {
         if (currentState != null)
         {
-
             currentState.OnExecute(this);
         }
     }
 
     public void FindPlayer()
     {
-        distance = Vector2.Distance(player.transform.position, transform.position);
+        distance = Vector2.Distance(Hero.Instance.transform.position, transform.position);
         float stopDistance = distance + 1f;
-        Vector2 direction = player.transform.position - transform.position;
-        direction = direction.normalized;
+        Vector2 direction = Hero.Instance.transform.position - transform.position;
+        rb.velocity = direction.normalized*2f;
         // tinh goc giua vector(x,y) va truc Ox
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         if (angle >= -90 && angle <= 90)
         {
-            transform.localScale = new Vector3(-4, 4, 4);
+            transform.localScale = new Vector3(-1, 1, 1);
 
         }
         else
         {
-            transform.localScale = new Vector3(4, 4, 4);
+            transform.localScale = new Vector3(1, 1, 1);
 
         }
 
@@ -66,9 +62,11 @@ public class Bot : AtractBot
             if (distance <= 1.5f)
             {
                 ChangeState(new IdleState());
+                rb.velocity = Vector2.zero;
                 
             }
-            transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
+            Vector2 newPosition = Vector2.MoveTowards(rb.position, Hero.Instance.transform.position, speed * Time.deltaTime);
+            rb.MovePosition(newPosition);
         }
     }
 
@@ -150,15 +148,15 @@ public class Bot : AtractBot
     {
         transform.position = Vector3.MoveTowards(transform.position, des, 0.02f);
         Vector3 direction = des-transform.position;
-        direction = direction.normalized;
+        rb.velocity = direction.normalized * 2f;
         float angle = Mathf.Atan2(direction.y, direction.x)*Mathf.Rad2Deg;
         if (angle >= -90 && angle <= 90)
         {
-            transform.localScale = new Vector3(-4, 4, 4);
+            transform.localScale = new Vector3(-1, 1, 1);
         }
         else
         {
-            transform.localScale = new Vector3(4, 4, 4);
+            transform.localScale = new Vector3(1, 1, 1);
         }
     }
 

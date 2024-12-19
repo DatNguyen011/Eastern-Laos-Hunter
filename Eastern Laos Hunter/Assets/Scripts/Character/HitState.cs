@@ -13,7 +13,10 @@ public class HitState : IState<Bot>
     public void OnExecute(Bot bot)
     {
         time += Time.deltaTime;
-        bot.ChangeState(new IdleState());
+        if (time > 0.5f)
+        {
+            bot.ChangeState(new IdleState());
+        }
     }
 
     public void OnExit(Bot bot)

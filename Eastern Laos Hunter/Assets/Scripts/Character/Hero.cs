@@ -125,7 +125,7 @@ public class Hero : Singleton<Hero>
                 isHolding = true;
                 
                 rb.velocity = Vector2.zero;
-                ChangeAnim("Idle");
+                 ChangeAnim("Idle");
                 InitBullet();
 
             }
@@ -199,18 +199,28 @@ public class Hero : Singleton<Hero>
     {
         this.hp -= hp;
         healthBar.SetHealthByImage(maxHp, this.hp);
+        isAttack=true;
+        ChangeAnim("Hit");
+        StartCoroutine(HitToIdle());
         if (this.hp <= 0)
         {
             OnDead();
         }
     }
 
+    public IEnumerator HitToIdle()
+    {
+        yield return new WaitForSeconds(.5f);
+        isAttack = false;
+
+    }
+
     public void ReduceMp(float mp)
     {
-
         this.mp -= mp;
         healthBar.SetManaByImage(maxMp, this.mp);
-        if(this.mp < mp) {
+        
+        if (this.mp < mp) {
             overMana = true;
         }
     }
@@ -307,7 +317,9 @@ public class Hero : Singleton<Hero>
     public void OnDead()
     {
         isDead = true;
+        ChangeAnim("Dead");
         couterTime.OnCancel();
+        
         StartCoroutine(SpawnHero());
     }
 

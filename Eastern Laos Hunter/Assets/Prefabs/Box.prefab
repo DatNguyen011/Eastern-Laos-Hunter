@@ -230,5 +230,5 @@ MonoBehaviour:
     type: 3}
   manaBottle: {fileID: 3013277905274272790, guid: 4f39e2864ab98bc458aaa2e1598e5bb5,
     type: 3}
-  goldOject: {fileID: 1187891307316583170, guid: e7a8c07a596b8fe48be80f2c62a25e68,
+  goldOject: {fileID: 6470860676266891272, guid: e7a8c07a596b8fe48be80f2c62a25e68,
     type: 3}

@@ -14,9 +14,8 @@ public class IdleState : IState<Bot>
     public void OnExecute(Bot bot)
     {
         time += Time.deltaTime;
-        if (time > 1f)
+        if (time > .5f)
         {
-            Debug.Log("Patrol");
             bot.ChangeState(new PatrolState());
         }
         //else if (bot.haveTarget == true)
