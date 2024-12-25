@@ -42,6 +42,7 @@ public class Hero : Singleton<Hero>
     private Vector2 move;
     private Vector2 targetPosition;
     private int atkNumber=1;
+    public PositionValue positionValue;
 
     //public HealthBar healthBar;
     void Start()
@@ -258,8 +259,8 @@ public class Hero : Singleton<Hero>
         this.hp = 100f;
         attackArea.SetActive(false);
         healthBar.SetHealthByImage(maxHp, hp);
-        transform.position = savePoint;
-        SavePoint();
+        transform.position = positionValue.initPosValue;
+        //SavePoint();
     }
 
     internal void SavePoint()

@@ -37,13 +37,17 @@ public class GameController : Singleton<GameController>
 
     public void OnInit()
     {
-        for (int i = 0; i < 3; i++)
+        if (listTransformBot.Count > 0)
         {
-            Bot spawnBot = Instantiate(botPrefabs);
-            spawnBot.transform.position = listTransformBot[i].position;
-            //spawnBot.OnInit();
-            listBot.Add(spawnBot);
+            for (int i = 0; i < 3; i++)
+            {
+                Bot spawnBot = Instantiate(botPrefabs);
+                spawnBot.transform.position = listTransformBot[i].position;
+                //spawnBot.OnInit();
+                listBot.Add(spawnBot);
+            }
         }
+
 
     }
 

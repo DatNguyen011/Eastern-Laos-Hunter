@@ -8,9 +8,10 @@ using UnityEngine.UIElements;
 
 public class Bot : AtractBot
 {
+    //public GameObject player;
     private string currentAnim;
     public Animator anim;
-    private float speed = 3f;
+    private float speed = 4f;
     public float distance;
     public HealthBar healthBar;
     public float hp = 100f;
@@ -22,17 +23,20 @@ public class Bot : AtractBot
     public GameObject bloodBottle;
     public GameObject manaBottle;
     public GameObject goldOject;
+    // Start is called before the first frame update
 
     void Start()
     {
+
         ChangeAnim("Idle");
-        rb = GetComponent<Rigidbody2D>();
+
     }
 
     public void UpdateState()
     {
         if (currentState != null)
         {
+
             currentState.OnExecute(this);
         }
     }
@@ -42,7 +46,7 @@ public class Bot : AtractBot
         distance = Vector2.Distance(Hero.Instance.transform.position, transform.position);
         float stopDistance = distance + 1f;
         Vector2 direction = Hero.Instance.transform.position - transform.position;
-        rb.velocity = direction.normalized*2f;
+        direction = direction.normalized;
         // tinh goc giua vector(x,y) va truc Ox
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         if (angle >= -90 && angle <= 90)
@@ -62,11 +66,9 @@ public class Bot : AtractBot
             if (distance <= 1.5f)
             {
                 ChangeState(new IdleState());
-                rb.velocity = Vector2.zero;
-                
+
             }
-            Vector2 newPosition = Vector2.MoveTowards(rb.position, Hero.Instance.transform.position, speed * Time.deltaTime);
-            rb.MovePosition(newPosition);
+            transform.position = Vector2.MoveTowards(this.transform.position, Hero.Instance.transform.position, speed * Time.deltaTime);
         }
     }
 
@@ -76,7 +78,7 @@ public class Bot : AtractBot
         StartCoroutine(DisableHitState());
         hp -= dame;
         healthBar.SetHealth(maxHp, hp);
-        if(hp <= 0)
+        if (hp <= 0)
         {
             isDead = true;
             OnDead();
@@ -123,19 +125,19 @@ public class Bot : AtractBot
     {
         //GameController.Instance.GainGold(10f);
         float randomNumber = Random.Range(1, 4);
-        if (randomNumber ==1 )
+        if (randomNumber == 1)
         {
             GameObject newBloodBottle = Instantiate(bloodBottle, transform.position, transform.rotation);
         }
-        else if (randomNumber ==2 )
+        else if (randomNumber == 2)
         {
             GameObject newManaBottle = Instantiate(manaBottle, transform.position, transform.rotation);
         }
-        else if (randomNumber ==3 )
+        else if (randomNumber == 3)
         {
             GameObject newGold = Instantiate(goldOject, transform.position, transform.rotation);
         }
-        
+
         Destroy(gameObject);
     }
 
@@ -146,13 +148,13 @@ public class Bot : AtractBot
 
     public void SetDestination(Vector3 des)
     {
-        transform.position = Vector3.MoveTowards(transform.position, des, 0.02f);
-        Vector3 direction = des-transform.position;
-        rb.velocity = direction.normalized * 2f;
-        float angle = Mathf.Atan2(direction.y, direction.x)*Mathf.Rad2Deg;
+        transform.position = Vector3.MoveTowards(transform.position, des, speed*Time.deltaTime);
+        Vector3 direction = des - transform.position;
+        direction = direction.normalized;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         if (angle >= -90 && angle <= 90)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(-1, 1, 1 );
         }
         else
         {
@@ -173,13 +175,13 @@ public class Bot : AtractBot
 
     IEnumerator AttackWait()
     {
-        if(haveTarget==true)
+        if (haveTarget == true)
         {
             ChangeState(new AttackState());
             yield return new WaitForSeconds(5f);
             StartCoroutine(AttackWait());
         }
-        
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -187,7 +189,7 @@ public class Bot : AtractBot
         if (collision.tag == "Hero")
         {
             haveTarget = false;
-            
+
             ChangeState(new IdleState());
         }
 

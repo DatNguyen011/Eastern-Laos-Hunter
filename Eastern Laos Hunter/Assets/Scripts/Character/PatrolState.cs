@@ -24,7 +24,7 @@ public class PatrolState : IState<Bot>
             bot.FindPlayer();
             
         }
-        else
+        else if(Vector2.Distance(Hero.Instance.transform.position, bot.transform.position) > 5f)
         {
             bot.SetDestination(pos);
         }
