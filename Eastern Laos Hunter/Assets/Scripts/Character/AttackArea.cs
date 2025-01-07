@@ -9,7 +9,7 @@ public class AttackArea : MonoBehaviour
     {
         if (collision.gameObject.tag=="Bot")
         {
-            collision.GetComponent<Bot>().ReduceHp(20f);
+            collision.GetComponent<Bot>().ReduceHp(30f);
         }
         if (collision.gameObject.tag=="Box")
         {

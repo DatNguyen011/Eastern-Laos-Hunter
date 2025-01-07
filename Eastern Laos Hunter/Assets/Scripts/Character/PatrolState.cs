@@ -5,33 +5,45 @@ using static UnityEditor.PlayerSettings;
 
 public class PatrolState : IState<Bot>
 {
-    Vector3 pos;
+    Vector2 pos;
     public void OnEnter(Bot bot)
     {
         bot.ChangeAnim("Run");
-        pos = (Vector3)Random.insideUnitCircle * 3f;
+        //pos = (Vector2)Random.insideUnitCircle * 3f;
+        pos = bot.RandomPoint();
     }
 
     public void OnExecute(Bot bot)
     {
-        
-        if (Vector2.Distance(bot.transform.position, pos) < 0.01f)
+        if (bot.isTouchWall == false)
         {
-            bot.ChangeState(new IdleState());
+            if (Vector2.Distance(bot.transform.position, pos) < 0.01f)
+            {
+                bot.ChangeState(new IdleState());
+            }
+            else if (Vector2.Distance(Hero.Instance.transform.position, bot.transform.position) <= 5f)
+            {
+                bot.FindPlayer();
+
+            }
+            else if (Vector2.Distance(Hero.Instance.transform.position, bot.transform.position) > 5f)
+            {
+                bot.SetDestination(pos);
+            }
         }
-        else if(Vector2.Distance(Hero.Instance.transform.position, bot.transform.position)<=5f)
+        else
         {
-            bot.FindPlayer();
-            
+            bot.SetDestination(bot.startPoint);
+            if(Vector2.Distance(bot.transform.position, bot.startPoint)<0.01f) {
+                bot.isTouchWall=false;
+                bot.ChangeState(new IdleState());
+            }
         }
-        else if(Vector2.Distance(Hero.Instance.transform.position, bot.transform.position) > 5f)
-        {
-            bot.SetDestination(pos);
-        }
+
     }
 
     public void OnExit(Bot bot)
     {
-        
+
     }
 }

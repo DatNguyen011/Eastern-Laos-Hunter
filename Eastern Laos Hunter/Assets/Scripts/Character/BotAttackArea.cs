@@ -6,9 +6,10 @@ public class BotAttackArea : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //if (collision.Equals("Hero"))
-        //{
-        //    collision.GetComponent<Hero>().ReduceHp(10f);
-        //}
+        if (collision.tag=="Hero")
+        {
+            //collision.GetComponent<Hero>() = Vector3.zero;
+            collision.GetComponent<Hero>().ReduceHp(10f);
+        }
     }
 }

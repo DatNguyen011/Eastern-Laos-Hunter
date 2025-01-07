@@ -14,10 +14,19 @@ public class IdleState : IState<Bot>
     public void OnExecute(Bot bot)
     {
         time += Time.deltaTime;
-        if (time > .5f)
+        if (bot.isDead == true)
         {
-            bot.ChangeState(new PatrolState());
+            bot.ChangeState(new DeadState());
         }
+        else
+        {
+            if (time > .5f)
+            {
+                bot.ChangeState(new PatrolState());
+
+            }
+        }
+        
         //else if (bot.haveTarget == true)
         //{
         //    Debug.Log("Idle Change At");

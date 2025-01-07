@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor;
@@ -18,18 +18,21 @@ public class Bot : AtractBot
     public float maxHp = 100f;
     public IState<Bot> currentState;
     public bool isDead = false;
+    public bool isTouchWall = false;
     public Rigidbody2D rb;
     public bool haveTarget = false;
     public GameObject bloodBottle;
     public GameObject manaBottle;
     public GameObject goldOject;
+    public GameObject attackArea;
+    public Vector2 startPoint;
     // Start is called before the first frame update
 
     void Start()
     {
 
         ChangeAnim("Idle");
-
+           
     }
 
     public void UpdateState()
@@ -123,7 +126,16 @@ public class Bot : AtractBot
 
     public override void OnDead()
     {
-        //GameController.Instance.GainGold(10f);
+        isDead = true;
+        ChangeState(null);
+        ChangeAnim("Dead");
+        StartCoroutine(WaitDead());
+    }
+
+    IEnumerator WaitDead()
+    {
+        yield return new WaitForSeconds(3f);
+        GameController.Instance.listBot.Remove(this);
         float randomNumber = Random.Range(1, 4);
         if (randomNumber == 1)
         {
@@ -137,8 +149,8 @@ public class Bot : AtractBot
         {
             GameObject newGold = Instantiate(goldOject, transform.position, transform.rotation);
         }
-
         Destroy(gameObject);
+
     }
 
     public override void OnInit()
@@ -146,10 +158,29 @@ public class Bot : AtractBot
         ChangeState(new IdleState());
     }
 
-    public void SetDestination(Vector3 des)
+    public Vector2 RandomPoint()
     {
-        transform.position = Vector3.MoveTowards(transform.position, des, speed*Time.deltaTime);
-        Vector3 direction = des - transform.position;
+        // Vị trí hiện tại
+        Vector2 currentPosition = transform.position;
+
+        // Random một góc trong khoảng từ 0 đến 360 độ
+        float randomAngle = Random.Range(0f, 360f);
+
+        // Chuyển góc random sang radian
+        float angleInRadians = randomAngle * Mathf.Deg2Rad;
+
+        // Tính toán vị trí mới dựa trên góc và bán kính
+        Vector2 randomPoint = new Vector2(
+            currentPosition.x + Mathf.Cos(angleInRadians) * 3f,
+            currentPosition.y + Mathf.Sin(angleInRadians) * 3f
+        );
+        return randomPoint;
+    }
+
+    public void SetDestination(Vector2 des)
+    {
+        transform.position = Vector2.MoveTowards((Vector2)transform.position, des, speed*Time.deltaTime);
+        Vector2 direction = des - (Vector2)transform.position;
         direction = direction.normalized;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         if (angle >= -90 && angle <= 90)
@@ -167,8 +198,12 @@ public class Bot : AtractBot
         if (collision.tag == "Hero")
         {
             haveTarget = true;
-            //ChangeState(new AttackState());
-            StartCoroutine(AttackWait());
+            ChangeState(new AttackState());
+            //StartCoroutine(AttackWait());
+        }
+        if (collision.tag == "Wall" || collision.tag == "Tree")
+        {
+            isTouchWall= true;
         }
     }
 
@@ -180,17 +215,6 @@ public class Bot : AtractBot
             ChangeState(new AttackState());
             yield return new WaitForSeconds(5f);
             StartCoroutine(AttackWait());
-        }
-
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag == "Hero")
-        {
-            haveTarget = false;
-
-            ChangeState(new IdleState());
         }
 
     }

@@ -12,6 +12,9 @@ TagManager:
   - HealthBottle
   - ManaBottle
   - Gold
+  - Bot
+  - Wall
+  - Tree
   layers:
   - Default
   - TransparentFX

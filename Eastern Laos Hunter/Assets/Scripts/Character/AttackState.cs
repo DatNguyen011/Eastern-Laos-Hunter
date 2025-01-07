@@ -8,7 +8,7 @@ public class AttackState : IState<Bot>
     public void OnEnter(Bot bot)
     {
         bot.ChangeAnim("Attack");
-
+        bot.attackArea.SetActive(true);
     }
 
     public void OnExecute(Bot bot)
@@ -16,7 +16,8 @@ public class AttackState : IState<Bot>
         time += Time.deltaTime;
         if (time > .5)
         {
-            Hero.Instance.ReduceHp(20f);
+            //Hero.Instance.ReduceHp(20f);
+            bot.attackArea.SetActive(false);
             bot.ChangeState(new IdleState());
         }
 

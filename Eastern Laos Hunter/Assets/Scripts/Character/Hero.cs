@@ -14,6 +14,7 @@ public class Hero : Singleton<Hero>
     private bool isAttack = false;
     private bool isDash = false;
     private bool isDead = false;
+    private bool isHit = false;
     public float countDownDash = 5f;
     public float dashTime = 0.3f;
     public CounterTime couterTime = new CounterTime();
@@ -79,7 +80,7 @@ public class Hero : Singleton<Hero>
     //AWDS
     void Update()
     {
-        if (isAttack==false&&isDead==false&&dialogBox.activeSelf==false&&isDash==false)
+        if (isAttack==false&&isDead==false&&dialogBox.activeSelf==false&&isDash==false && isHit == false)
         {
             rb = GetComponent<Rigidbody2D>();
             float moveX = Input.GetAxis("Horizontal");
@@ -183,7 +184,7 @@ public class Hero : Singleton<Hero>
             newBullet.GetComponent<Rigidbody2D>().AddForce(direction * 10f *-1f, ForceMode2D.Impulse);
             totalAngle = 0f;
         }
-        ReduceMp(10f);
+        ReduceMp(30f);
         Destroy(oldBullet);
         Destroy(newBullet, 2f);
         StartCoroutine(ThrowAttack());
@@ -199,8 +200,10 @@ public class Hero : Singleton<Hero>
     public void ReduceHp(float hp)
     {
         this.hp -= hp;
+        rb.velocity=Vector2.zero;
+        isHit = true;
         healthBar.SetHealthByImage(maxHp, this.hp);
-        isAttack=true;
+        
         ChangeAnim("Hit");
         StartCoroutine(HitToIdle());
         if (this.hp <= 0)
@@ -212,7 +215,8 @@ public class Hero : Singleton<Hero>
     public IEnumerator HitToIdle()
     {
         yield return new WaitForSeconds(.5f);
-        isAttack = false;
+        
+        isHit = false;
 
     }
 

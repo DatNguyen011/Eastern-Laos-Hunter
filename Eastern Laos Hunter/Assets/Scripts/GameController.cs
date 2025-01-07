@@ -8,7 +8,9 @@ public class GameController : Singleton<GameController>
     public float gold;
     public List<Bot> listBot = new List<Bot>();
     public List<Transform> listTransformBot = new List<Transform>();
-    public Bot botPrefabs;
+    public List<Bot> listBotPrefabs = new List<Bot>();
+    public GameObject switchLevel;
+    //public Bot botPrefabs;
     public void GainGold(float gold)
     {
         this.gold += gold;
@@ -39,20 +41,35 @@ public class GameController : Singleton<GameController>
     {
         if (listTransformBot.Count > 0)
         {
-            for (int i = 0; i < 3; i++)
+            for (int j = 0; j < listBotPrefabs.Count; j++)
             {
-                Bot spawnBot = Instantiate(botPrefabs);
-                spawnBot.transform.position = listTransformBot[i].position;
-                //spawnBot.OnInit();
-                listBot.Add(spawnBot);
+                for (int i = 0; i < listTransformBot.Count; i++)
+                {
+
+                    Bot spawnBot = Instantiate(listBotPrefabs[j]);
+                    spawnBot.transform.position = listTransformBot[i].position;
+                    spawnBot.startPoint = listTransformBot[i].position;
+                    //spawnBot.OnInit();
+                    listBot.Add(spawnBot);
+                }
+
             }
         }
 
 
     }
 
+    public void OpenNextLevel()
+    {
+        Debug.Log(listBot.Count);
+        if(listBot.Count <= 0)
+        {
+            switchLevel.SetActive(true);
+        }
+    }
+
     void Update()
     {
-
+        OpenNextLevel();
     }
 }
