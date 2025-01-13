@@ -184,7 +184,7 @@ public class Hero : Singleton<Hero>
             newBullet.GetComponent<Rigidbody2D>().AddForce(direction * 10f *-1f, ForceMode2D.Impulse);
             totalAngle = 0f;
         }
-        ReduceMp(30f);
+        ReduceMp(20f);
         Destroy(oldBullet);
         Destroy(newBullet, 2f);
         StartCoroutine(ThrowAttack());
@@ -301,6 +301,7 @@ public class Hero : Singleton<Hero>
 
     public void Dash()
     {
+        
         ChangeAnim("Tele1");
         isDash = true;
         
@@ -315,6 +316,7 @@ public class Hero : Singleton<Hero>
         rb.position = targetPosition;
         ChangeAnim("Tele2");
         yield return new WaitForSeconds(.5f);
+        ReduceMp(10f);
         isDash = false;
     }
 

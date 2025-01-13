@@ -61,7 +61,7 @@ public class GameController : Singleton<GameController>
 
     public void OpenNextLevel()
     {
-        Debug.Log(listBot.Count);
+       
         if(listBot.Count <= 0)
         {
             switchLevel.SetActive(true);
