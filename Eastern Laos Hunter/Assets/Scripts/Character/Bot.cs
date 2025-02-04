@@ -26,6 +26,7 @@ public class Bot : AtractBot
     public GameObject goldOject;
     public GameObject attackArea;
     public Vector2 startPoint;
+    public string typeBot;
     // Start is called before the first frame update
 
     void Start()
@@ -121,7 +122,9 @@ public class Bot : AtractBot
 
     public override void OnAttack()
     {
-
+            attackArea.SetActive(false);
+            ChangeState(new IdleState());
+      
     }
 
     public override void OnDead()

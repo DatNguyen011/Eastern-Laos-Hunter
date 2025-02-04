@@ -9,7 +9,7 @@ public class WolfBot : Bot
         OnInit();
     }
 
-    void Update()
+    void LateUpdate()
     {
         UpdateState();
     }

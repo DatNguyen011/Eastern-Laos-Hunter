@@ -260,11 +260,13 @@ public class Hero : Singleton<Hero>
     {
         rb=GetComponent<Rigidbody2D>();
         isDead = false;
-        this.hp = 100f;
+        this.hp = PlayerPrefs.GetFloat("hp");
+        this.mp = PlayerPrefs.GetFloat("mp");
         attackArea.SetActive(false);
         healthBar.SetHealthByImage(maxHp, hp);
+        healthBar.SetManaByImage(maxMp, mp);
+        positionValue.initPosValue = new Vector2(PlayerPrefs.GetFloat("posX"), PlayerPrefs.GetFloat("posY"));
         transform.position = positionValue.initPosValue;
-        //SavePoint();
     }
 
     internal void SavePoint()

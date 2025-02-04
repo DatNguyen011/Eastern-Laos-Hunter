@@ -17,8 +17,8 @@ public class AttackState : IState<Bot>
         if (time > .5)
         {
             //Hero.Instance.ReduceHp(20f);
-            bot.attackArea.SetActive(false);
-            bot.ChangeState(new IdleState());
+            bot.OnAttack();
+            
         }
 
     }

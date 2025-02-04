@@ -13,6 +13,9 @@ public class SwitchLevel : MonoBehaviour
     {
         if (collision.tag=="Hero")
         {
+            PlayerPrefs.SetInt("sceneNumber", screenNumber);
+            PlayerPrefs.SetFloat("posX", playerPos.x);
+            PlayerPrefs.SetFloat("posY", playerPos.y);
             posValue.initPosValue=playerPos;
             SceneManager.LoadScene(screenNumber,LoadSceneMode.Single);
         }

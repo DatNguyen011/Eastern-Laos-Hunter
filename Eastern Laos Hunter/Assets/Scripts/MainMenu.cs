@@ -24,8 +24,7 @@ public class MainMenu : Singleton<MainMenu>
         resumeBtn.onClick.AddListener(() => ResumeGame());
         settingBtn.onClick.AddListener(() => SettingGame());
         exitBtn.onClick.AddListener(() => YesNoQuestion(2));
-        //noBtn.onClick.AddListener(() => Yes());
-        //yesBtn.onClick.AddListener(() => No());
+
     }
 
 
@@ -35,7 +34,15 @@ public class MainMenu : Singleton<MainMenu>
     }
     public void ResumeGame()
     {
+        if (!PlayerPrefs.HasKey("sceneNumber"))
+        {
+            return;
+        }
+        else
+        {
+            SceneManager.LoadScene(PlayerPrefs.GetInt("sceneNumber"), LoadSceneMode.Single);
 
+        }
     }
     
     public void SettingGame()
@@ -54,6 +61,16 @@ public class MainMenu : Singleton<MainMenu>
         yesNoQuestion.SetActive(false);
         menu.SetActive(true);
     }
+
+    public void StartNewGame()
+    {
+        PlayerPrefs.SetInt("sceneNumber", 1);
+        PlayerPrefs.SetFloat("hp", 100);
+        PlayerPrefs.SetFloat("mp", 100);
+        PlayerPrefs.SetFloat("posX", 0);
+        PlayerPrefs.SetFloat("posY", 0);
+        SceneManager.LoadScene(1, LoadSceneMode.Single);
+    }
     
     public void YesNoQuestion(int a)
     {
@@ -62,7 +79,7 @@ public class MainMenu : Singleton<MainMenu>
         if (a == 1)
         {
             questionTxt.SetText("Do you want to start a new game?");
-            yesBtn.onClick.AddListener(() => StartGame());
+            yesBtn.onClick.AddListener(() => StartNewGame());
             noBtn.onClick.AddListener(() => OpenMenu());
         }
         else if (a == 2)

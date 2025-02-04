@@ -68,6 +68,11 @@ public class GameController : Singleton<GameController>
         }
     }
 
+    public void OpenMainMenu()
+    {
+        
+    }
+
     void Update()
     {
         OpenNextLevel();
