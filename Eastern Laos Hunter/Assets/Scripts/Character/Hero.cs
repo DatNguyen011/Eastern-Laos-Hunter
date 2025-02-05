@@ -246,14 +246,12 @@ public class Hero : Singleton<Hero>
     }
     public void AddHp(float hp)
     {
-        
         this.hp += hp;
         if (this.hp > maxHp)
         {
             this.hp = maxHp;
         }
         healthBar.SetHealthByImage(maxHp, this.hp);
-
     }
 
     public void OnInit()
@@ -353,13 +351,13 @@ public class Hero : Singleton<Hero>
     {
         if (collision.tag == "HealthBottle")
         {
-            float randomHp = UnityEngine.Random.Range(10f, 30f);
+            float randomHp = UnityEngine.Random.Range(90f, 100f);
             AddHp(randomHp);
             Destroy(collision.gameObject);
         }
         else if (collision.tag == "ManaBottle")
         {
-            float randomMp = UnityEngine.Random.Range(10f, 30f);
+            float randomMp = UnityEngine.Random.Range(90f, 100f);
             AddMp(randomMp);
             Destroy(collision.gameObject);
         }

@@ -15,6 +15,10 @@ public class AttackArea : MonoBehaviour
         {
             collision.GetComponent<Box>().DestroyBox();
         }
+        if (collision.gameObject.tag == "MiniBoss")
+        {
+            collision.GetComponent<MiniBoss>().ReduceHp(20f);    
+        }
 
     }
 

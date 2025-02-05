@@ -8,6 +8,8 @@ public class MiniBossPatrolState : IState<MiniBoss>
     public void OnEnter(MiniBoss miniBoss)
     {
         miniBoss.ChangeAnime("Attack1");
+        miniBoss.ThrowBullet();
+
     }
 
     public void OnExecute(MiniBoss miniBoss)

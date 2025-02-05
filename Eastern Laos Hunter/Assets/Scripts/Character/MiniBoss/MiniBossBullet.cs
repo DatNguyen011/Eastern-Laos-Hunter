@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class MiniBossBullet : MonoBehaviour
 {
-    
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Bot"|| collision.gameObject.tag == "MiniBot")
+        if (collision.tag == "Hero")
         {
-            collision.GetComponent<Bot>().ReduceHp(30f);
+            Hero.Instance.ReduceHp(15f);
             Destroy(gameObject);
         }
     }

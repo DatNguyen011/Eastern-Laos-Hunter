@@ -7,68 +7,80 @@
       "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\miniboss\\miniboss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\miniboss\\minibossattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\miniboss\\minibossattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\bot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\bot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\miniboss\\minibossidlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\miniboss\\minibossidlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\patrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\patrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|e:\\unity\\eastern-laos-hunter\\eastern laos hunter\\assets\\scripts\\character\\miniboss\\minibosspatrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\miniboss\\minibosspatrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\attackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\attackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\healthbottle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthbottle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\miniboss\\minibosshitstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\miniboss\\minibosshitstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\idlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\idlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\miniboss\\minibosspatrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\miniboss\\minibosspatrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\miniboss\\minibossdeadstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\miniboss\\minibossdeadstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|e:\\unity\\eastern-laos-hunter\\eastern laos hunter\\assets\\scripts\\character\\miniboss\\minibossbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\miniboss\\minibossbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|e:\\unity\\eastern-laos-hunter\\eastern laos hunter\\assets\\scripts\\character\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\miniboss\\minibossidlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\miniboss\\minibossidlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\botattackarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\botattackarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\attackarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\attackarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\istate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\istate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\miniboss\\minibossattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\miniboss\\minibossattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|e:\\unity\\eastern-laos-hunter\\eastern laos hunter\\assets\\scripts\\character\\miniboss\\minibossdeadstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\miniboss\\minibossdeadstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\wolfbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\wolfbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\patrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\patrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\attackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\attackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\idlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\idlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\istate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\istate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\atractbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\atractbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\wolfbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\wolfbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\environment\\box.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -107,16 +119,8 @@
       "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ingamejsondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\healthbottle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthbottle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\dialogue system\\dialogui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogue system\\dialogui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\character\\botattackarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\botattackarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{882DC2E2-3F94-B316-A644-A6E526132995}|Assembly-CSharp.csproj|E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\assets\\scripts\\dialogue system\\dialogueobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -166,37 +170,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
+              "Title": "MiniBossBullet.cs",
+              "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\MiniBoss\\MiniBossBullet.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\MiniBoss\\MiniBossBullet.cs",
+              "ToolTip": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\MiniBoss\\MiniBossBullet.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Character\\MiniBoss\\MiniBossBullet.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T16:04:26.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "MiniBossDeadState.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\MiniBoss\\MiniBossDeadState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\MiniBoss\\MiniBossDeadState.cs",
               "ToolTip": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\MiniBoss\\MiniBossDeadState.cs",
               "RelativeToolTip": "Assets\\Scripts\\Character\\MiniBoss\\MiniBossDeadState.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T03:26:11.527Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "MiniBossPatrolState.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\MiniBoss\\MiniBossPatrolState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\MiniBoss\\MiniBossPatrolState.cs",
               "ToolTip": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\MiniBoss\\MiniBossPatrolState.cs",
               "RelativeToolTip": "Assets\\Scripts\\Character\\MiniBoss\\MiniBossPatrolState.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T03:25:29.982Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "MiniBossHitState.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\MiniBoss\\MiniBossHitState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\MiniBoss\\MiniBossHitState.cs",
@@ -209,29 +226,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "MiniBossIdleState.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\MiniBoss\\MiniBossIdleState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\MiniBoss\\MiniBossIdleState.cs",
               "ToolTip": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\MiniBoss\\MiniBossIdleState.cs",
               "RelativeToolTip": "Assets\\Scripts\\Character\\MiniBoss\\MiniBossIdleState.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAzwBIAAAAEAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBIAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T03:15:03.483Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "MiniBossAttackState.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\MiniBoss\\MiniBossAttackState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\MiniBoss\\MiniBossAttackState.cs",
               "ToolTip": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\MiniBoss\\MiniBossAttackState.cs",
               "RelativeToolTip": "Assets\\Scripts\\Character\\MiniBoss\\MiniBossAttackState.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAkwA4AAAAFAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAA5wA4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T03:24:42.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T03:24:42.656Z"
             },
             {
               "$type": "Document",
@@ -241,27 +257,27 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\MiniBoss\\MiniBoss.cs",
               "ToolTip": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\MiniBoss\\MiniBoss.cs",
               "RelativeToolTip": "Assets\\Scripts\\Character\\MiniBoss\\MiniBoss.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAADwvycAAAAcAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwAsAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T03:07:43.828Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Hero.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\Hero.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Hero.cs",
               "ToolTip": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\Hero.cs",
               "RelativeToolTip": "Assets\\Scripts\\Character\\Hero.cs",
-              "ViewState": "AQIAAKoAAAAAAAAAAAAcwKoAAAAbAAAA",
+              "ViewState": "AQIAAF4BAAAAAAAAAAAlwGEBAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T18:20:20.043Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "InGameJsonData.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\InGameJsonData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InGameJsonData.cs",
@@ -279,14 +295,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Bot.cs",
               "ToolTip": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\Bot.cs",
               "RelativeToolTip": "Assets\\Scripts\\Character\\Bot.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAcwC8AAAAaAAAA",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAgwBcAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T17:23:11.53Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu.cs",
@@ -298,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 13,
               "Title": "WolfBot.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\WolfBot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\WolfBot.cs",
@@ -310,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "PositionValue.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\PositionValue.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PositionValue.cs",
@@ -322,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "SwitchLevel.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\SwitchLevel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SwitchLevel.cs",
@@ -334,7 +350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "BigNinja.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\BigNinja.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\BigNinja.cs",
@@ -346,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Box.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Environment\\Box.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Environment\\Box.cs",
@@ -358,7 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "DialogueObject.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Dialogue System\\DialogueObject.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dialogue System\\DialogueObject.cs",
@@ -370,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "TypeWirteEffect.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Dialogue System\\TypeWirteEffect.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dialogue System\\TypeWirteEffect.cs",
@@ -382,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "DialogUI.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Dialogue System\\DialogUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dialogue System\\DialogUI.cs",
@@ -394,19 +410,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 3,
               "Title": "HealthBottle.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\HealthBottle.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HealthBottle.cs",
               "ToolTip": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\HealthBottle.cs",
               "RelativeToolTip": "Assets\\Scripts\\HealthBottle.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T17:49:28.925Z"
+              "WhenOpened": "2024-12-03T17:49:28.925Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "Arrow.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\Arrow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Arrow.cs",
@@ -418,19 +435,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 8,
               "Title": "Bullet.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Bullet.cs",
               "ToolTip": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\Bullet.cs",
               "RelativeToolTip": "Assets\\Scripts\\Character\\Bullet.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T18:13:34.18Z"
+              "WhenOpened": "2024-11-29T18:13:34.18Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "AtractBot.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\AtractBot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AtractBot.cs",
@@ -442,7 +460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "GameController.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\GameController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameController.cs",
@@ -454,7 +472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "PatrolState.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\PatrolState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\PatrolState.cs",
@@ -462,12 +480,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Character\\PatrolState.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAADgvxIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T18:00:22.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T18:00:22.464Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "AttackState.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\AttackState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\AttackState.cs",
@@ -475,12 +492,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Character\\AttackState.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAQwBMAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T18:00:01.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T18:00:01.584Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "IdleState.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\IdleState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\IdleState.cs",
@@ -488,12 +504,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Character\\IdleState.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAQwBgAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T17:48:40.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T17:48:40.499Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "IState.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\IState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\IState.cs",
@@ -501,25 +516,23 @@
               "RelativeToolTip": "Assets\\Scripts\\Character\\IState.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T17:41:18.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T17:41:18.503Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "AttackArea.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\AttackArea.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\AttackArea.cs",
               "ToolTip": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\AttackArea.cs",
               "RelativeToolTip": "Assets\\Scripts\\Character\\AttackArea.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA0AAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBMAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T16:48:28.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T16:48:28.855Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "GeckoBot.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\GeckoBot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\GeckoBot.cs",
@@ -531,7 +544,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "SlimeBot.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\SlimeBot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\SlimeBot.cs",
@@ -543,7 +556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "CounterTime.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\CounterTime.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\CounterTime.cs",
@@ -555,7 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "SavePoint.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\SavePoint.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\SavePoint.cs",
@@ -567,7 +580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "UIManager.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\UIManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UIManager.cs",
@@ -579,19 +592,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 10,
               "Title": "BotAttackArea.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\BotAttackArea.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\BotAttackArea.cs",
               "ToolTip": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\BotAttackArea.cs",
               "RelativeToolTip": "Assets\\Scripts\\Character\\BotAttackArea.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T16:30:23.866Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "CameraFollower.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\CameraFollower.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollower.cs",
@@ -603,7 +616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "HitState.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\HitState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\HitState.cs",
@@ -615,7 +628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "HealthBar.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Character\\HealthBar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\HealthBar.cs",
@@ -627,7 +640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "Singleton.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\Scripts\\Singleton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Singleton.cs",
@@ -639,7 +652,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "JoystickControl.cs",
               "DocumentMoniker": "E:\\Unity\\Eastern-Laos-Hunter\\Eastern Laos Hunter\\Assets\\JoystickPack\\Scripts\\JoystickControl.cs",
               "RelativeDocumentMoniker": "Assets\\JoystickPack\\Scripts\\JoystickControl.cs",

@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 7711049564998481542}
   m_Layer: 0
   m_Name: MiniBoss1
-  m_TagString: Bot
+  m_TagString: MiniBoss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -209,7 +209,7 @@ Transform:
   m_GameObject: {fileID: 1378506040097493567}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.93387, y: 6.030575, z: 0}
+  m_LocalPosition: {x: 2.5098116, y: -3.836071, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -258,23 +258,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 8812237519728327275}
-  distance: 0
-  healthBar: {fileID: 8075652681530392861}
-  hp: 100
-  maxHp: 100
-  isDead: 0
-  isTouchWall: 0
-  rb: {fileID: 6839997788377747575}
-  haveTarget: 0
-  bloodBottle: {fileID: 5038483179338230441, guid: a55baad7e7bafcc45aeeb5675fcad30d,
-    type: 3}
-  manaBottle: {fileID: 3013277905274272790, guid: 4f39e2864ab98bc458aaa2e1598e5bb5,
-    type: 3}
-  goldOject: {fileID: 6470860676266891272, guid: e7a8c07a596b8fe48be80f2c62a25e68,
-    type: 3}
   attackArea: {fileID: 7864426042163986521}
-  startPoint: {x: 0, y: 0}
-  typeBot: 
+  isTouchWall: 0
+  speed: 8
+  newPosition: {x: 0, y: 0}
+  heroGameOject: {fileID: 0}
+  direction: {x: 0, y: 0}
+  healthBar: {fileID: 8075652681530392861}
+  isDead: 0
+  bulletPrefab: {fileID: 5512195697782867881, guid: fa76792234d49e84c98fab5548dc41a1,
+    type: 3}
 --- !u!58 &7711049564998481542
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -304,12 +297,12 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.046864033}
+  m_Offset: {x: 0, y: -0.10431111}
   serializedVersion: 2
-  m_Radius: 0.54686403
+  m_Radius: 1.2477673
 --- !u!1 &2256341667918278296
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,7 +513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2094199836362931190}
   - component: {fileID: 1878051900917248915}
-  - component: {fileID: 8852931064935178496}
+  - component: {fileID: 8300230113106175896}
   m_Layer: 0
   m_Name: AttackArea
   m_TagString: Untagged
@@ -555,8 +548,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5579c616927b45f479e04d446df3e28d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &8852931064935178496
-BoxCollider2D:
+--- !u!58 &8300230113106175896
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -587,19 +580,9 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.9102769, y: 0.0047408342}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: -0.054973006}
   serializedVersion: 2
-  m_Size: {x: 0.88621545, y: 1.2939433}
-  m_EdgeRadius: 0
+  m_Radius: 1.1047007
 --- !u!1 &9047652419828211656
 GameObject:
   m_ObjectHideFlags: 0
