@@ -12,7 +12,7 @@ public class Bot : AtractBot
     private string currentAnim;
     public Animator anim;
     private float speed = 4f;
-    public float distance;
+    private float distance;
     public HealthBar healthBar;
     public float hp = 100f;
     public float maxHp = 100f;
@@ -70,11 +70,11 @@ public class Bot : AtractBot
             if (distance <= 1.5f)
             {
                 ChangeState(new IdleState());
-
             }
             transform.position = Vector2.MoveTowards(this.transform.position, Hero.Instance.transform.position, speed * Time.deltaTime);
         }
     }
+
 
     public void ReduceHp(float dame)
     {
@@ -122,9 +122,8 @@ public class Bot : AtractBot
 
     public override void OnAttack()
     {
-            attackArea.SetActive(false);
-            ChangeState(new IdleState());
-      
+       attackArea.SetActive(false);
+       ChangeState(new IdleState());
     }
 
     public override void OnDead()

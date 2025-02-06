@@ -7,7 +7,7 @@ public class BigNinja : Bot
     
     void Start()
     {
-        typeBot = "smallbot";
+       
         OnInit();
     }
 

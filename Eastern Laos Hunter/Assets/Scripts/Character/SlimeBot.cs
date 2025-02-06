@@ -17,7 +17,6 @@ public class SlimeBot : Bot
     // Update is called once per frame
     void Update()
     {
-        FindPlayer();
         
     }
 

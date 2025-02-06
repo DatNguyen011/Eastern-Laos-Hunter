@@ -17,25 +17,33 @@ public class PatrolState : IState<Bot>
     {
         if (bot.isTouchWall == false)
         {
-            if (Vector2.Distance(bot.transform.position, pos) < 0.01f)
+            if (bot.typeBot == "longrange"&& Vector2.Distance(bot.transform.position, Hero.Instance.transform.position) < 10f)
             {
-                bot.ChangeState(new IdleState());
+                bot.OnAttack();
             }
-            else if (Vector2.Distance(Hero.Instance.transform.position, bot.transform.position) <= 5f)
+            else
             {
-                bot.FindPlayer();
+                if (Vector2.Distance(bot.transform.position, pos) < 0.01f)
+                {
+                    bot.ChangeState(new IdleState());
+                }
+                else if (Vector2.Distance(Hero.Instance.transform.position, bot.transform.position) <= 5f)
+                {
+                    bot.FindPlayer();
+                }
+                else if (Vector2.Distance(Hero.Instance.transform.position, bot.transform.position) > 5f)
+                {
+                    bot.SetDestination(pos);
+                }
+            }
 
-            }
-            else if (Vector2.Distance(Hero.Instance.transform.position, bot.transform.position) > 5f)
-            {
-                bot.SetDestination(pos);
-            }
         }
         else
         {
             bot.SetDestination(bot.startPoint);
-            if(Vector2.Distance(bot.transform.position, bot.startPoint)<0.01f) {
-                bot.isTouchWall=false;
+            if (Vector2.Distance(bot.transform.position, bot.startPoint) < 0.01f)
+            {
+                bot.isTouchWall = false;
                 bot.ChangeState(new IdleState());
             }
         }
