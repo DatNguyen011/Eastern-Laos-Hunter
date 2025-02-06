@@ -421,8 +421,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7374932810998348969}
   - component: {fileID: 9200388946788742754}
-  - component: {fileID: 8502823196916890232}
   - component: {fileID: 6720952998744560648}
+  - component: {fileID: 1288669249027263722}
   m_Layer: 0
   m_Name: Dart Bot
   m_TagString: Bot
@@ -475,36 +475,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8502823196916890232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5476290617769145467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99ba08567cc7d5c49a40c141c6501f50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 7007117784346859953}
-  distance: 0
-  healthBar: {fileID: 2720949642075907736}
-  hp: 100
-  maxHp: 100
-  isDead: 0
-  isTouchWall: 0
-  rb: {fileID: 9200388946788742754}
-  haveTarget: 0
-  bloodBottle: {fileID: 5038483179338230441, guid: a55baad7e7bafcc45aeeb5675fcad30d,
-    type: 3}
-  manaBottle: {fileID: 3013277905274272790, guid: 4f39e2864ab98bc458aaa2e1598e5bb5,
-    type: 3}
-  goldOject: {fileID: 6470860676266891272, guid: e7a8c07a596b8fe48be80f2c62a25e68,
-    type: 3}
-  attackArea: {fileID: 1121211428912223624}
-  startPoint: {x: 0, y: 0}
-  typeBot: 
 --- !u!58 &6720952998744560648
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -534,12 +504,43 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.046864033}
+  m_Offset: {x: -0.01751709, y: -0.14698863}
   serializedVersion: 2
-  m_Radius: 0.54686403
+  m_Radius: 1.0323532
+--- !u!114 &1288669249027263722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5476290617769145467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5fddc70a03d7aa4387a84ed29aa4096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 7007117784346859953}
+  healthBar: {fileID: 2720949642075907736}
+  hp: 100
+  maxHp: 100
+  isDead: 0
+  isTouchWall: 0
+  rb: {fileID: 9200388946788742754}
+  haveTarget: 0
+  bloodBottle: {fileID: 5038483179338230441, guid: a55baad7e7bafcc45aeeb5675fcad30d,
+    type: 3}
+  manaBottle: {fileID: 3013277905274272790, guid: 4f39e2864ab98bc458aaa2e1598e5bb5,
+    type: 3}
+  goldOject: {fileID: 6470860676266891272, guid: e7a8c07a596b8fe48be80f2c62a25e68,
+    type: 3}
+  attackArea: {fileID: 1121211428912223624}
+  startPoint: {x: 0, y: 0}
+  typeBot: 
+  bulletPrefabs: {fileID: 5512195697782867881, guid: fa76792234d49e84c98fab5548dc41a1,
+    type: 3}
 --- !u!1 &6663063373563787353
 GameObject:
   m_ObjectHideFlags: 0
