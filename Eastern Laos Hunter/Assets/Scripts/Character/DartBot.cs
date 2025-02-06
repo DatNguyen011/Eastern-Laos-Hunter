@@ -5,6 +5,7 @@ using UnityEngine;
 public class DartBot : Bot
 {
     public GameObject bulletPrefabs;
+    public GameObject throwDart;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,11 +32,19 @@ public class DartBot : Bot
 
     public override void OnAttack()
     {
+        isThrow = true;
         Vector2 direction = Hero.Instance.transform.position - transform.position;
-        direction=direction.normalized;
-        GameObject newBullet = Instantiate(bulletPrefabs, transform.position, Quaternion.identity);
+        direction = direction.normalized;
+        GameObject newBullet = Instantiate(bulletPrefabs, throwDart.transform.position, Quaternion.identity);
         newBullet.GetComponent<Rigidbody2D>().velocity = direction * 5f;
-        ChangeState(new PatrolState());
+        Destroy(newBullet, 4f);
+        StartCoroutine(WaitThrow());
         base.OnAttack();
+    }
+
+    IEnumerator WaitThrow()
+    {
+        yield return new WaitForSeconds(2f);
+        isThrow = false;
     }
 }

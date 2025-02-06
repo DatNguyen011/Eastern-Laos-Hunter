@@ -17,9 +17,9 @@ public class PatrolState : IState<Bot>
     {
         if (bot.isTouchWall == false)
         {
-            if (bot.typeBot == "longrange"&& Vector2.Distance(bot.transform.position, Hero.Instance.transform.position) < 10f)
+            if (bot.typeBot == "longrange"&& Vector2.Distance(bot.transform.position, Hero.Instance.transform.position) < 10f&&bot.isThrow==false)
             {
-                bot.OnAttack();
+                bot.ChangeState(new AttackState());
             }
             else
             {

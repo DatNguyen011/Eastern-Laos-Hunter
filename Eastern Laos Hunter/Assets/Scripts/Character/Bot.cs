@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
@@ -19,6 +20,7 @@ public class Bot : AtractBot
     public IState<Bot> currentState;
     public bool isDead = false;
     public bool isTouchWall = false;
+    public bool isThrow = false;
     public Rigidbody2D rb;
     public bool haveTarget = false;
     public GameObject bloodBottle;
@@ -27,6 +29,8 @@ public class Bot : AtractBot
     public GameObject attackArea;
     public Vector2 startPoint;
     public string typeBot;
+    public GameObject floatingDamage;
+
     // Start is called before the first frame update
 
     void Start()
@@ -82,6 +86,8 @@ public class Bot : AtractBot
         StartCoroutine(DisableHitState());
         hp -= dame;
         healthBar.SetHealth(maxHp, hp);
+        GameObject textFloating = Instantiate(floatingDamage, transform.position, Quaternion.identity);
+        textFloating.transform.GetChild(0).GetComponent<TextMeshPro>().text = dame.ToString();
         if (hp <= 0)
         {
             isDead = true;

@@ -129,6 +129,7 @@
     <Compile Include="Assets\Scripts\Character\Bullet.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Dialogue System\DialogUI.cs" />
+    <Compile Include="Assets\Scripts\FloatingParent.cs" />
     <Compile Include="Assets\Scripts\Character\SlimeBot.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\LayerTrigger.cs" />
@@ -138,6 +139,7 @@
     <Compile Include="Assets\Scripts\Character\MiniBoss\MiniBoss.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Environment\Box.cs" />
+    <Compile Include="Assets\Scripts\Character\DartBullet.cs" />
     <Compile Include="Assets\Scripts\Character\MiniBoss\MiniBossAttackState.cs" />
     <Compile Include="Assets\Scripts\InGameJsonData.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />

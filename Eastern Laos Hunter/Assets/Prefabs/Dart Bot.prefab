@@ -98,7 +98,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7124063858691289818}
-  - component: {fileID: 5997264493364238386}
   - component: {fileID: 3119439750670673597}
   m_Layer: 0
   m_Name: AttackArea
@@ -122,18 +121,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7374932810998348969}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5997264493364238386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1121211428912223624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5579c616927b45f479e04d446df3e28d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &3119439750670673597
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -411,6 +398,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2069655235859857572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4725013891742642776}
+  m_Layer: 0
+  m_Name: ThrowDart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4725013891742642776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069655235859857572}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.68, y: -0.121, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7374932810998348969}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5476290617769145467
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,6 +464,7 @@ Transform:
   - {fileID: 604156245503169975}
   - {fileID: 7223758268181700084}
   - {fileID: 7124063858691289818}
+  - {fileID: 4725013891742642776}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &9200388946788742754
@@ -528,6 +547,7 @@ MonoBehaviour:
   maxHp: 100
   isDead: 0
   isTouchWall: 0
+  isThrow: 0
   rb: {fileID: 9200388946788742754}
   haveTarget: 0
   bloodBottle: {fileID: 5038483179338230441, guid: a55baad7e7bafcc45aeeb5675fcad30d,
@@ -539,8 +559,9 @@ MonoBehaviour:
   attackArea: {fileID: 1121211428912223624}
   startPoint: {x: 0, y: 0}
   typeBot: 
-  bulletPrefabs: {fileID: 5512195697782867881, guid: fa76792234d49e84c98fab5548dc41a1,
+  bulletPrefabs: {fileID: 5619494958983603221, guid: 0055ba30248f54b41b0f0124a1bb5917,
     type: 3}
+  throwDart: {fileID: 2069655235859857572}
 --- !u!1 &6663063373563787353
 GameObject:
   m_ObjectHideFlags: 0

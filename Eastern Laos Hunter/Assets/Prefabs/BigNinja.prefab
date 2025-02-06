@@ -579,12 +579,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 2765693137349593663}
-  distance: 0
   healthBar: {fileID: 2896233608326939097}
   hp: 300
   maxHp: 300
   isDead: 0
   isTouchWall: 0
+  isThrow: 0
   rb: {fileID: 1879443942526240921}
   haveTarget: 0
   bloodBottle: {fileID: 5038483179338230441, guid: a55baad7e7bafcc45aeeb5675fcad30d,
@@ -595,6 +595,9 @@ MonoBehaviour:
     type: 3}
   attackArea: {fileID: 7101764339936942477}
   startPoint: {x: 0, y: 0}
+  typeBot: 
+  floatingDamage: {fileID: 7351787571236011286, guid: e0113d840b4f95249a4afd0913db340d,
+    type: 3}
 --- !u!61 &2555578740593670109
 BoxCollider2D:
   m_ObjectHideFlags: 0
