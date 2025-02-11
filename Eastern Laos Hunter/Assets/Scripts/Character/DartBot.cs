@@ -38,11 +38,11 @@ public class DartBot : Bot
         GameObject newBullet = Instantiate(bulletPrefabs, throwDart.transform.position, Quaternion.identity);
         newBullet.GetComponent<Rigidbody2D>().velocity = direction * 5f;
         Destroy(newBullet, 4f);
-        StartCoroutine(WaitThrow());
+        StartCoroutine(WaitShoot());
         base.OnAttack();
     }
 
-    IEnumerator WaitThrow()
+    IEnumerator WaitShoot()
     {
         yield return new WaitForSeconds(2f);
         isThrow = false;

@@ -31,6 +31,7 @@ public class Bot : AtractBot
     public string typeBot;
     public GameObject floatingDamage;
 
+
     // Start is called before the first frame update
 
     void Start()
@@ -207,7 +208,6 @@ public class Bot : AtractBot
         {
             haveTarget = true;
             ChangeState(new AttackState());
-            //StartCoroutine(AttackWait());
         }
         if (collision.tag == "Wall" || collision.tag == "Tree")
         {

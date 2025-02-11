@@ -44,6 +44,8 @@ public class Hero : Singleton<Hero>
     private Vector2 targetPosition;
     private int atkNumber=1;
     public PositionValue positionValue;
+    public GameObject healthAnimPrefab;
+    public Transform heroParent;
 
     //public HealthBar healthBar;
     void Start()
@@ -224,7 +226,6 @@ public class Hero : Singleton<Hero>
     {
         this.mp -= mp;
         healthBar.SetManaByImage(maxMp, this.mp);
-        
         if (this.mp < mp) {
             overMana = true;
         }
@@ -241,6 +242,7 @@ public class Hero : Singleton<Hero>
         {
             overMana=false;
         }
+        GameObject healthAnim = Instantiate(healthAnimPrefab, heroParent.transform.position, Quaternion.identity, heroParent);
         healthBar.SetManaByImage(maxMp, this.mp);
 
     }
@@ -251,6 +253,7 @@ public class Hero : Singleton<Hero>
         {
             this.hp = maxHp;
         }
+        GameObject healthAnim = Instantiate(healthAnimPrefab, heroParent.transform.position, Quaternion.identity, heroParent);
         healthBar.SetHealthByImage(maxHp, this.hp);
     }
 

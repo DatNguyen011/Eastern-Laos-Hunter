@@ -8,7 +8,7 @@ public class DartBullet : MonoBehaviour
     {
         if (collision.gameObject.tag == "Hero")
         {
-            collision.GetComponent<Bot>().ReduceHp(10f);
+            Hero.Instance.ReduceHp(10f);
             Destroy(gameObject);
         }
     }
