@@ -9,6 +9,7 @@ public class IdleState : IState<Bot>
     public void OnEnter(Bot bot)
     {
         bot.ChangeAnim("Idle");
+        
     }
 
     public void OnExecute(Bot bot)
@@ -20,7 +21,7 @@ public class IdleState : IState<Bot>
         }
         else
         {
-            if (time > .5f)
+            if (time > 2f)
             {
                 bot.ChangeState(new PatrolState());
 

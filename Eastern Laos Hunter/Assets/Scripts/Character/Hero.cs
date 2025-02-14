@@ -29,28 +29,29 @@ public class Hero : Singleton<Hero>
     public GameObject bullet;
     public GameObject arrow;
     public Transform bullerPos;
-    private bool isHolding=false;    //public List<Vector2> checkPoints = new List<Vector2>();
+    private bool isHolding = false;
     private GameObject newBullet;
     private GameObject oldBullet;
     public Transform pointRotation;
     private float angle;
     private float totalAngle;
     //private float maxAngle=60f;
-    private float directionRotation=1f;
-    private bool overMana=false;
+    private float directionRotation = 1f;
+    private bool overMana = false;
     public GameObject dialogBox;
     public Rigidbody2D rb;
     private Vector2 move;
     private Vector2 targetPosition;
-    private int atkNumber=1;
+    private int atkNumber = 1;
     public PositionValue positionValue;
     public GameObject healthAnimPrefab;
     public Transform heroParent;
+    public List<Image> skillImages = new List<Image>();
 
     //public HealthBar healthBar;
     void Start()
     {
-        
+
         OnInit();
     }
 
@@ -82,21 +83,21 @@ public class Hero : Singleton<Hero>
     //AWDS
     void Update()
     {
-        if (isAttack==false&&isDead==false&&dialogBox.activeSelf==false&&isDash==false && isHit == false)
+        if (isAttack == false && isDead == false && dialogBox.activeSelf == false && isHit == false)
         {
             rb = GetComponent<Rigidbody2D>();
             float moveX = Input.GetAxis("Horizontal");
             float moveY = Input.GetAxis("Vertical");
             move = new Vector2(moveX, moveY).normalized;
             rb.velocity = move * speed;
-       
+
 
             if (move == Vector2.zero)
             {
                 ChangeAnim("Idle");
             }
 
-            if (move != Vector2.zero&&isHolding==false)
+            if (move != Vector2.zero && isHolding == false)
             {
                 couterTime.OnCancel();
                 ChangeAnim("Run");
@@ -111,29 +112,29 @@ public class Hero : Singleton<Hero>
                     transform.Rotate(0, 180f, 0);
                 }
             }
-            
+
             if (Input.GetKeyDown(KeyCode.J))
             {
                 couterTime.OnExecute();
                 rb.velocity = Vector2.zero;
                 Attack();
             }
-            else if (Input.GetKeyDown(KeyCode.K))
+            else if (Input.GetKeyDown(KeyCode.K) && isDash == false)
             {
                 couterTime.OnCancel();
                 Dash();
             }
-            else if(Input.GetKeyDown(KeyCode.H)&&!overMana)
+            else if (Input.GetKeyDown(KeyCode.H) && !overMana)
             {
                 couterTime.OnCancel();
                 isHolding = true;
-                
+
                 rb.velocity = Vector2.zero;
-                 ChangeAnim("Idle");
+                ChangeAnim("Idle");
                 InitBullet();
 
             }
-            else if (isHolding&&Input.GetKey(KeyCode.H) && !overMana)
+            else if (isHolding && Input.GetKey(KeyCode.H) && !overMana)
             {
                 couterTime.OnCancel();
                 rb.velocity = Vector2.zero;
@@ -142,7 +143,7 @@ public class Hero : Singleton<Hero>
             else if (Input.GetKeyUp(KeyCode.H) && !overMana)
             {
                 couterTime.OnCancel();
-                isAttack=true;
+                isAttack = true;
                 isHolding = false;
                 ChangeAnim("Throw");
                 ThrowBullet();
@@ -158,16 +159,16 @@ public class Hero : Singleton<Hero>
 
     public void ShootAngle()
     {
-        
+
         angle = 50f * Time.deltaTime * directionRotation;
         oldBullet.transform.RotateAround(pointRotation.position, Vector3.forward, angle);
         totalAngle += angle;
-        
+
     }
     public void InitBullet()
     {
-        oldBullet=Instantiate(arrow, bullerPos.position, bullerPos.rotation , bullerPos);
-        
+        oldBullet = Instantiate(arrow, bullerPos.position, bullerPos.rotation, bullerPos);
+
     }
 
     public void ThrowBullet()
@@ -175,7 +176,7 @@ public class Hero : Singleton<Hero>
         // Chuyển từ độ sang radian
         float angleInRadians = totalAngle * Mathf.Deg2Rad;
         Vector2 direction = new Vector2(Mathf.Cos(angleInRadians), Mathf.Sin(angleInRadians)).normalized;
-        newBullet = Instantiate(bullet, bullerPos.position, bullerPos.rotation); 
+        newBullet = Instantiate(bullet, bullerPos.position, bullerPos.rotation);
         if (facingRight)
         {
             newBullet.GetComponent<Rigidbody2D>().AddForce(direction * 10f, ForceMode2D.Impulse);
@@ -183,14 +184,14 @@ public class Hero : Singleton<Hero>
         }
         else
         {
-            newBullet.GetComponent<Rigidbody2D>().AddForce(direction * 10f *-1f, ForceMode2D.Impulse);
+            newBullet.GetComponent<Rigidbody2D>().AddForce(direction * 10f * -1f, ForceMode2D.Impulse);
             totalAngle = 0f;
         }
         ReduceMp(20f);
         Destroy(oldBullet);
         Destroy(newBullet, 2f);
         StartCoroutine(ThrowAttack());
-        
+
     }
 
     public IEnumerator ThrowAttack()
@@ -202,10 +203,10 @@ public class Hero : Singleton<Hero>
     public void ReduceHp(float hp)
     {
         this.hp -= hp;
-        rb.velocity=Vector2.zero;
+        rb.velocity = Vector2.zero;
         isHit = true;
         healthBar.SetHealthByImage(maxHp, this.hp);
-        
+
         ChangeAnim("Hit");
         StartCoroutine(HitToIdle());
         if (this.hp <= 0)
@@ -217,7 +218,7 @@ public class Hero : Singleton<Hero>
     public IEnumerator HitToIdle()
     {
         yield return new WaitForSeconds(.5f);
-        
+
         isHit = false;
 
     }
@@ -226,13 +227,14 @@ public class Hero : Singleton<Hero>
     {
         this.mp -= mp;
         healthBar.SetManaByImage(maxMp, this.mp);
-        if (this.mp < mp) {
+        if (this.mp < mp)
+        {
             overMana = true;
         }
     }
     public void AddMp(float mp)
     {
-        
+
         this.mp += mp;
         if (this.mp > maxMp)
         {
@@ -240,7 +242,7 @@ public class Hero : Singleton<Hero>
         }
         if (this.mp > 10f)
         {
-            overMana=false;
+            overMana = false;
         }
         GameObject healthAnim = Instantiate(healthAnimPrefab, heroParent.transform.position, Quaternion.identity, heroParent);
         healthBar.SetManaByImage(maxMp, this.mp);
@@ -259,7 +261,7 @@ public class Hero : Singleton<Hero>
 
     public void OnInit()
     {
-        rb=GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
         isDead = false;
         this.hp = PlayerPrefs.GetFloat("hp");
         this.mp = PlayerPrefs.GetFloat("mp");
@@ -270,10 +272,6 @@ public class Hero : Singleton<Hero>
         transform.position = positionValue.initPosValue;
     }
 
-    internal void SavePoint()
-    {
-        savePoint = transform.position;
-    }
 
     public void Attack()
     {
@@ -281,20 +279,20 @@ public class Hero : Singleton<Hero>
         {
             atkNumber = 1;
         }
-        ChangeAnim("Attack"+atkNumber);
-        
+        ChangeAnim("Attack" + atkNumber);
+
         atkNumber++;
         isAttack = true;
         attackArea.SetActive(true);
-        
+
         StartCoroutine(ReturnIdle());
     }
 
 
     IEnumerator ReturnIdle()
     {
-        couterTime.OnStart(Attack, .6f);
-        yield return new WaitForSeconds(.4f);
+        couterTime.OnStart(Attack, .5f);
+        yield return new WaitForSeconds(.3f);
         ChangeAnim("Idle");
         yield return new WaitForSeconds(.2f);
         attackArea.SetActive(false);
@@ -304,23 +302,37 @@ public class Hero : Singleton<Hero>
 
     public void Dash()
     {
-        
-        ChangeAnim("Tele1");
-        isDash = true;
-        
-        StartCoroutine(Dashing());
-        
-    }
 
+        ChangeAnim("Tele1");
+
+        isDash = true;
+        isAttack = true;
+        skillImages[2].fillAmount = 1;
+        StartCoroutine(DashCooldown(5f));
+        StartCoroutine(Dashing());
+
+    }
+    IEnumerator DashCooldown(float duration)
+    {
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            skillImages[2].fillAmount = Mathf.Lerp(1, 0, elapsed / duration);
+            yield return null; // Đợi frame tiếp theo
+        }
+        skillImages[2].fillAmount = 0; // Đảm bảo fillAmount về 0
+        isDash = false;
+    }
     IEnumerator Dashing()
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.4f);
         targetPosition = (Vector2)transform.position + move * 3f;
         rb.position = targetPosition;
         ChangeAnim("Tele2");
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.4f);
         ReduceMp(10f);
-        isDash = false;
+        isAttack = false;
     }
 
 
@@ -329,7 +341,7 @@ public class Hero : Singleton<Hero>
         isDead = true;
         ChangeAnim("Dead");
         couterTime.OnCancel();
-        
+
         StartCoroutine(SpawnHero());
     }
 
@@ -364,9 +376,9 @@ public class Hero : Singleton<Hero>
             AddMp(randomMp);
             Destroy(collision.gameObject);
         }
-        else if(collision.tag == "Gold")
+        else if (collision.tag == "Gold")
         {
-            float randomGold= UnityEngine.Random.Range(5, 10);
+            float randomGold = UnityEngine.Random.Range(5, 10);
             GameController.Instance.GainGold(randomGold);
             Destroy(collision.gameObject);
         }

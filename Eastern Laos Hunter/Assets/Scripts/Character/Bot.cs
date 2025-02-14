@@ -30,6 +30,9 @@ public class Bot : AtractBot
     public Vector2 startPoint;
     public string typeBot;
     public GameObject floatingDamage;
+    public GameObject patrolVFXPrefab;
+    public Transform botVFXParent;
+    public GameObject botVFX;
 
 
     // Start is called before the first frame update
@@ -52,11 +55,13 @@ public class Bot : AtractBot
 
     public void FindPlayer()
     {
+        
         distance = Vector2.Distance(Hero.Instance.transform.position, transform.position);
         float stopDistance = distance + 1f;
         Vector2 direction = Hero.Instance.transform.position - transform.position;
         direction = direction.normalized;
         // tinh goc giua vector(x,y) va truc Ox
+
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         if (angle >= -90 && angle <= 90)
         {
@@ -71,7 +76,7 @@ public class Bot : AtractBot
 
         if (distance < 5f)
         {
-
+           
             if (distance <= 1.5f)
             {
                 ChangeState(new IdleState());
@@ -83,17 +88,17 @@ public class Bot : AtractBot
 
     public void ReduceHp(float dame)
     {
-        ChangeState(new HitState());
-        StartCoroutine(DisableHitState());
         hp -= dame;
-        healthBar.SetHealth(maxHp, hp);
-        GameObject textFloating = Instantiate(floatingDamage, transform.position, Quaternion.identity);
-        textFloating.transform.GetChild(0).GetComponent<TextMeshPro>().text = dame.ToString();
         if (hp <= 0)
         {
             isDead = true;
             OnDead();
         }
+        ChangeState(new HitState());
+        StartCoroutine(DisableHitState());
+        healthBar.SetHealth(maxHp, hp);
+        GameObject textFloating = Instantiate(floatingDamage, transform.position, Quaternion.identity);
+        textFloating.transform.GetChild(0).GetComponent<TextMeshPro>().text = dame.ToString();
     }
 
     IEnumerator DisableHitState()
@@ -143,7 +148,7 @@ public class Bot : AtractBot
 
     IEnumerator WaitDead()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         GameController.Instance.listBot.Remove(this);
         float randomNumber = Random.Range(1, 4);
         if (randomNumber == 1)
@@ -186,12 +191,23 @@ public class Bot : AtractBot
         return randomPoint;
     }
 
+    public void SpawnVfx()
+    {
+        //if (patrolVFX != null)
+        //{
+        //    Destroy(patrolVFX);
+        //}
+        Instantiate(patrolVFXPrefab,botVFXParent.transform.position, Quaternion.identity,botVFXParent);
+    }
+
     public void SetDestination(Vector2 des)
     {
         transform.position = Vector2.MoveTowards((Vector2)transform.position, des, speed*Time.deltaTime);
         Vector2 direction = des - (Vector2)transform.position;
         direction = direction.normalized;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        
+        
         if (angle >= -90 && angle <= 90)
         {
             transform.localScale = new Vector3(-1, 1, 1 );

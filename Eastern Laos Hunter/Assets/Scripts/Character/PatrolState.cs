@@ -9,7 +9,8 @@ public class PatrolState : IState<Bot>
     public void OnEnter(Bot bot)
     {
         bot.ChangeAnim("Run");
-        //pos = (Vector2)Random.insideUnitCircle * 3f;
+        bot.botVFX.SetActive(true);
+        bot.SpawnVfx();
         pos = bot.RandomPoint();
     }
 
@@ -29,6 +30,8 @@ public class PatrolState : IState<Bot>
                 }
                 else if (Vector2.Distance(Hero.Instance.transform.position, bot.transform.position) <= 5f)
                 {
+                    bot.botVFX.SetActive(false);
+                    
                     bot.FindPlayer();
                 }
                 else if (Vector2.Distance(Hero.Instance.transform.position, bot.transform.position) > 5f)

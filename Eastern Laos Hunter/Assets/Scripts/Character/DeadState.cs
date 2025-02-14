@@ -13,9 +13,10 @@ public class DeadState : IState<Bot>
     public void OnExecute(Bot t)
     {
         time += Time.deltaTime;
-        if (time > 1)
+        if (time > .6)
         {
             t.isDead = false;
+            
         }
     }
 
