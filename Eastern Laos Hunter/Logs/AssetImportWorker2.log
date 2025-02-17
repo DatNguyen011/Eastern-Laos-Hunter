@@ -15,7 +15,7 @@ E:/Unity/Eastern-Laos-Hunter/Eastern Laos Hunter
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-50780
+60170
 Successfully changed project path to: E:/Unity/Eastern-Laos-Hunter/Eastern Laos Hunter
 E:/Unity/Eastern-Laos-Hunter/Eastern Laos Hunter
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ E:/Unity/Eastern-Laos-Hunter/Eastern Laos Hunter
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [20124] Host "[IP] 192.168.1.13 [Port] 0 [Flags] 2 [Guid] 3480198190 [EditorId] 3480198190 [Version] 1048832 [Id] WindowsEditor(7,Admin) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [2240] Host "[IP] 192.168.1.13 [Port] 0 [Flags] 2 [Guid] 667349071 [EditorId] 667349071 [Version] 1048832 [Id] WindowsEditor(7,Admin) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [20124] Host "[IP] 192.168.1.13 [Port] 0 [Flags] 2 [Guid] 3480198190 [EditorId] 3480198190 [Version] 1048832 [Id] WindowsEditor(7,Admin) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [2240] Host "[IP] 192.168.1.13 [Port] 0 [Flags] 2 [Guid] 667349071 [EditorId] 667349071 [Version] 1048832 [Id] WindowsEditor(7,Admin) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 652.57 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 3569.04 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.24f1 (334eb2a0b267)
 [Subsystems] Discovering subsystems at path D:/unity/Install Unity/2022.3.24f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'D:/unity/Install Unity/2022.3.24f1/Editor/Data/Managed'
 Mono path[1] = 'D:/unity/Install Unity/2022.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/unity/Install Unity/2022.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56468
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56692
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/unity/Install Unity/2022.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004444 seconds.
-- Loaded All Assemblies, in  0.366 seconds
+Registered in 0.248689 seconds.
+- Loaded All Assemblies, in 10.965 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.431 seconds
-Domain Reload Profiling: 796ms
-	BeginReloadAssembly (110ms)
+- Finished resetting the current domain, in  0.434 seconds
+Domain Reload Profiling: 11399ms
+	BeginReloadAssembly (7860ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (156ms)
-		LoadAssemblies (109ms)
+	RebuildCommonClasses (934ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (308ms)
+	LoadAllAssembliesAndSetupDomain (1847ms)
+		LoadAssemblies (7859ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (154ms)
-			TypeCache.Refresh (153ms)
-				TypeCache.ScanAssembly (138ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
+		AnalyzeDomain (1845ms)
+			TypeCache.Refresh (1844ms)
+				TypeCache.ScanAssembly (1397ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (431ms)
+	FinalizeReload (434ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (368ms)
+		SetupLoadedEditorAssemblies (354ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (8ms)
+			SetLoadedEditorAssemblies (9ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (287ms)
-			ProcessInitializeOnLoadMethodAttributes (59ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (259ms)
+			ProcessInitializeOnLoadMethodAttributes (72ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -116,55 +116,55 @@ Domain Reload Profiling: 796ms
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.971 seconds
-Refreshing native plugins compatible for Editor in 3.49 ms, found 4 plugins.
+- Loaded All Assemblies, in 13.309 seconds
+Refreshing native plugins compatible for Editor in 3.60 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.058 seconds
-Domain Reload Profiling: 3029ms
-	BeginReloadAssembly (148ms)
+- Finished resetting the current domain, in  1.279 seconds
+Domain Reload Profiling: 14588ms
+	BeginReloadAssembly (149ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (21ms)
 	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (12ms)
+	RebuildNativeTypeToScriptingClass (17ms)
 	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (1737ms)
-		LoadAssemblies (1615ms)
+	LoadAllAssembliesAndSetupDomain (13069ms)
+		LoadAssemblies (12310ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (209ms)
-			TypeCache.Refresh (176ms)
-				TypeCache.ScanAssembly (157ms)
-			ScanForSourceGeneratedMonoScriptInfo (24ms)
+		AnalyzeDomain (843ms)
+			TypeCache.Refresh (813ms)
+				TypeCache.ScanAssembly (722ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
 			ResolveRequiredComponents (7ms)
-	FinalizeReload (1059ms)
+	FinalizeReload (1280ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (886ms)
+		SetupLoadedEditorAssemblies (1093ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (5ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (68ms)
-			ProcessInitializeOnLoadAttributes (768ms)
-			ProcessInitializeOnLoadMethodAttributes (39ms)
+			BeforeProcessingInitializeOnLoad (65ms)
+			ProcessInitializeOnLoadAttributes (980ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 3.85 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 3.67 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4136 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 72 unused Assets / (200.9 KB). Loaded Objects now: 4611.
-Memory consumption went from 165.1 MB to 164.9 MB.
-Total: 3.815800 ms (FindLiveObjects: 0.289500 ms CreateObjectMapping: 0.224300 ms MarkObjects: 3.104500 ms  DeleteObjects: 0.196800 ms)
+Memory consumption went from 165.0 MB to 164.8 MB.
+Total: 3.785200 ms (FindLiveObjects: 0.299700 ms CreateObjectMapping: 0.222800 ms MarkObjects: 3.064200 ms  DeleteObjects: 0.197700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -179,246 +179,6 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 87045.639336 seconds.
-  path: Assets/Tilemap/Environment/plains_0.asset
-  artifactKey: Guid(e74c7d9f8271c7847b78dba1c362f032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/plains_0.asset using Guid(e74c7d9f8271c7847b78dba1c362f032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c730450df647148541aabbbe43cbb9e5') in 0.128273 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 4.267488 seconds.
-  path: Assets/Tilemap/Environment/plains_7.asset
-  artifactKey: Guid(70484900c2bb3584eb914944c7587066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/plains_7.asset using Guid(70484900c2bb3584eb914944c7587066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1399416a514a18c438d3aa360727471') in 0.013937 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.167124 seconds.
-  path: Assets/Tilemap/Environment/plains_10.asset
-  artifactKey: Guid(6d7929684253d6249b5e94670a826701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/plains_10.asset using Guid(6d7929684253d6249b5e94670a826701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e45104d614bbdec6135075bdfa59ab3c') in 0.017226 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 5.167216 seconds.
-  path: Assets/Tilemap/Environment/plains_13.asset
-  artifactKey: Guid(e8cca863e36f7b445a58080e9b4d119f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/plains_13.asset using Guid(e8cca863e36f7b445a58080e9b4d119f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9569eb3df8fded20939813451481d5e8') in 0.014661 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Tilemap/Environment/plains_17.asset
-  artifactKey: Guid(ebee2fc753cb9e548b4a98299855ac1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/plains_17.asset using Guid(ebee2fc753cb9e548b4a98299855ac1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c989e2ef405455ed519bf20e1a630bb') in 0.012362 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.481866 seconds.
-  path: Assets/Tilemap/Environment/plains_19.asset
-  artifactKey: Guid(5e5f7b54a126de64eb3579fbe571864e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/plains_19.asset using Guid(5e5f7b54a126de64eb3579fbe571864e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78179566f0adc60539f793c4859560a6') in 0.013843 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.014628 seconds.
-  path: Assets/Tilemap/Environment/plains_22.asset
-  artifactKey: Guid(03a2a5533b077e54f9a55b86c8124425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/plains_22.asset using Guid(03a2a5533b077e54f9a55b86c8124425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e925b3a2015404339ccce800574b6d8a') in 0.011863 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tilemap/Environment/plains_26.asset
-  artifactKey: Guid(95fcafdd3691b414593e0dcddb307f78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/plains_26.asset using Guid(95fcafdd3691b414593e0dcddb307f78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6342199cd54f1ea8f28544589f11a742') in 0.014216 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.228233 seconds.
-  path: Assets/Tilemap/Environment/plains_28.asset
-  artifactKey: Guid(121808134c655e141b178dacf7977edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/plains_28.asset using Guid(121808134c655e141b178dacf7977edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2436115506d4c5962cd39915d9d9c727') in 0.013642 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Tilemap/Environment/plains_32.asset
-  artifactKey: Guid(243c1fc5e10b98d499d6d6b15c75356e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/plains_32.asset using Guid(243c1fc5e10b98d499d6d6b15c75356e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e1c491288147286123c66c4a40124c8') in 0.012500 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Tilemap/Environment/plains_31.asset
-  artifactKey: Guid(229708f0de3362e4e8ff1ffb96aecca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/plains_31.asset using Guid(229708f0de3362e4e8ff1ffb96aecca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ece3ac721a8f2937191bf7e3e21db65') in 0.013937 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.355424 seconds.
-  path: Assets/Tilemap/Environment/plains_37.asset
-  artifactKey: Guid(51daafb35909bdc438de4a030aa156c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/plains_37.asset using Guid(51daafb35909bdc438de4a030aa156c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '233c824c6232532e9ee7723c1805bdc5') in 0.013564 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Tilemap/Environment/plains_42.asset
-  artifactKey: Guid(20074e786c02c084d921936b122955ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/plains_42.asset using Guid(20074e786c02c084d921936b122955ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5b55e0290f1586feddc3f63aed07437') in 0.014250 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.020105 seconds.
-  path: Assets/Tilemap/Environment/plains_43.asset
-  artifactKey: Guid(73242be68bdca7b4895d35789c94be1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/plains_43.asset using Guid(73242be68bdca7b4895d35789c94be1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99558589e6ea6bc231693c6373919565') in 0.011761 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 9.245185 seconds.
-  path: Assets/Tilemap/Environment/New Palette.prefab
-  artifactKey: Guid(b5e8f0e4a49ad704bb8b676fee10829a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/New Palette.prefab using Guid(b5e8f0e4a49ad704bb8b676fee10829a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44b6998d22dc14a0b98c027c5c5223f6') in 0.109133 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 182
-========================================================================
-Received Import Request.
-  Time since last request: 72.347138 seconds.
-  path: Assets/Tilemap/Environment/New Palette 2.prefab
-  artifactKey: Guid(11b9cd4a921b25445b8e89d00877a91c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/New Palette 2.prefab using Guid(11b9cd4a921b25445b8e89d00877a91c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fab34f7a9cf2e004d2588ab99235d6c8') in 0.014262 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 55.450437 seconds.
-  path: Assets/Tilemap/Environment/Water Tiles anim_0.asset
-  artifactKey: Guid(c7df22ffb9c2af0449f20b7fceaf6995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/Water Tiles anim_0.asset using Guid(c7df22ffb9c2af0449f20b7fceaf6995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ece8878d64e8422ff178e5da506a7fb') in 0.015366 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tilemap/Environment/Water Tiles anim_2.asset
-  artifactKey: Guid(ad04a0590b8f72a4483e4ed468cd367d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/Water Tiles anim_2.asset using Guid(ad04a0590b8f72a4483e4ed468cd367d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '215dab8043b3186b046ebbe90e2808a2') in 0.014230 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 4.068513 seconds.
-  path: Assets/Tilemap/Environment/Water Tiles anim_6.asset
-  artifactKey: Guid(11e1df59152d3af48aaccb5ffcb8576a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/Water Tiles anim_6.asset using Guid(11e1df59152d3af48aaccb5ffcb8576a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8943064c6c99cac4512eebd27ba46a28') in 0.014920 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Tilemap/Environment/Water Tiles anim_9.asset
-  artifactKey: Guid(1e8d05530fa879b4c8b0060ecd8b960c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/Water Tiles anim_9.asset using Guid(1e8d05530fa879b4c8b0060ecd8b960c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '593369f61a131743541b45808792d7d2') in 0.017036 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.025713 seconds.
-  path: Assets/Tilemap/Environment/Water Tiles anim_12.asset
-  artifactKey: Guid(e3a923351c602d6469457105d09cac2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/Water Tiles anim_12.asset using Guid(e3a923351c602d6469457105d09cac2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a431b106dfe053b952d790099c4fec6') in 0.005093 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.653827 seconds.
-  path: Assets/Tilemap/Environment/Water Tiles anim_15.asset
-  artifactKey: Guid(90a9907eb5226a7498046f7d6b088d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/Water Tiles anim_15.asset using Guid(90a9907eb5226a7498046f7d6b088d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db899771139786ae362457ad8d6ed509') in 0.012886 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.010664 seconds.
-  path: Assets/Tilemap/Environment/Water Tiles anim_17.asset
-  artifactKey: Guid(2f1b77a063b47d1488fb268ab8f156bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/Water Tiles anim_17.asset using Guid(2f1b77a063b47d1488fb268ab8f156bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b3a9bd56da77bf8da81c07852500da') in 0.005071 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Tilemap/Environment/Water Tiles anim_19.asset
-  artifactKey: Guid(62c56b66bdd6ac44e94fc905626c162a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/Water Tiles anim_19.asset using Guid(62c56b66bdd6ac44e94fc905626c162a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0b1d88cdd5075db8620ab3d2635fad2') in 0.019042 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tilemap/Environment/Water Tiles anim_23.asset
-  artifactKey: Guid(cc38153d905e80644bf8bd655e36bfc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/Water Tiles anim_23.asset using Guid(cc38153d905e80644bf8bd655e36bfc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '462f9eb63c7d737e9137c53db384cd6a') in 0.012527 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Tilemap/Environment/Water Tiles anim_21.asset
-  artifactKey: Guid(3b1822ccce3a2594a95062d81b704a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/Water Tiles anim_21.asset using Guid(3b1822ccce3a2594a95062d81b704a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe796773cdeb85fb57e87e2e39296064') in 0.012822 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.462913 seconds.
-  path: Assets/Tilemap/Environment/Water Tiles anim_27.asset
-  artifactKey: Guid(f8811ca3fdde27840a564f9bf356cb3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/Water Tiles anim_27.asset using Guid(f8811ca3fdde27840a564f9bf356cb3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b30c3b9afd7d478b6164645ecee5962') in 0.013108 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.009335 seconds.
-  path: Assets/Tilemap/Environment/Water Tiles anim_30.asset
-  artifactKey: Guid(c558d017b5992d24e9d7fe94f8143a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/Water Tiles anim_30.asset using Guid(c558d017b5992d24e9d7fe94f8143a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b71f56f4aed928c4b716e8f25a3cc2b7') in 0.011970 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Tilemap/Environment/Water Tiles anim_31.asset
-  artifactKey: Guid(15558f6268826374dbd699852fb6f5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/Water Tiles anim_31.asset using Guid(15558f6268826374dbd699852fb6f5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36c34d76bb72ffd0fdece61032ca63c9') in 0.012300 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 19.973221 seconds.
-  path: Assets/Tilemap/Environment/decor_16x16_1.asset
-  artifactKey: Guid(9a1e8ffea63722e4395a76c5570c9698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemap/Environment/decor_16x16_1.asset using Guid(9a1e8ffea63722e4395a76c5570c9698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3f5950129fa851335d690dec665485a') in 0.014084 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
 AssetImportWorker is now disconnected from the server
