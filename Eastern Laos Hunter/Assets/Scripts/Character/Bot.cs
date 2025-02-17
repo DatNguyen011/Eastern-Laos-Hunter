@@ -94,11 +94,12 @@ public class Bot : AtractBot
             isDead = true;
             OnDead();
         }
-        ChangeState(new HitState());
-        StartCoroutine(DisableHitState());
         healthBar.SetHealth(maxHp, hp);
         GameObject textFloating = Instantiate(floatingDamage, transform.position, Quaternion.identity);
         textFloating.transform.GetChild(0).GetComponent<TextMeshPro>().text = dame.ToString();
+        ChangeState(new HitState());
+        //StartCoroutine(DisableHitState());
+        
     }
 
     IEnumerator DisableHitState()

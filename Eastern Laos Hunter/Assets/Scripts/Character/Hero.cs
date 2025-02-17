@@ -12,13 +12,18 @@ public class Hero : Singleton<Hero>
     public Animator animator;
     private string currentAnim;
     private bool isAttack = false;
-    private bool isDash = false;
+    private Dictionary<int, bool> skillCooldowns = new Dictionary<int, bool>
+    {
+    { 0, false },
+    { 1, false },
+    { 2, false },
+    { 3, false },
+    };
     private bool isDead = false;
     private bool isHit = false;
     public float countDownDash = 5f;
     public float dashTime = 0.3f;
     public CounterTime couterTime = new CounterTime();
-    public GameObject attackArea;
     public float maxHp = 100f;
     public float maxMp = 100f;
     public float hp = 100f;
@@ -113,22 +118,28 @@ public class Hero : Singleton<Hero>
                 }
             }
 
-            if (Input.GetKeyDown(KeyCode.J))
+            if (Input.GetKeyDown(KeyCode.J) && skillCooldowns[0] == false)
             {
                 couterTime.OnExecute();
                 rb.velocity = Vector2.zero;
                 Attack();
             }
-            else if (Input.GetKeyDown(KeyCode.K) && isDash == false)
+            else if (Input.GetKeyDown(KeyCode.K) && skillCooldowns[2] == false && !overMana)
             {
                 couterTime.OnCancel();
                 Dash();
             }
-            else if (Input.GetKeyDown(KeyCode.H) && !overMana)
+
+            else if(Input.GetKeyDown(KeyCode.L)&& skillCooldowns[3] == false && !overMana)
+            {
+                FinalAttack();
+            }
+
+            else if (Input.GetKeyDown(KeyCode.H) && !overMana && skillCooldowns[1] == false)
             {
                 couterTime.OnCancel();
                 isHolding = true;
-
+                
                 rb.velocity = Vector2.zero;
                 ChangeAnim("Idle");
                 InitBullet();
@@ -147,10 +158,11 @@ public class Hero : Singleton<Hero>
                 isHolding = false;
                 ChangeAnim("Throw");
                 ThrowBullet();
-                //isAttack = false;
             }
         }
     }
+
+    
 
     public void ReverseDirection()
     {
@@ -167,8 +179,8 @@ public class Hero : Singleton<Hero>
     }
     public void InitBullet()
     {
+        skillCooldowns[1] = true;
         oldBullet = Instantiate(arrow, bullerPos.position, bullerPos.rotation, bullerPos);
-
     }
 
     public void ThrowBullet()
@@ -191,7 +203,7 @@ public class Hero : Singleton<Hero>
         Destroy(oldBullet);
         Destroy(newBullet, 2f);
         StartCoroutine(ThrowAttack());
-
+        StartCoroutine(Cooldown(3f, 1));
     }
 
     public IEnumerator ThrowAttack()
@@ -265,13 +277,51 @@ public class Hero : Singleton<Hero>
         isDead = false;
         this.hp = PlayerPrefs.GetFloat("hp");
         this.mp = PlayerPrefs.GetFloat("mp");
-        attackArea.SetActive(false);
         healthBar.SetHealthByImage(maxHp, hp);
         healthBar.SetManaByImage(maxMp, mp);
         positionValue.initPosValue = new Vector2(PlayerPrefs.GetFloat("posX"), PlayerPrefs.GetFloat("posY"));
         transform.position = positionValue.initPosValue;
     }
 
+    public void FinalAttack()
+    {
+        ChangeAnim("FinalAttack");
+        isAttack = true;
+        skillCooldowns[3] = true;
+        StartCoroutine(WaitFinalAttack());
+        StartCoroutine(Cooldown(5f, 3));
+    }
+
+    IEnumerator WaitFinalAttack()
+    {
+        yield return new WaitForSeconds(0.6f); // Delay để khớp với animation
+
+        Vector2 attackDirection = facingRight ? Vector2.right : Vector2.left; // Hướng của BoxCast
+        float attackRange = 3f; // Chiều dài của hộp
+        Vector2 boxSize = new Vector2(3f, 2f); // Kích thước của hộp (ngang x cao)
+        float angle = 0f; // Góc quay của BoxCast (0 nghĩa là không xoay)
+        LayerMask enemyLayer = LayerMask.GetMask("Bot"); // Lọc layer của kẻ địch
+
+        RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, boxSize, angle, attackDirection, attackRange, enemyLayer);
+
+        foreach (RaycastHit2D hit in hits) // Kiểm tra từng kẻ địch trong vùng
+        {
+            if (hit.collider.CompareTag("Bot"))
+            {
+                hit.collider.GetComponent<Bot>().ReduceHp(50f);
+            }
+            else if (hit.collider.CompareTag("MiniBoss"))
+            {
+                hit.collider.GetComponent<MiniBoss>().ReduceHp(50f);
+            }
+            else if (hit.collider.CompareTag("Box"))
+            {
+                hit.collider.GetComponent<Box>().DestroyBox();
+            }
+        }
+
+        isAttack = false;
+    }
 
     public void Attack()
     {
@@ -283,57 +333,94 @@ public class Hero : Singleton<Hero>
 
         atkNumber++;
         isAttack = true;
-        attackArea.SetActive(true);
-
-        StartCoroutine(ReturnIdle());
+        skillCooldowns[0] = true;
+        //attackArea.SetActive(true);
+        StartCoroutine(PerformAttack());
+        StartCoroutine(Cooldown(.5f, 0));
     }
 
+    
 
-    IEnumerator ReturnIdle()
+    IEnumerator PerformAttack()
     {
-        couterTime.OnStart(Attack, .5f);
-        yield return new WaitForSeconds(.3f);
-        ChangeAnim("Idle");
-        yield return new WaitForSeconds(.2f);
-        attackArea.SetActive(false);
+        yield return new WaitForSeconds(0.4f); // Delay để khớp với animation
+
+        Vector2 attackDirection = facingRight ? Vector2.right : Vector2.left; // Hướng của BoxCast
+        float attackRange = 1.5f; // Chiều dài của hộp
+        Vector2 boxSize = new Vector2(1.5f, 1f); // Kích thước của hộp (ngang x cao)
+        float angle = 0f; // Góc quay của BoxCast (0 nghĩa là không xoay)
+        LayerMask enemyLayer = LayerMask.GetMask("Bot"); // Lọc layer của kẻ địch
+
+        RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, boxSize, angle, attackDirection, attackRange, enemyLayer);
+
+        foreach (RaycastHit2D hit in hits) // Kiểm tra từng kẻ địch trong vùng
+        {
+            if (hit.collider.CompareTag("Bot"))
+            {
+                hit.collider.GetComponent<Bot>().ReduceHp(30f);
+            }
+            else if (hit.collider.CompareTag("MiniBoss"))
+            {
+                hit.collider.GetComponent<MiniBoss>().ReduceHp(20f);
+            }
+        }
+
         isAttack = false;
-        //attackCountDown = 0;
     }
+
+    //IEnumerator ReturnIdle()
+    //{
+    //    couterTime.OnStart(Attack, .5f);
+    //    yield return new WaitForSeconds(.3f);
+    //    ChangeAnim("Idle");
+    //    yield return new WaitForSeconds(.2f);
+    //    isAttack = false;
+    //    //attackCountDown = 0;
+    //}
 
     public void Dash()
     {
 
         ChangeAnim("Tele1");
 
-        isDash = true;
+        skillCooldowns[2] = true;
         isAttack = true;
         skillImages[2].fillAmount = 1;
-        StartCoroutine(DashCooldown(5f));
+        StartCoroutine(Cooldown(3f, 2));
+
         StartCoroutine(Dashing());
 
     }
-    IEnumerator DashCooldown(float duration)
+    IEnumerator Cooldown(float duration, int skillNumber)
     {
         float elapsed = 0f;
         while (elapsed < duration)
         {
             elapsed += Time.deltaTime;
-            skillImages[2].fillAmount = Mathf.Lerp(1, 0, elapsed / duration);
+            skillImages[skillNumber].fillAmount = Mathf.Lerp(1, 0, elapsed / duration);
             yield return null; // Đợi frame tiếp theo
         }
-        skillImages[2].fillAmount = 0; // Đảm bảo fillAmount về 0
-        isDash = false;
+        skillImages[skillNumber].fillAmount = 0; // Đảm bảo fillAmount về 0
+        skillCooldowns[skillNumber] = false;
     }
     IEnumerator Dashing()
     {
-        yield return new WaitForSeconds(.4f);
-        targetPosition = (Vector2)transform.position + move * 3f;
-        rb.position = targetPosition;
-        ChangeAnim("Tele2");
-        yield return new WaitForSeconds(.4f);
+        float dashTime = 0.4f; 
+        float elapsedTime = 0f; 
+        Vector2 startPos = transform.position; 
+        Vector2 targetPos = startPos + move.normalized * 6f; 
+        isAttack = true; 
+        while (elapsedTime < dashTime)
+        {
+            transform.position = Vector2.Lerp(startPos, targetPos, elapsedTime / dashTime);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+        transform.position = targetPos; 
         ReduceMp(10f);
-        isAttack = false;
+        isAttack = false; 
     }
+
 
 
     public void OnDead()

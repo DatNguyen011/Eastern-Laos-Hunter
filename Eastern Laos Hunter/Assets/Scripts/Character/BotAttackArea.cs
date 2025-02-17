@@ -8,7 +8,6 @@ public class BotAttackArea : MonoBehaviour
     {
         if (collision.tag=="Hero")
         {
-            //collision.GetComponent<Hero>() = Vector3.zero;
             collision.GetComponent<Hero>().ReduceHp(10f);
         }
     }

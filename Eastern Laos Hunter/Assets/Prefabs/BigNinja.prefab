@@ -45,7 +45,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7842191795092640260}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Parent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 6569998137363731763}
   - component: {fileID: 2765693137349593663}
   - component: {fileID: 6987990973022271333}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Animator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -545,7 +545,7 @@ GameObject:
   - component: {fileID: 1879443942526240921}
   - component: {fileID: 7642065275647447480}
   - component: {fileID: 2555578740593670109}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BigNinja
   m_TagString: Bot
   m_Icon: {fileID: 0}
@@ -666,7 +666,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.41246915, y: 0}
+  m_Offset: {x: -0.4476727, y: 0.005415857}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -677,7 +677,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8249385, y: 1}
+  m_Size: {x: 2.2961235, y: 1.6932379}
   m_EdgeRadius: 0
 --- !u!1 &7101764339936942477
 GameObject:
@@ -690,7 +690,7 @@ GameObject:
   - component: {fileID: 4199156704016634943}
   - component: {fileID: 8648243098243894381}
   - component: {fileID: 6241929393444163927}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -756,7 +756,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.9102769, y: 0.0047408342}
+  m_Offset: {x: -0.98609936, y: 0.0047408342}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -767,7 +767,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.88621545, y: 1.2939433}
+  m_Size: {x: 1.7310998, y: 1.2939433}
   m_EdgeRadius: 0
 --- !u!1 &7907559734956922093
 GameObject:
@@ -778,7 +778,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5770145119476964768}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: VFX
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}

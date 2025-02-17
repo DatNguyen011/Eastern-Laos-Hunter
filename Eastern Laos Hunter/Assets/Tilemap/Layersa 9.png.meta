@@ -1,0 +1,1390 @@
+fileFormatVersion: 2
+guid: 923b07e635f267f45be1efd3d24baf37
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Layersa 9_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1763
+        width: 113
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 67, y: 0, z: 45, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a120e6dcb202f6e43b9a6c34e7f455de
+      internalID: -873545376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_1
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1760
+        width: 119
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 77, y: 0, z: 42, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ca6967e7051d54d9b468ca279c2401
+      internalID: 399384653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_2
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1757
+        width: 120
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 76, y: 0, z: 43, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5053e34ac08a0dd4db6ae32d8d4c4733
+      internalID: 785773980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_3
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 1749
+        width: 123
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 71, y: 0, z: 52, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7377b78f1bc4bf048bdaae38cfa2db8d
+      internalID: -1560194178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_4
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1749
+        width: 130
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 79, y: 0, z: 51, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5a6031c848fb44e94b9ae7175cb76f
+      internalID: -160770322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_5
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1748
+        width: 134
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 78, y: 0, z: 55, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3127664f2e36d04a9149a5cb5edaaa6
+      internalID: 15064591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_6
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1748
+        width: 142
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 87, y: 0, z: 55, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5124b5764ef824a910e175d4456a0e
+      internalID: 72812591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_7
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1562
+        width: 163
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 98, y: 0, z: 65, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d80a5fa10f8124e922de572f4e5fcb
+      internalID: 1083383116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_8
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 1560
+        width: 173
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 114, y: 0, z: 59, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91bfec80193a0794e90720faee461d99
+      internalID: 349034236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_9
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 1556
+        width: 176
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 115, y: 0, z: 61, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78c1e3f6e68bec47b709f2154f16daf
+      internalID: 21115505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_10
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1557
+        width: 174
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 111, y: 0, z: 63, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1dee058c81e414584b5995fbd754a2
+      internalID: -170577358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1591
+        width: 175
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 108, y: 0, z: 67, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c403097a7d115094ba6ead46e71a9bdb
+      internalID: 1626756138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_12
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 1594
+        width: 163
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 105, y: 0, z: 58, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6fd9f2f4e4d0cb4389a71dae71c0844
+      internalID: 1400857089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_13
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 1591
+        width: 168
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 105, y: 0, z: 62, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d774fbbfe4089c444ba074175df50693
+      internalID: 472038726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_14
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 1590
+        width: 165
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 105, y: 0, z: 60, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02db9590c4bbd954897b38b5db92a3dd
+      internalID: 1887124905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_15
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1579
+        width: 175
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 110, y: 0, z: 65, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b66374c4dfaf1b4a80c90bf90822273
+      internalID: -1473014149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_16
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 1572
+        width: 174
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 114, y: 0, z: 60, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0be455457037b7408b0a9f46c983ad4
+      internalID: 1922372602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_17
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1426
+        width: 147
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 75, y: 0, z: 72, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42baba86b4cb1e4db87c144b14ac9bf
+      internalID: 1188906270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_18
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1428
+        width: 126
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 63, y: 0, z: 62, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de77b3335fe87ba49a19bccd3f641f3c
+      internalID: 1966002898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_19
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1423
+        width: 115
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 57, y: 0, z: 58, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb5a379f52ca0b44bcfcc4b846919a6
+      internalID: -1898160272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_20
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1439
+        width: 115
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 58, y: 0, z: 57, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4830f003fbe2e9448828128e36eb5b4b
+      internalID: 772556600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_21
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 1445
+        width: 109
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 54, y: 0, z: 55, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57317f20a265ef845a04a3ada617cd90
+      internalID: -1817517544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_22
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 1442
+        width: 112
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 55, y: 0, z: 57, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010709493fd257c4f87b394f006dcea5
+      internalID: 1840791592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_23
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 1419
+        width: 126
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 63, y: 0, z: 62, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f201c5e307650e41856173773c7ae9d
+      internalID: -1754173361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1177
+        width: 133
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 88, y: 0, z: 45, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ddca19a287305941891003410937aca
+      internalID: 11178734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_25
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 1159
+        width: 134
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 82, y: 0, z: 51, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8500512241e57a429195868af32fcb7
+      internalID: 1513895493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_26
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1142
+        width: 302
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 129, y: 0, z: 172, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eacbc6ef1ea33504da45f8b9b47e54a1
+      internalID: 1809181669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_27
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1132
+        width: 310
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 136, y: 0, z: 174, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840e16745ae961b4a9b116aa3c461419
+      internalID: -167521452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_28
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 1182
+        width: 183
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 137, y: 0, z: 46, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf7e7b7910af124c8e93237ed1a4cb1
+      internalID: -141290414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_29
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 938
+        width: 176
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 116, y: 0, z: 59, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c9d7034aefca74195ea5786190f47b
+      internalID: -1171856538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_30
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 941
+        width: 172
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 110, y: 0, z: 62, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b274d4921c9f4a4181c45e25de747a5
+      internalID: 683129392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_31
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 890
+        width: 302
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 152, y: 0, z: 150, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa924c5c3819fa44a935926969c4ee9
+      internalID: 175630083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_32
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 872
+        width: 309
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 150, y: 0, z: 159, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a9a798e1523a604792e747f7f88d8d8
+      internalID: -2089509859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_33
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 889
+        width: 229
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 140, y: 0, z: 89, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5099a59c124bc8149bab874f6f5a3ca3
+      internalID: 1389437043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_34
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 602
+        width: 175
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 97, y: 0, z: 78, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a71e2e203aeb9b468518186e9303939
+      internalID: -370069449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_35
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 623
+        width: 141
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 82, y: 0, z: 59, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e808786235096f44a848bc1ca65d3e2
+      internalID: -467226469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_36
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 611
+        width: 279
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 114, y: 0, z: 163, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ed92c35c3440343bcbbdfb36fc90b1
+      internalID: 831039082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_37
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 647
+        width: 287
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 119, y: 0, z: 166, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dabfe90c2bcb0b49bb9fbd30c1dd891
+      internalID: -1494860932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_38
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 652
+        width: 188
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 114, y: 0, z: 72, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 185973a7b7cd50b41a916017256610ef
+      internalID: -1820504319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 261
+        width: 268
+        height: 309
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 212, y: 0, z: 55, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976d8e3fd10a705438874778219b7624
+      internalID: 1186905229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_40
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 262
+        width: 279
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 226, y: 0, z: 53, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23791f70d2d8ff14284b31fc469c5eab
+      internalID: -1102307391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_41
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 263
+        width: 275
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 222, y: 0, z: 53, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc44700bf634754ebde61dbd0b30f88
+      internalID: -700307700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_42
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 264
+        width: 306
+        height: 308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 257, y: 0, z: 48, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445ca96d33f17fe41af61a0e7728c659
+      internalID: -780922363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_43
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 242
+        width: 434
+        height: 331
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 0, z: 305, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfcd2f4592fa6c941962fcaedb8ab673
+      internalID: -1294013875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_44
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 245
+        width: 382
+        height: 326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 79, y: 0, z: 302, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d753f3291dda244afc81a235b09695
+      internalID: 830156663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_45
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 283
+        width: 376
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 73, y: 0, z: 301, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7204902bfdf30f647af000e00b8c57fc
+      internalID: -1494642073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_46
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 416
+        width: 380
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 79, y: 0, z: 301, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1918d63f6039a64d8513f0498f24f43
+      internalID: -1880395349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_47
+      rect:
+        serializedVersion: 2
+        x: 2834
+        y: 414
+        width: 353
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 69, y: 0, z: 284, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4175fd92edf664b97b22624eedd4d4
+      internalID: 799539830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_48
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 16
+        width: 195
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee9567390c63894bac820d602c3d1b4
+      internalID: -1189775240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_49
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 18
+        width: 193
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f958fe0544a14a54f96a542722258458
+      internalID: 414857286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_50
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 12
+        width: 202
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752407d73dc16a34298e0112de503c4b
+      internalID: -1355304657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_51
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 9
+        width: 202
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ea42bf9d9dc604bb73a53b05971cd6
+      internalID: -1063590178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_52
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 7
+        width: 204
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3847c6dc15be346b3391d97653216b
+      internalID: -1974836825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_53
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 6
+        width: 203
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702c8b228bff3e74b91e65e459ccd0e0
+      internalID: 1820966137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_54
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 4
+        width: 202
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f5630c4eb9dda4195441d90dade380
+      internalID: 1675942468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_55
+      rect:
+        serializedVersion: 2
+        x: 2786
+        y: 1251
+        width: 146
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 74, y: 0, z: 72, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4043708aeaa15e849896d471b16fbbe7
+      internalID: 484814340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_56
+      rect:
+        serializedVersion: 2
+        x: 3021
+        y: 1255
+        width: 148
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 75, y: 0, z: 73, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42cb48be0ae50646ad0cdd54ce71139
+      internalID: 1998399531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layersa 9_57
+      rect:
+        serializedVersion: 2
+        x: 2775
+        y: 917
+        width: 144
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 83, y: 0, z: 61, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477714baebce87143ba5c436867670f9
+      internalID: 1468739909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Layersa 9_0: -873545376
+      Layersa 9_1: 399384653
+      Layersa 9_10: -170577358
+      Layersa 9_11: 1626756138
+      Layersa 9_12: 1400857089
+      Layersa 9_13: 472038726
+      Layersa 9_14: 1887124905
+      Layersa 9_15: -1473014149
+      Layersa 9_16: 1922372602
+      Layersa 9_17: 1188906270
+      Layersa 9_18: 1966002898
+      Layersa 9_19: -1898160272
+      Layersa 9_2: 785773980
+      Layersa 9_20: 772556600
+      Layersa 9_21: -1817517544
+      Layersa 9_22: 1840791592
+      Layersa 9_23: -1754173361
+      Layersa 9_24: 11178734
+      Layersa 9_25: 1513895493
+      Layersa 9_26: 1809181669
+      Layersa 9_27: -167521452
+      Layersa 9_28: -141290414
+      Layersa 9_29: -1171856538
+      Layersa 9_3: -1560194178
+      Layersa 9_30: 683129392
+      Layersa 9_31: 175630083
+      Layersa 9_32: -2089509859
+      Layersa 9_33: 1389437043
+      Layersa 9_34: -370069449
+      Layersa 9_35: -467226469
+      Layersa 9_36: 831039082
+      Layersa 9_37: -1494860932
+      Layersa 9_38: -1820504319
+      Layersa 9_39: 1186905229
+      Layersa 9_4: -160770322
+      Layersa 9_40: -1102307391
+      Layersa 9_41: -700307700
+      Layersa 9_42: -780922363
+      Layersa 9_43: -1294013875
+      Layersa 9_44: 830156663
+      Layersa 9_45: -1494642073
+      Layersa 9_46: -1880395349
+      Layersa 9_47: 799539830
+      Layersa 9_48: -1189775240
+      Layersa 9_49: 414857286
+      Layersa 9_5: 15064591
+      Layersa 9_50: -1355304657
+      Layersa 9_51: -1063590178
+      Layersa 9_52: -1974836825
+      Layersa 9_53: 1820966137
+      Layersa 9_54: 1675942468
+      Layersa 9_55: 484814340
+      Layersa 9_56: 1998399531
+      Layersa 9_57: 1468739909
+      Layersa 9_6: 72812591
+      Layersa 9_7: 1083383116
+      Layersa 9_8: 349034236
+      Layersa 9_9: 21115505
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 6959289964790003238}
   - component: {fileID: 5049666793883768147}
   - component: {fileID: 3972056096006616962}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WolfBot
   m_TagString: Bot
   m_Icon: {fileID: 0}
@@ -180,8 +180,6 @@ MonoBehaviour:
     type: 3}
   patrolVFXPrefab: {fileID: 4817604397813813661, guid: 4ba890682b7d62c4bb6a59c95664dd01,
     type: 3}
-  warningVFXPrefab: {fileID: 1296159620623533981, guid: 4803ad8887f51c942859f56a36ac1e9a,
-    type: 3}
   botVFXParent: {fileID: 1574621173189416588}
   botVFX: {fileID: 8926338041466833849}
 --- !u!1 &1075701459813237304
@@ -282,7 +280,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1574621173189416588}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Parent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -390,7 +388,7 @@ GameObject:
   - component: {fileID: 791808324788269304}
   - component: {fileID: 3762661156538965649}
   - component: {fileID: 1098575412885072363}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Animator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -571,7 +569,7 @@ GameObject:
   - component: {fileID: 2377067707510962419}
   - component: {fileID: 6472514184829061889}
   - component: {fileID: 9119676383732096984}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -780,7 +778,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6671232595921920654}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: VFX
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
