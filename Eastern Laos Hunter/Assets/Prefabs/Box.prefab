@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 580821905460067226}
   - component: {fileID: 3712929884305217821}
   - component: {fileID: 4539296644964750545}
-  m_Layer: 20
+  m_Layer: 3
   m_Name: Anim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fc594f0aec33c8e428c11dff7f2a51f5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 5393137809920841459}
   - component: {fileID: 7577896225739788024}
   - component: {fileID: 5736708629558959572}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Box
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -135,8 +135,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.17724, y: -0.2098916, z: -0.009725535}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 580821905460067226}
   m_Father: {fileID: 0}

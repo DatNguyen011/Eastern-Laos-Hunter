@@ -185,6 +185,7 @@ public class Hero : Singleton<Hero>
 
     public void ThrowBullet()
     {
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.throwMusic);
         // Chuyển từ độ sang radian
         float angleInRadians = totalAngle * Mathf.Deg2Rad;
         Vector2 direction = new Vector2(Mathf.Cos(angleInRadians), Mathf.Sin(angleInRadians)).normalized;
@@ -286,6 +287,7 @@ public class Hero : Singleton<Hero>
     public void FinalAttack()
     {
         ChangeAnim("FinalAttack");
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.finalAttackMusic);
         isAttack = true;
         skillCooldowns[3] = true;
         StartCoroutine(WaitFinalAttack());
@@ -308,11 +310,11 @@ public class Hero : Singleton<Hero>
         {
             if (hit.collider.CompareTag("Bot"))
             {
-                hit.collider.GetComponent<Bot>().ReduceHp(50f);
+                hit.collider.GetComponent<Bot>().ReduceHp(30f);
             }
             else if (hit.collider.CompareTag("MiniBoss"))
             {
-                hit.collider.GetComponent<MiniBoss>().ReduceHp(50f);
+                hit.collider.GetComponent<MiniBoss>().ReduceHp(30f);
             }
             else if (hit.collider.CompareTag("Box"))
             {
@@ -325,6 +327,7 @@ public class Hero : Singleton<Hero>
 
     public void Attack()
     {
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.attackMusic);
         if (atkNumber > 3)
         {
             atkNumber = 1;
@@ -334,7 +337,6 @@ public class Hero : Singleton<Hero>
         atkNumber++;
         isAttack = true;
         skillCooldowns[0] = true;
-        //attackArea.SetActive(true);
         StartCoroutine(PerformAttack());
         StartCoroutine(Cooldown(.5f, 0));
     }
@@ -362,6 +364,10 @@ public class Hero : Singleton<Hero>
             else if (hit.collider.CompareTag("MiniBoss"))
             {
                 hit.collider.GetComponent<MiniBoss>().ReduceHp(20f);
+            }
+            else if (hit.collider.CompareTag("Box"))
+            {
+                hit.collider.GetComponent<Box>().DestroyBox();
             }
         }
 
@@ -405,6 +411,7 @@ public class Hero : Singleton<Hero>
     }
     IEnumerator Dashing()
     {
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.dashMusic);
         float dashTime = 0.4f; 
         float elapsedTime = 0f; 
         Vector2 startPos = transform.position; 
