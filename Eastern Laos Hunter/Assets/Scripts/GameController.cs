@@ -15,7 +15,7 @@ public class GameController : Singleton<GameController>
     {
         this.gold += gold;
         PlayerPrefs.SetString("gold", this.gold.ToString());
-        UIManager.Instance.InitGold();
+        UIManager.Instance.OnInit();
     }
 
     public void InitGold()

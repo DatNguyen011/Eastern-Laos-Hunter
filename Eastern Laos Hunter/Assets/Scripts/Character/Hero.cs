@@ -185,7 +185,7 @@ public class Hero : Singleton<Hero>
 
     public void ThrowBullet()
     {
-        AudioManager.Instance.PlaySFX(AudioManager.Instance.throwMusic);
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.throwSound);
         // Chuyển từ độ sang radian
         float angleInRadians = totalAngle * Mathf.Deg2Rad;
         Vector2 direction = new Vector2(Mathf.Cos(angleInRadians), Mathf.Sin(angleInRadians)).normalized;
@@ -287,7 +287,7 @@ public class Hero : Singleton<Hero>
     public void FinalAttack()
     {
         ChangeAnim("FinalAttack");
-        AudioManager.Instance.PlaySFX(AudioManager.Instance.finalAttackMusic);
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.finalAttackSound);
         isAttack = true;
         skillCooldowns[3] = true;
         StartCoroutine(WaitFinalAttack());
@@ -327,7 +327,7 @@ public class Hero : Singleton<Hero>
 
     public void Attack()
     {
-        AudioManager.Instance.PlaySFX(AudioManager.Instance.attackMusic);
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.attackSound);
         if (atkNumber > 3)
         {
             atkNumber = 1;
@@ -411,7 +411,7 @@ public class Hero : Singleton<Hero>
     }
     IEnumerator Dashing()
     {
-        AudioManager.Instance.PlaySFX(AudioManager.Instance.dashMusic);
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.dashSound);
         float dashTime = 0.4f; 
         float elapsedTime = 0f; 
         Vector2 startPos = transform.position; 

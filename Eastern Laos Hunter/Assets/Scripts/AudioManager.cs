@@ -10,21 +10,26 @@ public class AudioManager : Singleton<AudioManager>
     public AudioSource SFXSource;
     [Header("-------- Audio Clip --------")]
     public AudioClip mainMenuMusic;
-    public AudioClip attackMusic;
-    public AudioClip throwMusic;
-    public AudioClip dashMusic;
-    public AudioClip finalAttackMusic;
-    public AudioClip healthMusic;
-    //public AudioClip hitMusic;
+    public AudioClip attackSound;
+    public AudioClip throwSound;
+    public AudioClip dashSound;
+    public AudioClip finalAttackSound;
+    public AudioClip healthSound;
+    public AudioClip RunSound;
 
-    private void Start()
+
+    void Awake()
     {
-        //musicSource.clip = mainMenuMusic;
-        //musicSource.Play();
+        DontDestroyOnLoad(gameObject);
     }
 
     public void PlaySFX(AudioClip clip)
     {
         SFXSource.PlayOneShot(clip);
+    }
+
+    public void PlayMusic(AudioClip clip)
+    {
+        musicSource.PlayOneShot(clip);
     }
 }

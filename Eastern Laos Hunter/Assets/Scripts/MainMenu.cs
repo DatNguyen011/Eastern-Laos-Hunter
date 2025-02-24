@@ -18,8 +18,9 @@ public class MainMenu : Singleton<MainMenu>
     [SerializeField] GameObject menu;
     [SerializeField] GameObject yesNoQuestion;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        AudioManager.Instance.PlayMusic(AudioManager.Instance.mainMenuMusic);
         startBtn.onClick.AddListener(() => YesNoQuestion(1));
         resumeBtn.onClick.AddListener(() => ResumeGame());
         settingBtn.onClick.AddListener(() => SettingGame());
