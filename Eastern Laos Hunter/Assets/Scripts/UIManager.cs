@@ -11,14 +11,15 @@ using UnityEngine.UI;
 public class UIManager : Singleton<UIManager>
 {
     public TextMeshProUGUI gold;
-    public TextMeshProUGUI time;
-    public TextMeshProUGUI deadNumber;
+    public TextMeshProUGUI tmpTime;
+    public TextMeshProUGUI tmpdeadNumber;
     public Button btnSettings;
     public Button btnClose;
     public Button btnMainMenu;
     public Button btnReplay;
     public GameObject settingPanel;
     private float elapsedTime = 0;
+    public float deadNumber=0;
 
     void Start()
     {
@@ -31,14 +32,16 @@ public class UIManager : Singleton<UIManager>
     public void OpenMainMenu()
     {
         SceneManager.LoadScene(0,LoadSceneMode.Single);
+        PlayerPrefs.SetFloat("time", elapsedTime);
+        PlayerPrefs.Save();
     }
 
     private void Update()
     {
         elapsedTime += Time.deltaTime;
-
         TimeSpan timeSpan = TimeSpan.FromSeconds(elapsedTime);
-        time.text = string.Format("{0:D2}:{1:D2}:{2:D2}", timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds);
+        tmpTime.text = string.Format("{0:D2}:{1:D2}:{2:D2}", timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds);
+        tmpdeadNumber.text=deadNumber.ToString();
     }
 
     public void OpenSetting()
@@ -48,6 +51,11 @@ public class UIManager : Singleton<UIManager>
 
     public void OnInit()
     {
+        if (PlayerPrefs.HasKey("time"))
+        {
+            elapsedTime = PlayerPrefs.GetFloat("time");
+        }
         gold.text = PlayerPrefs.GetString("gold");
+
     }
 }

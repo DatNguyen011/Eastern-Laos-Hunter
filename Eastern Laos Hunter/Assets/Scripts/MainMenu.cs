@@ -17,6 +17,7 @@ public class MainMenu : Singleton<MainMenu>
     [SerializeField] int sceneNumber;
     [SerializeField] GameObject menu;
     [SerializeField] GameObject yesNoQuestion;
+    [SerializeField] GameObject settingPanel;
     // Start is called before the first frame update
     void Awake()
     {
@@ -48,9 +49,14 @@ public class MainMenu : Singleton<MainMenu>
     
     public void SettingGame()
     {
-
+        settingPanel.SetActive(true);
     }
     
+    public void CloseSetting()
+    {
+        settingPanel.SetActive(false);
+    }
+
     public void ExitGame()
     {
         UnityEditor.EditorApplication.isPlaying = false;
@@ -70,6 +76,9 @@ public class MainMenu : Singleton<MainMenu>
         PlayerPrefs.SetFloat("mp", 100);
         PlayerPrefs.SetFloat("posX", 0);
         PlayerPrefs.SetFloat("posY", 0);
+        PlayerPrefs.SetFloat("time", 0);
+        PlayerPrefs.SetFloat("dead_number", 0);
+        PlayerPrefs.Save();
         SceneManager.LoadScene(1, LoadSceneMode.Single);
     }
     

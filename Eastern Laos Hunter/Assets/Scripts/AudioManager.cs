@@ -14,8 +14,8 @@ public class AudioManager : Singleton<AudioManager>
     public AudioClip throwSound;
     public AudioClip dashSound;
     public AudioClip finalAttackSound;
-    public AudioClip healthSound;
-    public AudioClip RunSound;
+    public AudioClip hitSound;
+    public AudioClip deadSound;
 
 
     void Awake()

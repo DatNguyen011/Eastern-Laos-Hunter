@@ -15,7 +15,7 @@ E:/Unity/Eastern-Laos-Hunter/Eastern Laos Hunter
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-54204
+62869
 Successfully changed project path to: E:/Unity/Eastern-Laos-Hunter/Eastern Laos Hunter
 E:/Unity/Eastern-Laos-Hunter/Eastern Laos Hunter
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ E:/Unity/Eastern-Laos-Hunter/Eastern Laos Hunter
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [24568] Host "[IP] 169.254.83.107 [Port] 0 [Flags] 2 [Guid] 1970753484 [EditorId] 1970753484 [Version] 1048832 [Id] WindowsEditor(7,Admin) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8344] Host "[IP] 169.254.83.107 [Port] 0 [Flags] 2 [Guid] 2007768253 [EditorId] 2007768253 [Version] 1048832 [Id] WindowsEditor(7,Admin) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [24568] Host "[IP] 169.254.83.107 [Port] 0 [Flags] 2 [Guid] 1970753484 [EditorId] 1970753484 [Version] 1048832 [Id] WindowsEditor(7,Admin) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8344] Host "[IP] 169.254.83.107 [Port] 0 [Flags] 2 [Guid] 2007768253 [EditorId] 2007768253 [Version] 1048832 [Id] WindowsEditor(7,Admin) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 13.82 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 12.30 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.24f1 (334eb2a0b267)
 [Subsystems] Discovering subsystems at path D:/unity/Install Unity/2022.3.24f1/Editor/Data/Resources/UnitySubsystems
@@ -70,43 +70,43 @@ Initialize mono
 Mono path[0] = 'D:/unity/Install Unity/2022.3.24f1/Editor/Data/Managed'
 Mono path[1] = 'D:/unity/Install Unity/2022.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/unity/Install Unity/2022.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56480
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56636
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/unity/Install Unity/2022.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005227 seconds.
-- Loaded All Assemblies, in  0.623 seconds
+Registered in 0.004786 seconds.
+- Loaded All Assemblies, in  0.404 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.323 seconds
-Domain Reload Profiling: 946ms
-	BeginReloadAssembly (318ms)
+- Finished resetting the current domain, in  0.330 seconds
+Domain Reload Profiling: 734ms
+	BeginReloadAssembly (126ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (42ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (70ms)
-	LoadAllAssembliesAndSetupDomain (180ms)
-		LoadAssemblies (149ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (58ms)
+	LoadAllAssembliesAndSetupDomain (166ms)
+		LoadAssemblies (125ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (178ms)
-			TypeCache.Refresh (176ms)
-				TypeCache.ScanAssembly (160ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
+		AnalyzeDomain (164ms)
+			TypeCache.Refresh (162ms)
+				TypeCache.ScanAssembly (147ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (323ms)
+	FinalizeReload (330ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (254ms)
+		SetupLoadedEditorAssemblies (256ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
+			InitializePlatformSupportModulesInManaged (9ms)
 			SetLoadedEditorAssemblies (9ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (177ms)
+			ProcessInitializeOnLoadAttributes (178ms)
 			ProcessInitializeOnLoadMethodAttributes (57ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
@@ -116,56 +116,810 @@ Domain Reload Profiling: 946ms
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.847 seconds
-Refreshing native plugins compatible for Editor in 4.02 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.914 seconds
+Refreshing native plugins compatible for Editor in 3.67 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.924 seconds
-Domain Reload Profiling: 1771ms
+- Finished resetting the current domain, in  0.948 seconds
+Domain Reload Profiling: 1862ms
 	BeginReloadAssembly (174ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (42ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (46ms)
-	LoadAllAssembliesAndSetupDomain (570ms)
-		LoadAssemblies (370ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (636ms)
+		LoadAssemblies (434ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (300ms)
-			TypeCache.Refresh (240ms)
-				TypeCache.ScanAssembly (215ms)
-			ScanForSourceGeneratedMonoScriptInfo (39ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (925ms)
+		AnalyzeDomain (304ms)
+			TypeCache.Refresh (255ms)
+				TypeCache.ScanAssembly (229ms)
+			ScanForSourceGeneratedMonoScriptInfo (33ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (948ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (695ms)
+		SetupLoadedEditorAssemblies (721ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (6ms)
 			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (95ms)
-			ProcessInitializeOnLoadAttributes (492ms)
-			ProcessInitializeOnLoadMethodAttributes (94ms)
+			BeforeProcessingInitializeOnLoad (96ms)
+			ProcessInitializeOnLoadAttributes (511ms)
+			ProcessInitializeOnLoadMethodAttributes (98ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 3.34 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 3.85 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5779 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 92 unused Assets / (463.1 KB). Loaded Objects now: 6256.
-Memory consumption went from 241.9 MB to 241.5 MB.
-Total: 4.534000 ms (FindLiveObjects: 0.411100 ms CreateObjectMapping: 0.369500 ms MarkObjects: 3.485200 ms  DeleteObjects: 0.267700 ms)
+Unloading 5780 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 92 unused Assets / (464.7 KB). Loaded Objects now: 6257.
+Memory consumption went from 242.0 MB to 241.5 MB.
+Total: 4.760100 ms (FindLiveObjects: 0.449500 ms CreateObjectMapping: 0.443100 ms MarkObjects: 3.548600 ms  DeleteObjects: 0.317700 ms)
 
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 868536.743548 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/HIT/1.wav
+  artifactKey: Guid(ede73ccc2388d6544b2ffbb93260d55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/HIT/1.wav using Guid(ede73ccc2388d6544b2ffbb93260d55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '826142861188198ecf1431a37a731abc') in 0.150813 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/HIT/6.wav
+  artifactKey: Guid(03f54df3ba0333042a8a1c2039c25445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/HIT/6.wav using Guid(03f54df3ba0333042a8a1c2039c25445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b25cd3e1e6da943839e1c051ffc3357') in 0.065864 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/HIT/2.wav
+  artifactKey: Guid(ec58559a08a43254eac43d01d7504ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/HIT/2.wav using Guid(ec58559a08a43254eac43d01d7504ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba35ba6807d8769090bdd1a219aaa7e9') in 0.013951 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/HIT/4.wav
+  artifactKey: Guid(084f1af5a763d9c4994298a7afb5e7df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/HIT/4.wav using Guid(084f1af5a763d9c4994298a7afb5e7df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0502a7f14efee48648a566c7dcaf4eb5') in 0.014848 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/HIT/9.wav
+  artifactKey: Guid(9243cb058dd70cb4e909fe5d86f96013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/HIT/9.wav using Guid(9243cb058dd70cb4e909fe5d86f96013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b17925493c9a4bd0b2e5795344086896') in 0.014536 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 41.684713 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/COMBAT/2.wav
+  artifactKey: Guid(ad54a4a01b93ac44ab07e34ff2518814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/COMBAT/2.wav using Guid(ad54a4a01b93ac44ab07e34ff2518814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75368515bc7faef8b5cb61b2486f460d') in 0.016851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/COMBAT/4.wav
+  artifactKey: Guid(b89d9ba59f0016a42ad854eb49b51c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/COMBAT/4.wav using Guid(b89d9ba59f0016a42ad854eb49b51c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67737bd3deee935a165b3fee6e07d33f') in 0.019301 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/COMBAT/9.wav
+  artifactKey: Guid(ee7cfca947d743148929547d35f52526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/COMBAT/9.wav using Guid(ee7cfca947d743148929547d35f52526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c58b997dd35886ac5114ff2b028dab1') in 0.015759 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/COMBAT/6.wav
+  artifactKey: Guid(bfb6f0d0d877acb419a86a3993b6269c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/COMBAT/6.wav using Guid(bfb6f0d0d877acb419a86a3993b6269c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e956ad1fe6e4c20d0b4f67e648d3276') in 0.016169 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.687637 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/DEATH/2.wav
+  artifactKey: Guid(89760a7514e0827479ce6c911e50e0db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/DEATH/2.wav using Guid(89760a7514e0827479ce6c911e50e0db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6688bd32f9681d87479c8d16ba2e1ca') in 0.015104 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/DEATH/4.wav
+  artifactKey: Guid(0a9bd31ef6f9af443ae45191fe9a3949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/DEATH/4.wav using Guid(0a9bd31ef6f9af443ae45191fe9a3949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '693b976c886319fffa976bbd92e8658e') in 0.013925 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 39.682604 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/CHASE/2.wav
+  artifactKey: Guid(16351708669fe1b4490d0db5e5e984e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/CHASE/2.wav using Guid(16351708669fe1b4490d0db5e5e984e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aa7fc2ddb826892683e5cddc56a2c3d') in 0.037450 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5.031412 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/CHARSELECT/2.wav
+  artifactKey: Guid(0ff62e1e8b724e940a5b65057ed93ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/CHARSELECT/2.wav using Guid(0ff62e1e8b724e940a5b65057ed93ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '440595c0da2daa511aca3047ab287f5a') in 0.013472 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/CHARSELECT/9.wav
+  artifactKey: Guid(97a81e3fc9c541a4190926174d1823b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/CHARSELECT/9.wav using Guid(97a81e3fc9c541a4190926174d1823b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4483d1b87e31920c85c67ba178dc2393') in 0.017662 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/CHARSELECT/5.wav
+  artifactKey: Guid(87d497077cd97d241807c3bd49affc19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/CHARSELECT/5.wav using Guid(87d497077cd97d241807c3bd49affc19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '165b08034e169269ac26c8f838322409') in 0.013722 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/CHARSELECT/8.wav
+  artifactKey: Guid(409d229d5f656584cb87125255de45be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/CHARSELECT/8.wav using Guid(409d229d5f656584cb87125255de45be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8526fdd74eb0b8d875c16b3dab8dd3a7') in 0.011851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5.945691 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/CHALLENGECOMPLETE/2.wav
+  artifactKey: Guid(a2b6ca825530680489401e90f59f8ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/CHALLENGECOMPLETE/2.wav using Guid(a2b6ca825530680489401e90f59f8ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '637c9f13f7465633f86f93f49ec8f37f') in 0.014571 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/CHALLENGECOMPLETE/5.wav
+  artifactKey: Guid(5d8ac644d447cf44d984b058f66f099b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/CHALLENGECOMPLETE/5.wav using Guid(5d8ac644d447cf44d984b058f66f099b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1d4c82bfaba58eaed3eb6815abd5ec6') in 0.018791 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5.881312 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/STARTLEVEL/3.wav
+  artifactKey: Guid(85dda9301f930fb41a114d6abd7e1cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/STARTLEVEL/3.wav using Guid(85dda9301f930fb41a114d6abd7e1cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17bcc91c1a47b82e3cf2cb9f0bd4a2de') in 0.016089 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/STARTLEVEL/8.wav
+  artifactKey: Guid(5292969f5bb84144e973c557e12b53c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/STARTLEVEL/8.wav using Guid(5292969f5bb84144e973c557e12b53c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd52406cb51d20e1800897d291e63c84f') in 0.015296 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/STARTLEVEL/7.wav
+  artifactKey: Guid(df5886dc1a777324a8a4b34075004d40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/STARTLEVEL/7.wav using Guid(df5886dc1a777324a8a4b34075004d40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc5dea8b08286ba20dedd4d4be22bc4c') in 0.012597 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/STARTLEVEL/15.wav
+  artifactKey: Guid(5316df61d2ae3944eb779a6b5ccd8113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/STARTLEVEL/15.wav using Guid(5316df61d2ae3944eb779a6b5ccd8113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c3e1910e014a57cf28668a21139efc') in 0.013842 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/STARTLEVEL/19.wav
+  artifactKey: Guid(86e2dd0747eb9b34badee8e13215c79b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/STARTLEVEL/19.wav using Guid(86e2dd0747eb9b34badee8e13215c79b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '422175b4e46a2463a1f8d63dc3d826e1') in 0.011850 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/STARTLEVEL/21.wav
+  artifactKey: Guid(e6131d2700c32e2498f8c95fae1a96cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/STARTLEVEL/21.wav using Guid(e6131d2700c32e2498f8c95fae1a96cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d619eea82c2f3a9fe85e6c197ce4e39') in 0.011450 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/STARTLEVEL/20.wav
+  artifactKey: Guid(15ca03fce1ecab840b882872d122c719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/STARTLEVEL/20.wav using Guid(15ca03fce1ecab840b882872d122c719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71547735938a9841a8c405ee11896905') in 0.013210 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 9.688190 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/GOODKILL/2.wav
+  artifactKey: Guid(810fb8768a2157d42baa726d60ab4ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/GOODKILL/2.wav using Guid(810fb8768a2157d42baa726d60ab4ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a16f7f674c109a844efe202def6ceab4') in 0.022348 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/GOODKILL/4.wav
+  artifactKey: Guid(a70d1098ee09b0240938125f6ee0754a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/GOODKILL/4.wav using Guid(a70d1098ee09b0240938125f6ee0754a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efad22fdbc609841a156d71b61c0b617') in 0.012155 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/GOODKILL/9.wav
+  artifactKey: Guid(6ef1e5c928d66dd4cb9d1365a7435f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/GOODKILL/9.wav using Guid(6ef1e5c928d66dd4cb9d1365a7435f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7522edb6706d124146e23a5368e930a8') in 0.012322 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/GOODKILL/7.wav
+  artifactKey: Guid(8edc1233200e7c943a94931981fc04be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/GOODKILL/7.wav using Guid(8edc1233200e7c943a94931981fc04be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc54165b2fdbc396c083281e4ce2c0ef') in 0.011927 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.571425 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/FALLTOOFAR/2.wav
+  artifactKey: Guid(5eaa674f03d36d0428402c5020441e71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/FALLTOOFAR/2.wav using Guid(5eaa674f03d36d0428402c5020441e71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a4de29570eeb52012e981d5b1705e06') in 0.021639 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.281433 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/EXITLEVEL/2.wav
+  artifactKey: Guid(b9b16f40c5479bc43901d3060934541f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/EXITLEVEL/2.wav using Guid(b9b16f40c5479bc43901d3060934541f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dd3b18579c36945d80ca90ae5a34c15') in 0.016982 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/EXITLEVEL/3.wav
+  artifactKey: Guid(b0524a1bb6fecc44ea18bae654e69a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/EXITLEVEL/3.wav using Guid(b0524a1bb6fecc44ea18bae654e69a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '944a5b871a86c71e19dd8cbc83829780') in 0.013087 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.839068 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/FALLDEATH/2.wav
+  artifactKey: Guid(c2d92e46f2702104890c198bcbc4929c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/FALLDEATH/2.wav using Guid(c2d92e46f2702104890c198bcbc4929c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a2d0f01dd92e97a52e4e9949281e5f5') in 0.017646 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 24.907742 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/MISSIONCOMPLETE/3.wav
+  artifactKey: Guid(afe24d43037c5f44582073a154abf3a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/MISSIONCOMPLETE/3.wav using Guid(afe24d43037c5f44582073a154abf3a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '666d371bfe45d08c751bd3c269861549') in 0.018884 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/MISSIONCOMPLETE/13.wav
+  artifactKey: Guid(8616cb050fac3be40b83a48e39fbe564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/MISSIONCOMPLETE/13.wav using Guid(8616cb050fac3be40b83a48e39fbe564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7e895ecc0d48595006211ce24019413') in 0.017152 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/MISSIONCOMPLETE/14.wav
+  artifactKey: Guid(4a3bf5af205af804b90b3c1d5da3c917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/MISSIONCOMPLETE/14.wav using Guid(4a3bf5af205af804b90b3c1d5da3c917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '801bc2172e6a150d81239ef4f0e6878e') in 0.015307 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/MISSIONCOMPLETE/16.wav
+  artifactKey: Guid(55e9308fb4ac1df44857fbbbe87d4543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/MISSIONCOMPLETE/16.wav using Guid(55e9308fb4ac1df44857fbbbe87d4543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8688bdaa6f300681c0bbef096b1ff6d') in 0.013283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/MISSIONCOMPLETE/4.wav
+  artifactKey: Guid(4a7b375830f10b241b85daee72a93d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/MISSIONCOMPLETE/4.wav using Guid(4a7b375830f10b241b85daee72a93d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a9b3db074f87e08ef92f5df0e0851d0') in 0.014090 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/MISSIONCOMPLETE/15.wav
+  artifactKey: Guid(5387ac258c07bc34ea66acfa8449803d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/MISSIONCOMPLETE/15.wav using Guid(5387ac258c07bc34ea66acfa8449803d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d4e13ad97402e59e39fe4af9f1fa419') in 0.014227 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/MISSIONCOMPLETE/21.wav
+  artifactKey: Guid(f634df6a55cf82c459a52ddfe5a3915a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/MISSIONCOMPLETE/21.wav using Guid(f634df6a55cf82c459a52ddfe5a3915a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4e2e3d42e9cd037c45c4b4c2b50678f') in 0.013322 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/MISSIONCOMPLETE/5.wav
+  artifactKey: Guid(27bdb49732dc89c4092d1b1d1638cc5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/MISSIONCOMPLETE/5.wav using Guid(27bdb49732dc89c4092d1b1d1638cc5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dbaa3045f3d18740ab96062795c9ff9') in 0.014176 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.108456 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/NOAMMO/2.wav
+  artifactKey: Guid(9881a377686890f4ea57752887dadeb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/NOAMMO/2.wav using Guid(9881a377686890f4ea57752887dadeb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29d7982ee0849e0733254f80e7624ffd') in 0.016255 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/NOAMMO/3.wav
+  artifactKey: Guid(1d2753d4b03c3e943b561f370b8ae9ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/NOAMMO/3.wav using Guid(1d2753d4b03c3e943b561f370b8ae9ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a2a429f91033e00dd54fa9221aefdde') in 0.014363 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/NOAMMO/5.wav
+  artifactKey: Guid(9c22ace47630e0b4ea5dfdfe74e5dbef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/NOAMMO/5.wav using Guid(9c22ace47630e0b4ea5dfdfe74e5dbef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4739afe068d64729e0f668837b4fb803') in 0.015349 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/NOAMMO/4.wav
+  artifactKey: Guid(54df59b9747bca143a43d04a71ede096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/NOAMMO/4.wav using Guid(54df59b9747bca143a43d04a71ede096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7270aa60c6207765d150ffaadedfd21') in 0.014217 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 9.461024 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/ONBLOWBACK/2.wav
+  artifactKey: Guid(a73e6094e91997b40854efda1f94c886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/ONBLOWBACK/2.wav using Guid(a73e6094e91997b40854efda1f94c886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '984f767cdb4b14b68b8f4536e63d13a8') in 0.015853 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/ONBLOWBACK/5.wav
+  artifactKey: Guid(4cf27f0c688f18245866250115c8e191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/ONBLOWBACK/5.wav using Guid(4cf27f0c688f18245866250115c8e191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a92b7389fe6c0dd5a0ecf75a0f1599e9') in 0.012462 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/ONBLOWBACK/3.wav
+  artifactKey: Guid(72e321b5c9adabd4980c8d2aef82b04b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/ONBLOWBACK/3.wav using Guid(72e321b5c9adabd4980c8d2aef82b04b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff908a4b067cd74014a94c7a76c51594') in 0.013837 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 4.840104 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/ONGETUP/2.wav
+  artifactKey: Guid(d5bcab0ffccf11e43870337db07a30b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/ONGETUP/2.wav using Guid(d5bcab0ffccf11e43870337db07a30b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9ac6b49c40a59a3eafdfb0fb63950f3') in 0.013929 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/ONGETUP/6.wav
+  artifactKey: Guid(35159c7d523a6244da77b40997e294c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/ONGETUP/6.wav using Guid(35159c7d523a6244da77b40997e294c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11d13426c1befb9f84e3dac1418d99f8') in 0.014199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/ONGETUP/4.wav
+  artifactKey: Guid(56b6eabf9d76bf24aa2e7422996114a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/ONGETUP/4.wav using Guid(56b6eabf9d76bf24aa2e7422996114a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6584dec6a6311ad0249d0fe6f55dddf7') in 0.012093 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 4.509581 seconds.
+  path: Assets/Leohpaz/Hero Sound/Jesus/POSTER/2.wav
+  artifactKey: Guid(6decb1eeb02881a40a54fa04e60ef46c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Hero Sound/Jesus/POSTER/2.wav using Guid(6decb1eeb02881a40a54fa04e60ef46c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '787851173ae919279b3ca6c1de7beffd') in 0.014530 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5.811300 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/1 (3).wav
+  artifactKey: Guid(cd7a9b5e0318b50469a793f52c0bddf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/1 (3).wav using Guid(cd7a9b5e0318b50469a793f52c0bddf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ece022b6bc7b3ecb9a794a2f3491b49') in 0.015642 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/3 (2).wav
+  artifactKey: Guid(c89d6d8eb804c38478375f06a94c43d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/3 (2).wav using Guid(c89d6d8eb804c38478375f06a94c43d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad0e78158503ee5b7164c6236a348e1b') in 0.012584 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/3 (4).wav
+  artifactKey: Guid(635127814bdad2a47bb5c8457b9b0bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/3 (4).wav using Guid(635127814bdad2a47bb5c8457b9b0bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8751035c893a12b5692eb7b1f74ccb88') in 0.012798 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/2 (9).wav
+  artifactKey: Guid(1f15d733dd416ac49b1189301c59b2b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/2 (9).wav using Guid(1f15d733dd416ac49b1189301c59b2b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23eb2b54a43e08ed002fe382bcdb28bb') in 0.015555 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/1 (4).wav
+  artifactKey: Guid(6bd3b6bfe0fd0b34ba885f20a94bfa6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/1 (4).wav using Guid(6bd3b6bfe0fd0b34ba885f20a94bfa6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38a249b2124cf4ea15b7b5c36c072747') in 0.013515 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/2 (3).wav
+  artifactKey: Guid(076f1cdbc8e6c6743b3cf778bcedd48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/2 (3).wav using Guid(076f1cdbc8e6c6743b3cf778bcedd48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ed43a3f690c0a2ffb381a213f34b43f') in 0.015189 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/4 (10).wav
+  artifactKey: Guid(a841bb7540492dd46acaf3355cf01461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/4 (10).wav using Guid(a841bb7540492dd46acaf3355cf01461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47fa20be2454d43c316d99d980c45d1d') in 0.014524 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/3 (9).wav
+  artifactKey: Guid(6921d826437772543802ec782969ec24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/3 (9).wav using Guid(6921d826437772543802ec782969ec24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3cc4c85b953053c174ffeca7fcc0ffc') in 0.017176 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/4 (6).wav
+  artifactKey: Guid(085f296daa2214846b846ea8e355335c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/4 (6).wav using Guid(085f296daa2214846b846ea8e355335c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ded412e4b129b32ec16ef171e07d111') in 0.016417 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/2 (1).wav
+  artifactKey: Guid(68748773bff88b44aad12685985989cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/2 (1).wav using Guid(68748773bff88b44aad12685985989cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '045f842e330437cc5352b78248251cec') in 0.016260 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/3 (8).wav
+  artifactKey: Guid(aa7f99c5e31fc654fa39f384b90a7834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/3 (8).wav using Guid(aa7f99c5e31fc654fa39f384b90a7834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10f3043fe82f562ded2dbb13dfe16ea7') in 0.014875 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/4 (8).wav
+  artifactKey: Guid(fdc9a9bb9677300498a59487734f004b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/4 (8).wav using Guid(fdc9a9bb9677300498a59487734f004b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '214ebbeefa11630ae3ec3ccfc854af60') in 0.011793 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/4 (5).wav
+  artifactKey: Guid(ce0fd66ac7e3a8444857eb3d78f1c247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/4 (5).wav using Guid(ce0fd66ac7e3a8444857eb3d78f1c247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28eaba6f5a996c1eb7dd11182f476ea0') in 0.014339 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.294267 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/5 (4).wav
+  artifactKey: Guid(a9f7e8dbc14070642bc04faa014056ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/5 (4).wav using Guid(a9f7e8dbc14070642bc04faa014056ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38b754d3242ca1c1972a1a45f9920022') in 0.012936 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/5 (6).wav
+  artifactKey: Guid(f6882be0d7754c644bc88affeb4252e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/5 (6).wav using Guid(f6882be0d7754c644bc88affeb4252e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd60c73e54dc4839942431f2c5357349b') in 0.014517 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/6 (3).wav
+  artifactKey: Guid(0ea1a7b805eb8f84aa379b4c730c6003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/6 (3).wav using Guid(0ea1a7b805eb8f84aa379b4c730c6003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e7b07ace4770615578dd307b9894786') in 0.015362 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/7 (8).wav
+  artifactKey: Guid(1cbca90a741e2944fb72fe47ef098745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/7 (8).wav using Guid(1cbca90a741e2944fb72fe47ef098745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bbce63364a2c4273c292e6f869f9afb') in 0.011712 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/8 (3).wav
+  artifactKey: Guid(9f99075679fb8ea4c8415903ba49e034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/8 (3).wav using Guid(9f99075679fb8ea4c8415903ba49e034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1129bed11b5d752020e1444f266cc1ec') in 0.011805 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/8 (4).wav
+  artifactKey: Guid(63bd81abc18e8274186e2eeea7de98d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/8 (4).wav using Guid(63bd81abc18e8274186e2eeea7de98d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '663b928ae1a804ab65d5c82a15b256f9') in 0.012031 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/8 (7).wav
+  artifactKey: Guid(dfbbf26ccf25540409863c5fdb148b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/8 (7).wav using Guid(dfbbf26ccf25540409863c5fdb148b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6490552a63a592cf6f0a62e02c72c414') in 0.012584 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/7 (7).wav
+  artifactKey: Guid(a5ab9de8dc1b95243a489b87f7bb6720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/7 (7).wav using Guid(a5ab9de8dc1b95243a489b87f7bb6720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eff60206d7974b9205c5f3f226486436') in 0.012165 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/7 (1).wav
+  artifactKey: Guid(24e5d4cfe7375f04687f32b08e529404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/7 (1).wav using Guid(24e5d4cfe7375f04687f32b08e529404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72b8275d289e2afa923aeda108210f17') in 0.011603 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/7 (4).wav
+  artifactKey: Guid(8da85b4eadbf8464694125fee0082dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/7 (4).wav using Guid(8da85b4eadbf8464694125fee0082dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c5c89674d64619a32b76b37e5f2c57c') in 0.012131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.580954 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/9 (4).wav
+  artifactKey: Guid(7cc4b066c3a04a24dba10a1ab5d2597f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/9 (4).wav using Guid(7cc4b066c3a04a24dba10a1ab5d2597f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96a1a849bfb4c35f3bcc28cb90f8bacd') in 0.015373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/9 (6).wav
+  artifactKey: Guid(7dbaf0d7cb7b144438b1f613b23e948c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/9 (6).wav using Guid(7dbaf0d7cb7b144438b1f613b23e948c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e2da5319243651e46105f326e4ca771') in 0.014755 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/10 (8).wav
+  artifactKey: Guid(5f20bd01dd265924881ff0b8d70d346a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/10 (8).wav using Guid(5f20bd01dd265924881ff0b8d70d346a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7468c4ed4670124bd16e40439c014cf2') in 0.017795 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/10 (3).wav
+  artifactKey: Guid(0a955c5d9be28ab4d85c857b2ad5d796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/10 (3).wav using Guid(0a955c5d9be28ab4d85c857b2ad5d796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5ec5c5612e404f2abc24702ee1dba29') in 0.015021 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/11 (1).wav
+  artifactKey: Guid(2ff546d89ee7090489de7093e624d373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/11 (1).wav using Guid(2ff546d89ee7090489de7093e624d373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f60cf98097a945aab1b96eeb6dc0c19') in 0.013363 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/9 (5).wav
+  artifactKey: Guid(21012ffd75d7a454589c1d5b85aa6742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/9 (5).wav using Guid(21012ffd75d7a454589c1d5b85aa6742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8adeeefa93d21ed201cac8ca146c0fe4') in 0.014105 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/10 (9).wav
+  artifactKey: Guid(783cdbdcb836544448a27fe4290abc19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/10 (9).wav using Guid(783cdbdcb836544448a27fe4290abc19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c6b3992aa74eab53cb9c99c7aff1b24') in 0.014147 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/11 (6).wav
+  artifactKey: Guid(839467e1243680f4ea4f04c4a33bcc23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/11 (6).wav using Guid(839467e1243680f4ea4f04c4a33bcc23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6741325d859493ce3edcb1ee7941063') in 0.016077 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/11 (9).wav
+  artifactKey: Guid(18f12ac77321db644bb190624ecfbc80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/11 (9).wav using Guid(18f12ac77321db644bb190624ecfbc80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b92365b3bf1f24577538b6b6d6a78acd') in 0.014741 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/11 (5).wav
+  artifactKey: Guid(4069015e5ebb94742bdf3755c74d4491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/11 (5).wav using Guid(4069015e5ebb94742bdf3755c74d4491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '415ee74d361d917f1167e0523c7f87b0') in 0.015014 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Leohpaz/Enemy Sound/cops (not a hero)/11 (8).wav
+  artifactKey: Guid(8a171e62b6ca4424fbdc10e2befdff70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/Enemy Sound/cops (not a hero)/11 (8).wav using Guid(8a171e62b6ca4424fbdc10e2befdff70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '361ce5fcd442b40b7afca957a3e1c567') in 0.014526 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  4.452 seconds
+Refreshing native plugins compatible for Editor in 53.17 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 11.576 seconds
+Domain Reload Profiling: 16041ms
+	BeginReloadAssembly (2557ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (290ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (908ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (59ms)
+	LoadAllAssembliesAndSetupDomain (1778ms)
+		LoadAssemblies (2122ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (675ms)
+			TypeCache.Refresh (491ms)
+				TypeCache.ScanAssembly (114ms)
+			ScanForSourceGeneratedMonoScriptInfo (140ms)
+			ResolveRequiredComponents (43ms)
+	FinalizeReload (11590ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1016ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (114ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (90ms)
+			ProcessInitializeOnLoadAttributes (497ms)
+			ProcessInitializeOnLoadMethodAttributes (299ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 3.90 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5616 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (466.7 KB). Loaded Objects now: 6272.
+Memory consumption went from 219.6 MB to 219.2 MB.
+Total: 101.334100 ms (FindLiveObjects: 0.428200 ms CreateObjectMapping: 0.419600 ms MarkObjects: 100.140700 ms  DeleteObjects: 0.344500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -183,53 +937,53 @@ AssetImportParameters requested are different than current active one (requested
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.540 seconds
-Refreshing native plugins compatible for Editor in 3.94 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.500 seconds
+Refreshing native plugins compatible for Editor in 3.48 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.271 seconds
-Domain Reload Profiling: 1811ms
-	BeginReloadAssembly (183ms)
+- Finished resetting the current domain, in  1.501 seconds
+Domain Reload Profiling: 1999ms
+	BeginReloadAssembly (178ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (12ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (52ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (282ms)
-		LoadAssemblies (317ms)
+		CreateAndSetChildDomain (40ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (245ms)
+		LoadAssemblies (305ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (54ms)
-			TypeCache.Refresh (12ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (28ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (1272ms)
+		AnalyzeDomain (27ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (1501ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (562ms)
+		SetupLoadedEditorAssemblies (604ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (5ms)
 			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (86ms)
-			ProcessInitializeOnLoadAttributes (389ms)
-			ProcessInitializeOnLoadMethodAttributes (73ms)
-			AfterProcessingInitializeOnLoad (3ms)
+			BeforeProcessingInitializeOnLoad (92ms)
+			ProcessInitializeOnLoadAttributes (409ms)
+			ProcessInitializeOnLoadMethodAttributes (87ms)
+			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (15ms)
-Refreshing native plugins compatible for Editor in 3.39 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 6.04 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5616 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (463.3 KB). Loaded Objects now: 6262.
-Memory consumption went from 215.2 MB to 214.7 MB.
-Total: 4.638800 ms (FindLiveObjects: 0.625000 ms CreateObjectMapping: 0.676300 ms MarkObjects: 3.098200 ms  DeleteObjects: 0.238500 ms)
+Unloading 56 unused Assets / (465.2 KB). Loaded Objects now: 6277.
+Memory consumption went from 221.6 MB to 221.1 MB.
+Total: 6.288500 ms (FindLiveObjects: 0.730800 ms CreateObjectMapping: 0.688100 ms MarkObjects: 4.477600 ms  DeleteObjects: 0.390300 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):

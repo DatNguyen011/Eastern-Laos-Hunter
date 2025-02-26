@@ -52,6 +52,7 @@ public class Hero : Singleton<Hero>
     public GameObject healthAnimPrefab;
     public Transform heroParent;
     public List<Image> skillImages = new List<Image>();
+    public Collider2D heroCollider;
 
     //public HealthBar healthBar;
     void Start()
@@ -59,31 +60,6 @@ public class Hero : Singleton<Hero>
 
         OnInit();
     }
-
-    //Joystick
-    //void Update()
-    //{       
-    //    transform.position += JoystickControl.direct*speed*Time.deltaTime;
-
-    //    if (JoystickControl.direct.x>0&& !facingRight)
-    //    {
-    //        facingRight = !facingRight;
-    //        transform.Rotate(0, 180f, 0);
-    //        ChangeAnim("Run");
-
-    //    }
-    //    else if (JoystickControl.direct.x < 0&&facingRight)
-    //    {
-    //        facingRight = !facingRight;
-    //        transform.Rotate(0, 180f, 0);
-    //        ChangeAnim("Run");
-
-    //    }
-    //    else if (JoystickControl.direct == Vector3.zero && !isAttack)
-    //    {
-    //        ChangeAnim("Idle");
-    //    }
-    //}
 
     //AWDS
     void Update()
@@ -221,6 +197,7 @@ public class Hero : Singleton<Hero>
         healthBar.SetHealthByImage(maxHp, this.hp);
 
         ChangeAnim("Hit");
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.hitSound);
         StartCoroutine(HitToIdle());
         if (this.hp <= 0)
         {
@@ -281,7 +258,9 @@ public class Hero : Singleton<Hero>
         healthBar.SetHealthByImage(maxHp, hp);
         healthBar.SetManaByImage(maxMp, mp);
         positionValue.initPosValue = new Vector2(PlayerPrefs.GetFloat("posX"), PlayerPrefs.GetFloat("posY"));
+        
         transform.position = positionValue.initPosValue;
+        heroCollider.gameObject.SetActive(true);
     }
 
     public void FinalAttack()
@@ -434,8 +413,13 @@ public class Hero : Singleton<Hero>
     {
         isDead = true;
         ChangeAnim("Dead");
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.deadSound);
+        heroCollider.gameObject.SetActive(false);
+        UIManager.Instance.deadNumber += 1;
+        PlayerPrefs.SetFloat("dead_number",UIManager.Instance.deadNumber);
+        PlayerPrefs.Save();
         couterTime.OnCancel();
-
+        
         StartCoroutine(SpawnHero());
     }
 

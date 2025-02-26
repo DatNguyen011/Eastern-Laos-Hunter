@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9144969038299512641}
   - component: {fileID: 7173947373634863745}
   - component: {fileID: 2372034086625865688}
+  - component: {fileID: 5442351209561969248}
   m_Layer: 0
   m_Name: HealthVFX
   m_TagString: Untagged
@@ -119,3 +120,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b67672109294e5843a62eb82063fd3ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5442351209561969248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8229037035523394324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 391fcb1015c3b2748a5c5a1fc520c335, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: cfce0cea076109f478783201b2a9f57f, type: 3}
