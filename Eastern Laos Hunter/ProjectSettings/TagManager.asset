@@ -16,6 +16,10 @@ TagManager:
   - Wall
   - Tree
   - MiniBoss
+  - RedStone
+  - BlueStone
+  - YellowStone
+  - Treasure
   layers:
   - Default
   - TransparentFX

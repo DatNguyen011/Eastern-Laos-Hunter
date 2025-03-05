@@ -78,6 +78,8 @@ public class MainMenu : Singleton<MainMenu>
         PlayerPrefs.SetFloat("posY", 0);
         PlayerPrefs.SetFloat("time", 0);
         PlayerPrefs.SetFloat("dead_number", 0);
+        PlayerPrefs.SetFloat("maxmp", 0);
+        PlayerPrefs.SetFloat("maxhp", 0);
         PlayerPrefs.Save();
         SceneManager.LoadScene(1, LoadSceneMode.Single);
     }

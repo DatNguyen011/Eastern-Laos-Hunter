@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEditor;
@@ -7,7 +8,7 @@ using UnityEngine;
 using UnityEngine.TextCore.Text;
 using UnityEngine.UIElements;
 
-public class Bot : AtractBot
+public class Bot : BaseBot
 {
     //public GameObject player;
     private string currentAnim;
@@ -35,18 +36,16 @@ public class Bot : AtractBot
     public GameObject botVFX;
 
 
-    // Start is called before the first frame update
-
     void Start()
     {
 
         ChangeAnim("Idle");
-           
+
     }
 
     public void UpdateState()
     {
-        if (currentState != null)
+        if (currentState != null && isDead == false)
         {
 
             currentState.OnExecute(this);
@@ -55,7 +54,7 @@ public class Bot : AtractBot
 
     public void FindPlayer()
     {
-        
+
         distance = Vector2.Distance(Hero.Instance.transform.position, transform.position);
         float stopDistance = distance + 1f;
         Vector2 direction = Hero.Instance.transform.position - transform.position;
@@ -76,7 +75,7 @@ public class Bot : AtractBot
 
         if (distance < 5f)
         {
-           
+
             if (distance <= 1.5f)
             {
                 ChangeState(new IdleState());
@@ -99,7 +98,6 @@ public class Bot : AtractBot
         textFloating.transform.GetChild(0).GetComponent<TextMeshPro>().text = dame.ToString();
         ChangeState(new HitState());
         //StartCoroutine(DisableHitState());
-        
     }
 
     IEnumerator DisableHitState()
@@ -135,13 +133,12 @@ public class Bot : AtractBot
 
     public override void OnAttack()
     {
-       attackArea.SetActive(false);
-       ChangeState(new IdleState());
+        attackArea.SetActive(false);
+        ChangeState(new IdleState());
     }
 
     public override void OnDead()
     {
-        isDead = true;
         ChangeState(null);
         ChangeAnim("Dead");
         StartCoroutine(WaitDead());
@@ -154,15 +151,19 @@ public class Bot : AtractBot
         float randomNumber = Random.Range(1, 4);
         if (randomNumber == 1)
         {
-            GameObject newBloodBottle = Instantiate(bloodBottle, transform.position, transform.rotation);
+            GameObject newBloodBottle = Instantiate(bloodBottle, transform.position, Quaternion.identity);
         }
         else if (randomNumber == 2)
         {
-            GameObject newManaBottle = Instantiate(manaBottle, transform.position, transform.rotation);
+            GameObject newManaBottle = Instantiate(manaBottle, transform.position, Quaternion.identity);
         }
         else if (randomNumber == 3)
         {
-            GameObject newGold = Instantiate(goldOject, transform.position, transform.rotation);
+            GameObject newGold = Instantiate(goldOject, transform.position, Quaternion.identity);
+        }
+        else if (GameController.Instance.listBot.Count <= 0)
+        {
+            GameController.Instance.OpenNextLevel();
         }
         Destroy(gameObject);
 
@@ -175,16 +176,9 @@ public class Bot : AtractBot
 
     public Vector2 RandomPoint()
     {
-        // Vị trí hiện tại
         Vector2 currentPosition = transform.position;
-
-        // Random một góc trong khoảng từ 0 đến 360 độ
         float randomAngle = Random.Range(0f, 360f);
-
-        // Chuyển góc random sang radian
         float angleInRadians = randomAngle * Mathf.Deg2Rad;
-
-        // Tính toán vị trí mới dựa trên góc và bán kính
         Vector2 randomPoint = new Vector2(
             currentPosition.x + Mathf.Cos(angleInRadians) * 3f,
             currentPosition.y + Mathf.Sin(angleInRadians) * 3f
@@ -198,20 +192,20 @@ public class Bot : AtractBot
         //{
         //    Destroy(patrolVFX);
         //}
-        Instantiate(patrolVFXPrefab,botVFXParent.transform.position, Quaternion.identity,botVFXParent);
+        Instantiate(patrolVFXPrefab, botVFXParent.transform.position, Quaternion.identity, botVFXParent);
     }
 
     public void SetDestination(Vector2 des)
     {
-        transform.position = Vector2.MoveTowards((Vector2)transform.position, des, speed*Time.deltaTime);
+        transform.position = Vector2.MoveTowards((Vector2)transform.position, des, speed * Time.deltaTime);
         Vector2 direction = des - (Vector2)transform.position;
         direction = direction.normalized;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        
-        
+
+
         if (angle >= -90 && angle <= 90)
         {
-            transform.localScale = new Vector3(-1, 1, 1 );
+            transform.localScale = new Vector3(-1, 1, 1);
         }
         else
         {
@@ -228,7 +222,7 @@ public class Bot : AtractBot
         }
         if (collision.tag == "Wall" || collision.tag == "Tree")
         {
-            isTouchWall= true;
+            isTouchWall = true;
         }
     }
 

@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 6614443975765187900}
   - component: {fileID: 9005982864034678795}
   - component: {fileID: 8794945076607063219}
-  - component: {fileID: 4002501582157472145}
+  - component: {fileID: -5000530862034262978}
   m_Layer: 0
   m_Name: MiniBossBullet
   m_TagString: Untagged
@@ -203,7 +203,7 @@ CircleCollider2D:
   m_Offset: {x: -0.0016889125, y: 0}
   serializedVersion: 2
   m_Radius: 0.17669035
---- !u!114 &4002501582157472145
+--- !u!114 &-5000530862034262978
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -212,6 +212,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 5512195697782867881}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f54f68cb79ca044ad31a536f3d3425, type: 3}
+  m_Script: {fileID: 11500000, guid: 4cc74f6dfd3863b449851337fdb570b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

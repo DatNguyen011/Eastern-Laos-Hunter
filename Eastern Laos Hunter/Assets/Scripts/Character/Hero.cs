@@ -28,6 +28,7 @@ public class Hero : Singleton<Hero>
     public float maxMp = 100f;
     public float hp = 100f;
     public float mp = 100f;
+    public float dame = 20f;
     public HealthBar healthBar;
     //public GameObject checkPoint;
     private Vector3 savePoint;
@@ -53,6 +54,9 @@ public class Hero : Singleton<Hero>
     public Transform heroParent;
     public List<Image> skillImages = new List<Image>();
     public Collider2D heroCollider;
+    public GameObject floatingDamage;
+    public Transform heroVfxParent;
+    //public GameObject heroVfx;
 
     //public HealthBar healthBar;
     void Start()
@@ -255,6 +259,8 @@ public class Hero : Singleton<Hero>
         isDead = false;
         this.hp = PlayerPrefs.GetFloat("hp");
         this.mp = PlayerPrefs.GetFloat("mp");
+        this.maxHp = PlayerPrefs.GetFloat("maxhp");
+        this.maxMp = PlayerPrefs.GetFloat("maxmp");
         healthBar.SetHealthByImage(maxHp, hp);
         healthBar.SetManaByImage(maxMp, mp);
         positionValue.initPosValue = new Vector2(PlayerPrefs.GetFloat("posX"), PlayerPrefs.GetFloat("posY"));
@@ -289,15 +295,19 @@ public class Hero : Singleton<Hero>
         {
             if (hit.collider.CompareTag("Bot"))
             {
-                hit.collider.GetComponent<Bot>().ReduceHp(30f);
+                hit.collider.GetComponent<Bot>()?.ReduceHp(dame);
             }
             else if (hit.collider.CompareTag("MiniBoss"))
             {
-                hit.collider.GetComponent<MiniBoss>().ReduceHp(30f);
+                hit.collider.GetComponent<Boss>()?.ReduceHp(dame);
             }
             else if (hit.collider.CompareTag("Box"))
             {
-                hit.collider.GetComponent<Box>().DestroyBox();
+                hit.collider.GetComponent<Box>()?.DestroyBox();
+            }
+            else if (hit.collider.CompareTag("Treasure"))
+            {
+                hit.collider.GetComponent<Treasure>()?.OpenTreasure();
             }
         }
 
@@ -324,17 +334,16 @@ public class Hero : Singleton<Hero>
 
     IEnumerator PerformAttack()
     {
-        yield return new WaitForSeconds(0.4f); // Delay để khớp với animation
-
-        Vector2 attackDirection = facingRight ? Vector2.right : Vector2.left; // Hướng của BoxCast
-        float attackRange = 1.5f; // Chiều dài của hộp
-        Vector2 boxSize = new Vector2(1.5f, 1f); // Kích thước của hộp (ngang x cao)
-        float angle = 0f; // Góc quay của BoxCast (0 nghĩa là không xoay)
-        LayerMask enemyLayer = LayerMask.GetMask("Bot"); // Lọc layer của kẻ địch
+        yield return new WaitForSeconds(0.4f); 
+        Vector2 attackDirection = facingRight ? Vector2.right : Vector2.left;
+        float attackRange = 1.5f;
+        Vector2 boxSize = new Vector2(1.5f, 1f); 
+        float angle = 0f; 
+        LayerMask enemyLayer = LayerMask.GetMask("Bot"); 
 
         RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, boxSize, angle, attackDirection, attackRange, enemyLayer);
 
-        foreach (RaycastHit2D hit in hits) // Kiểm tra từng kẻ địch trong vùng
+        foreach (RaycastHit2D hit in hits)
         {
             if (hit.collider.CompareTag("Bot"))
             {
@@ -342,11 +351,15 @@ public class Hero : Singleton<Hero>
             }
             else if (hit.collider.CompareTag("MiniBoss"))
             {
-                hit.collider.GetComponent<MiniBoss>().ReduceHp(20f);
+                hit.collider.GetComponent<Boss>().ReduceHp(20f);
             }
             else if (hit.collider.CompareTag("Box"))
             {
                 hit.collider.GetComponent<Box>().DestroyBox();
+            }
+            else if (hit.collider.CompareTag("Treasure"))
+            {
+                hit.collider.GetComponent<Treasure>()?.OpenTreasure();
             }
         }
 
@@ -383,9 +396,9 @@ public class Hero : Singleton<Hero>
         {
             elapsed += Time.deltaTime;
             skillImages[skillNumber].fillAmount = Mathf.Lerp(1, 0, elapsed / duration);
-            yield return null; // Đợi frame tiếp theo
+            yield return null; 
         }
-        skillImages[skillNumber].fillAmount = 0; // Đảm bảo fillAmount về 0
+        skillImages[skillNumber].fillAmount = 0; 
         skillCooldowns[skillNumber] = false;
     }
     IEnumerator Dashing()
@@ -440,25 +453,49 @@ public class Hero : Singleton<Hero>
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "HealthBottle")
+        int randomValue = 0;
+
+        switch (collision.tag)
         {
-            float randomHp = UnityEngine.Random.Range(90f, 100f);
-            AddHp(randomHp);
-            Destroy(collision.gameObject);
+            case "HealthBottle":
+                randomValue = UnityEngine.Random.Range(90, 100);
+                AddHp(randomValue);
+                break;
+
+            case "ManaBottle":
+                randomValue = UnityEngine.Random.Range(90, 100);
+                AddMp(randomValue);
+                break;
+
+            case "Gold":
+                randomValue = UnityEngine.Random.Range(5, 10);
+                GameController.Instance.GainGold(randomValue);
+                break;
+
+            case "RedStone":
+                GameObject textFloating = Instantiate(floatingDamage, transform.position, Quaternion.identity, heroVfxParent);
+                textFloating.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Increased HP";
+                randomValue = UnityEngine.Random.Range(10, 20);
+                maxHp += randomValue;
+                healthBar.SetHealthByImage(maxHp,this.hp);
+                break;
+
+            case "BlueStone":
+                randomValue = UnityEngine.Random.Range(10, 20);
+                maxMp += randomValue;
+                healthBar.SetManaByImage(maxMp, this.hp);
+                break;
+            case "YellowStone":
+                randomValue = UnityEngine.Random.Range(10, 20);
+
+                break;
+            default:
+                return;
         }
-        else if (collision.tag == "ManaBottle")
-        {
-            float randomMp = UnityEngine.Random.Range(90f, 100f);
-            AddMp(randomMp);
-            Destroy(collision.gameObject);
-        }
-        else if (collision.tag == "Gold")
-        {
-            float randomGold = UnityEngine.Random.Range(5, 10);
-            GameController.Instance.GainGold(randomGold);
-            Destroy(collision.gameObject);
-        }
+
+        Destroy(collision.gameObject);
     }
+
 }

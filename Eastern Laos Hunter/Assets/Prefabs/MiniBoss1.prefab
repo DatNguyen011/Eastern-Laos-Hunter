@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7385609345775857886}
   - component: {fileID: 8812237519728327275}
   - component: {fileID: 3318321137808498401}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Animator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1301415112370435173}
@@ -139,7 +139,7 @@ RectTransform:
   m_Father: {fileID: 8933412686537952204}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -191,9 +191,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1301415112370435173}
   - component: {fileID: 6839997788377747575}
-  - component: {fileID: 5090833368048257108}
   - component: {fileID: 7711049564998481542}
-  m_Layer: 0
+  - component: {fileID: 1318726039426446346}
+  m_Layer: 3
   m_Name: MiniBoss1
   m_TagString: MiniBoss
   m_Icon: {fileID: 0}
@@ -245,29 +245,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5090833368048257108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1378506040097493567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99ba08567cc7d5c49a40c141c6501f50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 8812237519728327275}
-  attackArea: {fileID: 7864426042163986521}
-  isTouchWall: 0
-  speed: 8
-  newPosition: {x: 0, y: 0}
-  heroGameOject: {fileID: 0}
-  direction: {x: 0, y: 0}
-  healthBar: {fileID: 8075652681530392861}
-  isDead: 0
-  bulletPrefab: {fileID: 5512195697782867881, guid: fa76792234d49e84c98fab5548dc41a1,
-    type: 3}
 --- !u!58 &7711049564998481542
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -303,6 +280,33 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.10431111}
   serializedVersion: 2
   m_Radius: 1.2477673
+--- !u!114 &1318726039426446346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378506040097493567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82c4ee0d33ff58544b9f0eed7bcafdd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 8812237519728327275}
+  attackArea: {fileID: 7864426042163986521}
+  isTouchWall: 0
+  speed: 6
+  newPosition: {x: 0, y: 0}
+  direction: {x: 0, y: 0}
+  hp: 200
+  maxHp: 200
+  healthBar: {fileID: 8075652681530392861}
+  isDead: 0
+  bulletPrefab: {fileID: 5512195697782867881, guid: fa76792234d49e84c98fab5548dc41a1,
+    type: 3}
+  startPoint: {x: 0, y: 0}
+  treasurePrefabs: {fileID: 4136447336991796700, guid: b74e063462da8b144969ae269333b29c,
+    type: 3}
 --- !u!1 &2256341667918278296
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,7 +434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4120138760745354830
 RectTransform:
   m_ObjectHideFlags: 0
@@ -514,7 +518,7 @@ GameObject:
   - component: {fileID: 2094199836362931190}
   - component: {fileID: 1878051900917248915}
   - component: {fileID: 8300230113106175896}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}

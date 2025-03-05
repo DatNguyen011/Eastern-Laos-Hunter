@@ -99,7 +99,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7124063858691289818}
   - component: {fileID: 3119439750670673597}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -407,7 +407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4725013891742642776}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ThrowDart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,7 +438,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 920022692652524401}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: VFX
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -473,7 +473,7 @@ GameObject:
   - component: {fileID: 9200388946788742754}
   - component: {fileID: 6720952998744560648}
   - component: {fileID: 1288669249027263722}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Dart Bot
   m_TagString: Bot
   m_Icon: {fileID: 0}
@@ -594,7 +594,7 @@ MonoBehaviour:
   typeBot: 
   floatingDamage: {fileID: 7351787571236011286, guid: e0113d840b4f95249a4afd0913db340d,
     type: 3}
-  patrolVFXPrefab: {fileID: 4817604397813813661, guid: 4ba890682b7d62c4bb6a59c95664dd01,
+  patrolVFXPrefab: {fileID: 1296159620623533981, guid: 4803ad8887f51c942859f56a36ac1e9a,
     type: 3}
   botVFXParent: {fileID: 7845439615980072581}
   botVFX: {fileID: 4336809958240262778}
@@ -612,7 +612,7 @@ GameObject:
   - component: {fileID: 604156245503169975}
   - component: {fileID: 7007117784346859953}
   - component: {fileID: 8651164608319115195}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Animator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -716,7 +716,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7845439615980072581}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Parent
   m_TagString: Untagged
   m_Icon: {fileID: 0}

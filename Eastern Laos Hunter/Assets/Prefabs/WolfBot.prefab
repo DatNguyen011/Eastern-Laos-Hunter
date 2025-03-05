@@ -178,7 +178,7 @@ MonoBehaviour:
   typeBot: 
   floatingDamage: {fileID: 7351787571236011286, guid: e0113d840b4f95249a4afd0913db340d,
     type: 3}
-  patrolVFXPrefab: {fileID: 4817604397813813661, guid: 4ba890682b7d62c4bb6a59c95664dd01,
+  patrolVFXPrefab: {fileID: 1296159620623533981, guid: 4803ad8887f51c942859f56a36ac1e9a,
     type: 3}
   botVFXParent: {fileID: 1574621173189416588}
   botVFX: {fileID: 8926338041466833849}

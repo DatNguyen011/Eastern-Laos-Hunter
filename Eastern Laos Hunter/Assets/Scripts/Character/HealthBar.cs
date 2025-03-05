@@ -24,7 +24,6 @@ public class HealthBar : MonoBehaviour
 
     public void SetHealth(float maxHp, float hp)
     {
-        
         slider.gameObject.SetActive(hp<maxHp);
         slider.maxValue = maxHp;
         slider.value = hp;
@@ -39,13 +38,17 @@ public class HealthBar : MonoBehaviour
         hp = Mathf.Clamp(hp, 0, maxHp);
         fillHealth.fillAmount = hp/maxHp;
         PlayerPrefs.SetFloat("hp",hp);
+        PlayerPrefs.SetFloat("maxhp",maxHp);
+        PlayerPrefs.Save();
     }
 
-    public void SetManaByImage(float maxHp, float mp)
+    public void SetManaByImage(float maxMp, float mp)
     {
-        mp = Mathf.Clamp(mp, 0, maxHp);
-        fillMana.fillAmount = mp / maxHp;
+        mp = Mathf.Clamp(mp, 0, maxMp);
+        fillMana.fillAmount = mp / maxMp;
         PlayerPrefs.SetFloat("mp", mp);
+        PlayerPrefs.SetFloat("maxmp", maxMp);
+        PlayerPrefs.Save();
     }
 
 }

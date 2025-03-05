@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 3595860840749802661}
   - component: {fileID: 5722934582135429545}
   - component: {fileID: 5842988222997718111}
-  - component: {fileID: 2505671179899247687}
+  - component: {fileID: 8173417791094608028}
   m_Layer: 0
   m_Name: Anim
   m_TagString: Untagged
@@ -437,7 +437,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2505671179899247687
+--- !u!114 &8173417791094608028
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4507927336534613391}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4b46f33d914a8439da68a98c07a8c8, type: 3}
+  m_Script: {fileID: 11500000, guid: 391fcb1015c3b2748a5c5a1fc520c335, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: df7087e4d8a8bb546bc08ce68632903f, type: 3}
