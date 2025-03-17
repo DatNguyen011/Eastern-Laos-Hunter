@@ -28,7 +28,6 @@ public class Hero : Singleton<Hero>
     public float maxMp = 100f;
     public float hp = 100f;
     public float mp = 100f;
-    public float dame = 20f;
     public HealthBar healthBar;
     public GameObject bullet;
    
@@ -284,18 +283,16 @@ public class Hero : Singleton<Hero>
         Vector2 boxSize = new Vector2(3f, 2f); 
         float angle = 0f;
         LayerMask enemyLayer = LayerMask.GetMask("Bot", "Box");
-
         RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, boxSize, angle, attackDirection, attackRange, enemyLayer);
-
         foreach (RaycastHit2D hit in hits) 
         {
             if (hit.collider.CompareTag("Bot"))
             {
-                hit.collider.GetComponent<Bot>()?.ReduceHp(dame);
+                hit.collider.GetComponent<Bot>()?.ReduceHp(50f);
             }
             else if (hit.collider.CompareTag("MiniBoss"))
             {
-                hit.collider.GetComponent<Boss>()?.ReduceHp(dame);
+                hit.collider.GetComponent<Boss>()?.ReduceHp(50f);
             }
             else if (hit.collider.CompareTag("Box"))
             {
@@ -347,7 +344,7 @@ public class Hero : Singleton<Hero>
             }
             else if (hit.collider.CompareTag("MiniBoss"))
             {
-                hit.collider.GetComponent<Boss>().ReduceHp(20f);
+                hit.collider.GetComponent<Boss>().ReduceHp(30f);
             }
             else if (hit.collider.CompareTag("Box"))
             {
@@ -361,16 +358,6 @@ public class Hero : Singleton<Hero>
 
         isAttack = false;
     }
-
-    //IEnumerator ReturnIdle()
-    //{
-    //    couterTime.OnStart(Attack, .5f);
-    //    yield return new WaitForSeconds(.3f);
-    //    ChangeAnim("Idle");
-    //    yield return new WaitForSeconds(.2f);
-    //    isAttack = false;
-    //    //attackCountDown = 0;
-    //}
 
     public void Dash()
     {

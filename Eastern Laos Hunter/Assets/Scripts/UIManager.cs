@@ -19,8 +19,8 @@ public class UIManager : Singleton<UIManager>
     public Button btnReplay;
     public GameObject settingPanel;
     public GameObject endGamePanel;
-    private float elapsedTime = 0;
-    public static float deadNumber=0;
+    private static float elapsedTime;
+    public static float deadNumber;
     private bool isPaused = false;
 
     void Start()
@@ -35,7 +35,7 @@ public class UIManager : Singleton<UIManager>
     {
         SceneManager.LoadScene(0,LoadSceneMode.Single);
         PlayerPrefs.SetFloat("time", elapsedTime);
-        PlayerPrefs.SetFloat("dead_number", 0);
+        PlayerPrefs.SetFloat("dead_number", deadNumber);
         PlayerPrefs.Save();
         Pause();
     }
@@ -52,7 +52,7 @@ public class UIManager : Singleton<UIManager>
 
     private void Update()
     {
-        elapsedTime += Time.deltaTime;
+        elapsedTime += Time.unscaledDeltaTime;
         TimeSpan timeSpan = TimeSpan.FromSeconds(elapsedTime);
         tmpTime.text = string.Format("{0:D2}:{1:D2}:{2:D2}", timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds);
         tmpdeadNumber.text=deadNumber.ToString();

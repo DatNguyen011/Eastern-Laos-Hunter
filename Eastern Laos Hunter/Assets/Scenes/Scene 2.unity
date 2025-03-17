@@ -35318,8 +35318,8 @@ MonoBehaviour:
   - {fileID: 1317390422410283881, guid: 0e17876089373cd4595ccc0a49697a38, type: 3}
   - {fileID: 1317390422410283881, guid: 0e17876089373cd4595ccc0a49697a38, type: 3}
   listBossPrefabs:
-  - {fileID: 1543830651017543419, guid: c608cafb4eca29944ad6430a22830cf8, type: 3}
-  - {fileID: 4741149346022148831, guid: ad89a62f85aa8f948a162f28b4185d06, type: 3}
+  - {fileID: 7701727100186740225, guid: c608cafb4eca29944ad6430a22830cf8, type: 3}
+  - {fileID: 2455140063098201352, guid: ad89a62f85aa8f948a162f28b4185d06, type: 3}
   listBoxPrefabs: []
   wall: {fileID: 1470580032}
   switchLevel: {fileID: 304436579}

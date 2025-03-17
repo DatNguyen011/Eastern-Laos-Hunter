@@ -7,7 +7,7 @@ public class BossPatrolState : IState<Boss>
     public float time = 0;
     public void OnEnter(Boss miniBoss)
     {
-        miniBoss.ChangeAnime("Attack1");
+        miniBoss.ChangeAnime("Throw");
         miniBoss.ThrowBullet();
 
     }

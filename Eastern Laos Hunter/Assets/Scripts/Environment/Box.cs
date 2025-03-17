@@ -27,7 +27,7 @@ public class Box : MonoBehaviour
     public void DestroyBox()
     {
         ChangeAnim("Broken");
-        float randomNumber = Random.Range(1, 6);
+        float randomNumber = Random.Range(1, 7);
         if (randomNumber == 1)
         {
             GameObject newBloodBottle = Instantiate(bloodBottle, transform.position, transform.rotation);

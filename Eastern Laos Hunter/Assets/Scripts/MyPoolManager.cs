@@ -25,6 +25,15 @@ public class MyPoolManager : MonoBehaviour
         tmp.transform.position = position;
         return tmp;
     }
+
+    public GameObject Get(GameObject obj, Vector3 position, Transform parents)
+    {
+        tmp = Get(obj);
+        tmp.transform.position = position;
+        tmp.transform.parent = parents;
+        return tmp;
+    }
+
     public T Get<T>(T obj) where T : Component
     {
         tmp = Get(obj.gameObject);

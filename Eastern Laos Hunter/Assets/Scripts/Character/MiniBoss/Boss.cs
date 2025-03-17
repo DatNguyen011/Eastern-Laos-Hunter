@@ -57,9 +57,6 @@ public class Boss : BaseBot
         }
     }
 
-    
-
-
     private IEnumerator DisableBullet(GameObject bullet, float delay)
     {
         yield return new WaitForSeconds(delay);
@@ -108,8 +105,6 @@ public class Boss : BaseBot
             GameController.Instance.OpenNextLevel();
         }
         Destroy(gameObject,1f);
-        
-        //StartCoroutine(WaitDead());
     }
 
 

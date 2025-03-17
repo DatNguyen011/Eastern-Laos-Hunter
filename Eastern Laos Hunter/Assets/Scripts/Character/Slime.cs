@@ -3,19 +3,7 @@ using UnityEngine;
 
 public class Slime : MonoBehaviour
 {
-    public float damagePerSecond = 5f;
     private bool isHeroInside = false;
-
-    private void Start()
-    {
-        StartCoroutine(waitSetActive());
-    }
-
-    IEnumerator waitSetActive()
-    {
-        yield return new WaitForSeconds(5f);
-        gameObject.SetActive(false);
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -40,7 +28,7 @@ public class Slime : MonoBehaviour
         {
             if (hero != null)
             {
-                hero.ReduceHp(damagePerSecond);
+                hero.ReduceHp(5f);
             }
             yield return new WaitForSeconds(2f);
         }

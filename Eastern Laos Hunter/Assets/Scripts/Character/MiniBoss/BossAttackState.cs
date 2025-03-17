@@ -8,7 +8,7 @@ public class BossAttackState : IState<Boss>
     public float time = 0;
     public void OnEnter(Boss miniBoss)
     {
-        miniBoss.ChangeAnime("Attack2");
+        miniBoss.ChangeAnime("Attack");
 
         miniBoss.direction = Hero.Instance.transform.position - miniBoss.transform.position;
         miniBoss.direction = miniBoss.direction.normalized;

@@ -60261,7 +60261,12 @@ MonoBehaviour:
   - {fileID: 40964936}
   - {fileID: 1510544310}
   listBotPrefabs:
-  - {fileID: 133627633195758826, guid: 59b31707ed4019548a441b557a1d2fb6, type: 3}
+  - {fileID: 5863811154870869293, guid: 59b31707ed4019548a441b557a1d2fb6, type: 3}
+  - {fileID: 5863811154870869293, guid: 59b31707ed4019548a441b557a1d2fb6, type: 3}
+  - {fileID: 1317390422410283881, guid: 0e17876089373cd4595ccc0a49697a38, type: 3}
+  - {fileID: 1317390422410283881, guid: 0e17876089373cd4595ccc0a49697a38, type: 3}
+  - {fileID: 7642065275647447480, guid: 780b82ecc7c5b5e47b85d582879c0038, type: 3}
+  - {fileID: 5863811154870869293, guid: 59b31707ed4019548a441b557a1d2fb6, type: 3}
   listBossPrefabs: []
   listBoxPrefabs:
   - {fileID: 5736708629558959572, guid: f9d061ae455aea347a971eecd8c8475c, type: 3}
@@ -72279,6 +72284,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OpenBot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049663658418568328, guid: d36f4cad8d9da2f479caea5987e55e63,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4841332615751962117, guid: d36f4cad8d9da2f479caea5987e55e63,
         type: 3}

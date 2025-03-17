@@ -150,12 +150,15 @@ public class Bot : BaseBot
 
     public override void OnDead()
     {
-        
-        ChangeState(null);
         ChangeAnim("Dead");
+        if (!isDead) {
+            isDead = true;
+        } 
+        ChangeState(null);
         gameObject.tag = "Untagged";
         gameObject.layer = 0;
         botCollider.enabled = false;
+        rb.velocity = Vector2.zero;
         GameController.Instance.StartCoroutine(WaitDead());
     }
 
@@ -163,7 +166,7 @@ public class Bot : BaseBot
     {
         yield return new WaitForSeconds(2f);
         GameController.Instance.listBot.Remove(this);
-        float randomNumber = Random.Range(1, 4);
+        float randomNumber = Random.Range(1, 7);
         if (GameController.Instance.listBot.Count <= 0)
         {
             GameController.Instance.OpenNextLevel();

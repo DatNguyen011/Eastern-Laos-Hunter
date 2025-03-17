@@ -322,7 +322,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.04, y: -3.17, z: 713.1105}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4323783736914836684}
@@ -362,7 +362,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.08778238, y: -0.05595696}
+  m_Offset: {x: 0.0108914375, y: -0.020092368}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -373,7 +373,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.3155365, y: 2.947955}
+  m_Size: {x: 1.242034, y: 1.0106375}
   m_EdgeRadius: 0
 --- !u!50 &4710569803879207313
 Rigidbody2D:
@@ -439,7 +439,7 @@ MonoBehaviour:
     type: 3}
   botVFXParent: {fileID: 8812445396085029225}
   botVFX: {fileID: 5795367683118788775}
-  poisonSlimePrefab: {fileID: 5546765891598814074, guid: 6bfe6e7853500544ebc05836b5c09bc8,
+  slimePrefab: {fileID: 5546765891598814074, guid: 6bfe6e7853500544ebc05836b5c09bc8,
     type: 3}
   dropPoint: {fileID: 4101505807536283387}
 --- !u!1 &5795367683118788775

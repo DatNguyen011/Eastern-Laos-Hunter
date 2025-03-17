@@ -5,15 +5,16 @@ using UnityEngine.UI;
 
 public class OpenMainMenu : MonoBehaviour
 {
-    [SerializeField] private Button btnOpenMain;
+    //[SerializeField] private Button btnOpenMain;
     void Start()
     {
-        btnOpenMain.onClick.AddListener(() => Open());
+        StartCoroutine(WaitNextLevel());
     }
 
-    private void Open()
+    IEnumerator WaitNextLevel()
     {
-        PlayerPrefs.SetInt("sceneNumber", 1);
+        yield return new WaitForSeconds(3f);
+        PlayerPrefs.SetInt("sceneNumber", 0);
         PlayerPrefs.SetFloat("hp", 100);
         PlayerPrefs.SetFloat("mp", 100);
         PlayerPrefs.SetFloat("posX", -11);
