@@ -1,0 +1,473 @@
+fileFormatVersion: 2
+guid: 7b1cd74ab73383d408f4f2bc160118bb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 275
+        width: 55
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59bea63d92b4f974ca9d2ffda1c7a13f
+      internalID: -2030686722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 275
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22b488602964964e9e8a840160c23ee
+      internalID: -2005303378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_2
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 275
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f6a8ec3e2105648b53a775176dcfd2
+      internalID: 810644699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 275
+        width: 46
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0b1493f42945d4392ee3400e34f371
+      internalID: -684656896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_4
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 223
+        width: 55
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0877d7965cf64f479370e58f4cb24d3
+      internalID: 673691896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_5
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 221
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f255dd5c97fe8504fa53b608cefe1a6a
+      internalID: 885991733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_6
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 217
+        width: 38
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e4a3f3d65ed2d44b65c5a5f8bc6f96
+      internalID: -1885142377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_7
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 218
+        width: 46
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690911dceb201774fbea1030639f5d83
+      internalID: 619716645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 146
+        width: 56
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a6d663259c3b549862f2594236f0b3
+      internalID: -1172960834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_9
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 146
+        width: 43
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e309b249b8bc3c4da29738cf84a3bd3
+      internalID: 1560845330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_10
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 147
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc430777d336f84db6f9b56e606c1e7
+      internalID: -1035883152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_11
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 150
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60882dff5c0abc44fa93f2afe0d1db48
+      internalID: -451377234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 110
+        width: 56
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d71c3b54c052eff4a805ca2261aae6f2
+      internalID: 1037681289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_13
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 89
+        width: 43
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad0fae2db1881246a93fa39e68b16e5
+      internalID: -427940641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_14
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 82
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305f17202699c3c4da7b9082322461f9
+      internalID: -2047880161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_15
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 88
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c677adbceb96d4e9b6093470134177
+      internalID: 1053987560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_0: -2030686722
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_1: -2005303378
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_10: -1035883152
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_11: -451377234
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_12: 1037681289
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_13: -427940641
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_14: -2047880161
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_15: 1053987560
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_16: -434229046
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_17: 1289796493
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_18: -992570217
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_19: 222619698
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_2: 810644699
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_20: -858304945
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_21: -1393228516
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_22: -932537847
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_3: -684656896
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_4: 673691896
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_5: 885991733
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_6: -1885142377
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_7: 619716645
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_8: -1172960834
+      PC Computer - Koumajou Densetsu II Strangers Requiem - Green Slime_9: 1560845330
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

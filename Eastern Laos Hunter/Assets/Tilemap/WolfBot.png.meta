@@ -1,0 +1,1151 @@
+fileFormatVersion: 2
+guid: f59d4e510c1ca5b42b3d31cb21fb0b24
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WolfBot_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 722
+        width: 132
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 66, y: 0, z: 66, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8bf02bf36147a41a0caa4f2a318ea0
+      internalID: -905110213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_1
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 725
+        width: 125
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 63, y: 0, z: 62, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d34b74919b69f4c94fe28f3caf26fc
+      internalID: 558400649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_2
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 726
+        width: 121
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 57, y: 0, z: 64, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21680877bd5f3214bb5c5125fe2fa1f8
+      internalID: 2141308001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_3
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 725
+        width: 123
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 61, y: 0, z: 61, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 553ef88998836bd49862482fb134d8ea
+      internalID: -867640666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_4
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 724
+        width: 125
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 62, y: 0, z: 62, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b85a6bcb71eaa445b360be8bdfc84db
+      internalID: -625669121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_5
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 725
+        width: 127
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 63, y: 0, z: 64, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d659ec05edc137b45938deb4892f58bd
+      internalID: 1317835646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_6
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 725
+        width: 114
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 57, y: 0, z: 57, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625703790e1fe7d4180ddce254a9fba9
+      internalID: -1060341234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_7
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 725
+        width: 114
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 56, y: 0, z: 58, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b73fb712e6979c46ab17f9b2cae4907
+      internalID: 2127782430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_8
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 725
+        width: 124
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 62, y: 0, z: 62, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082605fd1ea644347995571e02d36020
+      internalID: -1814901358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_9
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 725
+        width: 123
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 61, y: 0, z: 61, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01377d9f6d5a5b44a084fb49601c5e1
+      internalID: -94801504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_10
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 612
+        width: 131
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 66, y: 0, z: 65, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95e54a6da976c3428b985b3376e2352
+      internalID: -1857400242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_11
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 612
+        width: 133
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 66, y: 0, z: 67, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ca3a3e8df8cf444b098058f2cd4400
+      internalID: -2074479238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_12
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 614
+        width: 122
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 62, y: 0, z: 60, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee21c7b0865b6e4ba00152b49f96aa5
+      internalID: -7540531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_13
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 617
+        width: 125
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 61, y: 0, z: 64, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53f9aacda61112478e265ec355379e2
+      internalID: 1838418679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_14
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 617
+        width: 138
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 69, y: 0, z: 69, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ba89411114c31489c02f96c2cf0a5e
+      internalID: -1886304553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_15
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 617
+        width: 130
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 65, y: 0, z: 65, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8bf3baf79c1a74788af4f62d1c2dc6
+      internalID: -56619872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_16
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 612
+        width: 142
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 70, y: 0, z: 72, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca997181d1926646a57e0b6954ddf9a
+      internalID: 1544668519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_17
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 613
+        width: 136
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 68, y: 0, z: 68, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc66952a02c38c43802771e898652c2
+      internalID: -2043119311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_18
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 613
+        width: 132
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 65, y: 0, z: 67, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098abfda766f25f4f95c9e3c6fba82a1
+      internalID: -1967720398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_19
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 613
+        width: 143
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 69, y: 0, z: 74, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff04ec6450fffb489bdb32f28f38410
+      internalID: -820741499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 502
+        width: 135
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 68, y: 0, z: 67, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7cb7a43c15b4f4ea4c114da6e5b656
+      internalID: 1839538360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_21
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 502
+        width: 138
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 68, y: 0, z: 70, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be723641ba11ea84d8ca401ef0b62355
+      internalID: 1503929258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_22
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 502
+        width: 139
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 69, y: 0, z: 70, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da18cceeb7627d43be5cc7102ea73fa
+      internalID: 1810619949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_23
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 502
+        width: 140
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 70, y: 0, z: 70, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 741451cfec0b7114dbed5fa7a24a627e
+      internalID: -1856312106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_24
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 502
+        width: 142
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 71, y: 0, z: 71, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302c6a74354987c4b951bb526cb1cef3
+      internalID: -167887947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_25
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 502
+        width: 137
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 69, y: 0, z: 68, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647b27b21faf84a46a9162ae3e6d8f18
+      internalID: 1817801010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_26
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 501
+        width: 137
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 69, y: 0, z: 68, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32dfb647cf8073e4f8c2f50d2abe5f74
+      internalID: -284142062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_27
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 501
+        width: 136
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 66, y: 0, z: 70, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf3d32017e512e468ffa37b2cca242c
+      internalID: 1167704072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_28
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 275
+        width: 98
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94437cb23cc815d4ab4143cfdabec3b7
+      internalID: 727246425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_29
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 275
+        width: 82
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5442b06cf5844fe41878820c42f61afb
+      internalID: -1381391809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_30
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 146
+        width: 75
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657431fc2ffe62f47bd0d7d89389e60d
+      internalID: -214496970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_31
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 144
+        width: 65
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b670e430ba6cd4a8f462c3391dcbdd
+      internalID: 30182587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_32
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 143
+        width: 95
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec7e8c231a2ffb4fbb2c1b2c7d62533
+      internalID: -1049103330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_33
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 141
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89cfdfb041a936f44a3403040d8c39b9
+      internalID: 344702440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_34
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 140
+        width: 104
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c095d75eead494f49b9412e1e74e2d1c
+      internalID: 550898025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_35
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 141
+        width: 106
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e404b54cadfdc4428243195d861ebb2
+      internalID: 77837430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_36
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 140
+        width: 98
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2cd65f5ad2f5d47b46a74b977c0cd5
+      internalID: 385066264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_37
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 141
+        width: 99
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2673408f2ac586248b40ed2a5f3e213d
+      internalID: -1835620299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_38
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 136
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf54cf7289d8154a81dceabcdc923a6
+      internalID: -253946016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_39
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 138
+        width: 114
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec302cd829f8834e80a86e8b8a5c99f
+      internalID: 1144950941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_40
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 398
+        width: 115
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424a76a3b5ab85144a00793544754c63
+      internalID: 829721262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_41
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 399
+        width: 134
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d008bcf268f6b194e88bba984e43469b
+      internalID: 1565463486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_42
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 399
+        width: 115
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d40a5ff04359c3439617bd113c04dff
+      internalID: 1103667666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_43
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 399
+        width: 108
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4f093ace162c74eb6b6bbfded14fbc
+      internalID: -1278282392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_44
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 398
+        width: 119
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151aa5b05d94556478f1bb385ca15b1f
+      internalID: -1032461721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfBot_45
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 397
+        width: 131
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f619996cd143be146885569b9694a60b
+      internalID: -163587065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      WolfBot_0: -905110213
+      WolfBot_1: 558400649
+      WolfBot_10: -1857400242
+      WolfBot_11: -2074479238
+      WolfBot_12: -7540531
+      WolfBot_13: 1838418679
+      WolfBot_14: -1886304553
+      WolfBot_15: -56619872
+      WolfBot_16: 1544668519
+      WolfBot_17: -2043119311
+      WolfBot_18: -1967720398
+      WolfBot_19: -820741499
+      WolfBot_2: 2141308001
+      WolfBot_20: 1839538360
+      WolfBot_21: 1503929258
+      WolfBot_22: 1810619949
+      WolfBot_23: -1856312106
+      WolfBot_24: -167887947
+      WolfBot_25: 1817801010
+      WolfBot_26: -284142062
+      WolfBot_27: 1167704072
+      WolfBot_28: 727246425
+      WolfBot_29: -1381391809
+      WolfBot_3: -867640666
+      WolfBot_30: -214496970
+      WolfBot_31: 30182587
+      WolfBot_32: -1049103330
+      WolfBot_33: 344702440
+      WolfBot_34: 550898025
+      WolfBot_35: 77837430
+      WolfBot_36: 385066264
+      WolfBot_37: -1835620299
+      WolfBot_38: -253946016
+      WolfBot_39: 1144950941
+      WolfBot_4: -625669121
+      WolfBot_40: 829721262
+      WolfBot_41: 1565463486
+      WolfBot_42: 1103667666
+      WolfBot_43: -1278282392
+      WolfBot_44: -1032461721
+      WolfBot_45: -163587065
+      WolfBot_46: -2021333353
+      WolfBot_47: 2016909739
+      WolfBot_48: -125804814
+      WolfBot_49: 1826609441
+      WolfBot_5: 1317835646
+      WolfBot_50: -382282000
+      WolfBot_51: -1725460795
+      WolfBot_52: -1816298111
+      WolfBot_53: -1776072192
+      WolfBot_54: 1109250615
+      WolfBot_55: 1583899442
+      WolfBot_56: 1778293814
+      WolfBot_57: 1824134498
+      WolfBot_58: 170913405
+      WolfBot_59: 154236915
+      WolfBot_6: -1060341234
+      WolfBot_60: -846558511
+      WolfBot_61: -813268952
+      WolfBot_62: 307155839
+      WolfBot_63: -2057324437
+      WolfBot_64: 1751031459
+      WolfBot_65: 1670296936
+      WolfBot_66: 201585189
+      WolfBot_67: -2078357831
+      WolfBot_68: 1438569058
+      WolfBot_69: -493365365
+      WolfBot_7: 2127782430
+      WolfBot_70: -1581428260
+      WolfBot_8: -1814901358
+      WolfBot_9: -94801504
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

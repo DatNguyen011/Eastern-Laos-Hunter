@@ -1,0 +1,1643 @@
+fileFormatVersion: 2
+guid: 74292e59722842a41879e906285607cc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 177
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Layer 2sss_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1202
+        width: 178
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30698a39cafbbd247a5410fd3caef18d
+      internalID: -1733595829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_1
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 1202
+        width: 177
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bdeecdec3c08bb4a84946794b987125
+      internalID: 1438548914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_3
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1202
+        width: 177
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5603ea714d6a5c64dbd8757648d12b26
+      internalID: 613438424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_4
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 1202
+        width: 178
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8b5b82563f41644acfedf167e930e4
+      internalID: -380596466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_6
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 1202
+        width: 178
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092904db393d371409e15bf4187fe856
+      internalID: 1131410058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_8
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 1202
+        width: 177
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03659bdaca709414ba145d839ba93136
+      internalID: 1276079330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_10
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 1202
+        width: 178
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc4a53b1dfa7234c9c161fc41148f3d
+      internalID: 1788377460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_12
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 1195
+        width: 197
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f9765ebae93b547a10e2804a67266a
+      internalID: 92666130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_14
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 1191
+        width: 195
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3cd5f0e3c4abf44b03686d0211b3fc
+      internalID: 1648415585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_29
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 994
+        width: 201
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a345aabc8a7f141b8d377b9b3a9acd
+      internalID: -1579962807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_31
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 994
+        width: 196
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6071da35e46cdc84489d512c7afc816f
+      internalID: 1222544403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_32
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 989
+        width: 396
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d0da1f8fc0f6447821088b207ec349
+      internalID: 399366196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_34
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 994
+        width: 193
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c35119b28c34a4db5590d3503c6473
+      internalID: 967625710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_36
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 997
+        width: 208
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93c9b7687722044abe9e8d29d9de04f
+      internalID: -1020947576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_37
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 991
+        width: 189
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6681acc81c5b6d41a9e633ef1768c01
+      internalID: 530745396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_38
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 990
+        width: 197
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad9eb923f6b4444c97159f526c542ea
+      internalID: -697769871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_39
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 992
+        width: 204
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8e394ce6cd5c84eaf59a129af69503
+      internalID: -1404508424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_45
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 797
+        width: 199
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d173a9e4b5866418d8adc8fabcf9ad
+      internalID: -435391071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_59
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 594
+        width: 407
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2823e3297608ce43822461cbfabf2f8
+      internalID: 265706779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_63
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 793
+        width: 201
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921a7d21020b68249a43322f8985c8b4
+      internalID: -2112221792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_65
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 798
+        width: 198
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5164b73fe77014e40846255a103658ac
+      internalID: -27632058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_69
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 794
+        width: 194
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6468d4f5b000149bb8c1e509996055
+      internalID: 1820561020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_72
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 794
+        width: 206
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d373807eeb9f604ebc23e9af1bac9bc
+      internalID: 1870876106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_74
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 801
+        width: 203
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93502f93880b6d745afb93b3bd62374e
+      internalID: -1870207513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_75
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 797
+        width: 193
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b35bf2c461262d4c8b8d0c5d6ca1045
+      internalID: -2133430432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_91
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 605
+        width: 198
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa3065ebd8db0d4d95498d481ed25e8
+      internalID: -775688283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_98
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 593
+        width: 206
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad4a23d359532643b2f358fca92a04e
+      internalID: 1569109390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_99
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 599
+        width: 583
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171447fe123e7e14b9bf0d2bd62500e0
+      internalID: 1071174246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_104
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 596
+        width: 393
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57bb0ad86a2e084b811a5b7a8554762
+      internalID: 2004596659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_110
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 604
+        width: 194
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc68fb137b261174fb394bd5b8bad488
+      internalID: -1992987024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_117
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 399
+        width: 203
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a64c543c1e3216459bb0e7bf695e2e3
+      internalID: -306552330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_119
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 397
+        width: 196
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d874e926884c1e46a22037d8227a0d5
+      internalID: 749767674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_120
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 407
+        width: 196
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c0087afe1f0844bbfc86c228ace2e3
+      internalID: -1735283398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_122
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 407
+        width: 199
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd8a8e69a14c4348b1c195172c94bd5
+      internalID: 1282848600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_124
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 407
+        width: 203
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee25e9f05e8d4e640a337022beaec8f7
+      internalID: -1204756896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_126
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 400
+        width: 191
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f51456a17e0ab4cadc88da5f9b78d9
+      internalID: 136522461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_130
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 400
+        width: 199
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765d4e00fc2e6904b8748e551fa9c280
+      internalID: -1717426990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_135
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 398
+        width: 193
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a5bbd9cc164124fbb94d165a493547
+      internalID: -1068764638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_137
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 400
+        width: 197
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e612de89df4364cb80a51121dcf85c
+      internalID: -275794109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_151
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 409
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8f1cd0bec417549b93021909b2431f
+      internalID: 2121549187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_152
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 404
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99cca7ec86d395e4f97dec7bd18b456c
+      internalID: -465382589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_156
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 400
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fede57e871fedf64288d3fccf6c534a5
+      internalID: 157365249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_157
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 399
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a338a9892f088634facbe8c573e8ec24
+      internalID: 1071191380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_158
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 400
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22bbab4f82e92de40a305cfac33ae799
+      internalID: 276554366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_159
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 400
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70df0a05a0757874c99866f5268ff582
+      internalID: 2006895983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_160
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 400
+        width: 79
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3df2ad6b340fb947b7ed90c822b9aa6
+      internalID: 52354866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_161
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 206
+        width: 194
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9329f8ded3cb84c44a608360b8622a44
+      internalID: 1055865767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_162
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 401
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e732bf361e1a01a4ea709cbd2b2045c1
+      internalID: -274901949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_165
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 214
+        width: 178
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dda300c711649e4591b2b0c987265ec
+      internalID: -155222273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_167
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 214
+        width: 179
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14a4697969502d14bae38ea61bb14e0a
+      internalID: 1731781269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_173
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 206
+        width: 204
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43f39108373b9b4eab3013cd58c2f2b
+      internalID: 173333578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_176
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 210
+        width: 199
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1efb38cfc13667b44b63f9e235565997
+      internalID: 534597030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_177
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 397
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17fc9a7577bc43048bbb41368fdb03ac
+      internalID: -2089433910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_178
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 398
+        width: 14
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281e2d23378f8964daf76ab1bd537a1e
+      internalID: -1882909373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_179
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 206
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aeed0a60a8e3ff47b5d77140fa05afd
+      internalID: 265407990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_181
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 206
+        width: 194
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d05e24a797d9849852166efae54b34
+      internalID: -658074216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_183
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 206
+        width: 197
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fbbbcb2828efcd4e8eaf1ded157a23f
+      internalID: -261527322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_186
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 206
+        width: 195
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617abd935dcf8a14ca712250e564f797
+      internalID: 257576921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_187
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 371
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0fae08bce4e7564798e3af9d62beb2d
+      internalID: -1621039811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_190
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 243
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 351e06a588069eb4d830409a5fe259a8
+      internalID: 244710355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_197
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 8
+        width: 207
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4cde980d0f8e7542be0d08b2bba5e83
+      internalID: 470247195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_199
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 8
+        width: 202
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777fdb51bee4e2b4daa250d2c3fb7c05
+      internalID: 1029152085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 2sss_200
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 6
+        width: 209
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edfbcc0e5feb53843a3c744f2f13078d
+      internalID: 2104664150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Layer 2sss_0: -1733595829
+      Layer 2sss_1: 1438548914
+      Layer 2sss_10: 1788377460
+      Layer 2sss_100: 2112396884
+      Layer 2sss_101: -1921314570
+      Layer 2sss_102: 2123355995
+      Layer 2sss_103: -976563678
+      Layer 2sss_104: 2004596659
+      Layer 2sss_105: -2045979908
+      Layer 2sss_106: -1482523050
+      Layer 2sss_107: -426869291
+      Layer 2sss_108: -1245347375
+      Layer 2sss_109: 1695860473
+      Layer 2sss_11: 1643791631
+      Layer 2sss_110: -1992987024
+      Layer 2sss_111: 2056552676
+      Layer 2sss_112: 119015873
+      Layer 2sss_113: 1934235364
+      Layer 2sss_114: 153908100
+      Layer 2sss_115: -251296718
+      Layer 2sss_116: -1218662955
+      Layer 2sss_117: -306552330
+      Layer 2sss_118: 39603279
+      Layer 2sss_119: 749767674
+      Layer 2sss_12: 92666130
+      Layer 2sss_120: -1735283398
+      Layer 2sss_121: -1098233527
+      Layer 2sss_122: 1282848600
+      Layer 2sss_123: 173257379
+      Layer 2sss_124: -1204756896
+      Layer 2sss_125: 1688226076
+      Layer 2sss_126: 136522461
+      Layer 2sss_127: -1494140586
+      Layer 2sss_128: 964769544
+      Layer 2sss_129: 1120717197
+      Layer 2sss_13: 1108833792
+      Layer 2sss_130: -1717426990
+      Layer 2sss_131: -422568501
+      Layer 2sss_132: -1297296206
+      Layer 2sss_133: -2139587632
+      Layer 2sss_134: 829895327
+      Layer 2sss_135: -1068764638
+      Layer 2sss_136: -1284243011
+      Layer 2sss_137: -275794109
+      Layer 2sss_138: -1866124205
+      Layer 2sss_139: 424570359
+      Layer 2sss_14: 1648415585
+      Layer 2sss_140: 343253665
+      Layer 2sss_141: -423012501
+      Layer 2sss_142: 476109748
+      Layer 2sss_143: -413246361
+      Layer 2sss_144: 163420019
+      Layer 2sss_145: -424838327
+      Layer 2sss_146: -156355998
+      Layer 2sss_147: 1841568975
+      Layer 2sss_148: -1300370179
+      Layer 2sss_149: 425666034
+      Layer 2sss_15: -1910768003
+      Layer 2sss_150: 438323635
+      Layer 2sss_151: 2121549187
+      Layer 2sss_152: -465382589
+      Layer 2sss_153: 1001066255
+      Layer 2sss_154: -969539140
+      Layer 2sss_155: 1507581562
+      Layer 2sss_156: 157365249
+      Layer 2sss_157: 1071191380
+      Layer 2sss_158: 276554366
+      Layer 2sss_159: 2006895983
+      Layer 2sss_16: -2057623167
+      Layer 2sss_160: 52354866
+      Layer 2sss_161: 1055865767
+      Layer 2sss_162: -274901949
+      Layer 2sss_163: 877882612
+      Layer 2sss_164: -539748231
+      Layer 2sss_165: -155222273
+      Layer 2sss_166: 446871391
+      Layer 2sss_167: 1731781269
+      Layer 2sss_168: -1088976186
+      Layer 2sss_169: 1969069828
+      Layer 2sss_17: 204156635
+      Layer 2sss_170: -600788442
+      Layer 2sss_171: 1827839410
+      Layer 2sss_172: -194033298
+      Layer 2sss_173: 173333578
+      Layer 2sss_174: -553500747
+      Layer 2sss_175: 232803880
+      Layer 2sss_176: 534597030
+      Layer 2sss_177: -2089433910
+      Layer 2sss_178: -1882909373
+      Layer 2sss_179: 265407990
+      Layer 2sss_18: 215841805
+      Layer 2sss_180: 1317336873
+      Layer 2sss_181: -658074216
+      Layer 2sss_182: -1666568933
+      Layer 2sss_183: -261527322
+      Layer 2sss_184: -760049400
+      Layer 2sss_185: 441366204
+      Layer 2sss_186: 257576921
+      Layer 2sss_187: -1621039811
+      Layer 2sss_188: 1471005988
+      Layer 2sss_189: -3632714
+      Layer 2sss_19: -1031121133
+      Layer 2sss_190: 244710355
+      Layer 2sss_191: 690425887
+      Layer 2sss_192: 1608932598
+      Layer 2sss_193: -1658382419
+      Layer 2sss_194: 262928689
+      Layer 2sss_195: -2028692384
+      Layer 2sss_196: -1351217558
+      Layer 2sss_197: 470247195
+      Layer 2sss_198: 343028179
+      Layer 2sss_199: 1029152085
+      Layer 2sss_2: 1620782846
+      Layer 2sss_20: -1168290012
+      Layer 2sss_200: 2104664150
+      Layer 2sss_201: 212759984
+      Layer 2sss_202: 2059416022
+      Layer 2sss_203: 1300001107
+      Layer 2sss_204: 20936808
+      Layer 2sss_205: -2001381258
+      Layer 2sss_21: 659613131
+      Layer 2sss_22: 945170862
+      Layer 2sss_23: 588706348
+      Layer 2sss_24: -1583413263
+      Layer 2sss_25: 1511646320
+      Layer 2sss_26: 334166322
+      Layer 2sss_27: 526868576
+      Layer 2sss_28: -577276049
+      Layer 2sss_29: -1579962807
+      Layer 2sss_3: 613438424
+      Layer 2sss_30: -727854265
+      Layer 2sss_31: 1222544403
+      Layer 2sss_32: 399366196
+      Layer 2sss_33: -375188380
+      Layer 2sss_34: 967625710
+      Layer 2sss_35: -1332225608
+      Layer 2sss_36: -1020947576
+      Layer 2sss_37: 530745396
+      Layer 2sss_38: -697769871
+      Layer 2sss_39: -1404508424
+      Layer 2sss_4: -380596466
+      Layer 2sss_40: 1057023825
+      Layer 2sss_41: 828066037
+      Layer 2sss_42: 406851021
+      Layer 2sss_43: 2133889858
+      Layer 2sss_44: 798383940
+      Layer 2sss_45: -435391071
+      Layer 2sss_46: 909529310
+      Layer 2sss_47: -38537498
+      Layer 2sss_48: 355387739
+      Layer 2sss_49: 588937213
+      Layer 2sss_5: 2002972332
+      Layer 2sss_50: -1793135123
+      Layer 2sss_51: 695637858
+      Layer 2sss_52: -710801297
+      Layer 2sss_53: -1399320141
+      Layer 2sss_54: -1837646783
+      Layer 2sss_55: 622382590
+      Layer 2sss_56: 220824518
+      Layer 2sss_57: 203250844
+      Layer 2sss_58: -1502492841
+      Layer 2sss_59: 265706779
+      Layer 2sss_6: 1131410058
+      Layer 2sss_60: 759079196
+      Layer 2sss_61: -1131593670
+      Layer 2sss_62: -344274658
+      Layer 2sss_63: -2112221792
+      Layer 2sss_64: -709081186
+      Layer 2sss_65: -27632058
+      Layer 2sss_66: 601013313
+      Layer 2sss_67: -188925659
+      Layer 2sss_68: -1526632660
+      Layer 2sss_69: 1820561020
+      Layer 2sss_7: 1808111502
+      Layer 2sss_70: -1508925277
+      Layer 2sss_71: -954268939
+      Layer 2sss_72: 1870876106
+      Layer 2sss_73: -2006853797
+      Layer 2sss_74: -1870207513
+      Layer 2sss_75: -2133430432
+      Layer 2sss_76: -964538254
+      Layer 2sss_77: 1764170436
+      Layer 2sss_78: -206846824
+      Layer 2sss_79: -258322072
+      Layer 2sss_8: 1276079330
+      Layer 2sss_80: -2015859290
+      Layer 2sss_81: -674175691
+      Layer 2sss_82: -322887384
+      Layer 2sss_83: 1860944663
+      Layer 2sss_84: -104400657
+      Layer 2sss_85: -919847105
+      Layer 2sss_86: 169131035
+      Layer 2sss_87: 1180605275
+      Layer 2sss_88: 1734768865
+      Layer 2sss_89: 1306672578
+      Layer 2sss_9: 558205829
+      Layer 2sss_90: 1590128919
+      Layer 2sss_91: -775688283
+      Layer 2sss_92: -607373361
+      Layer 2sss_93: 1678161848
+      Layer 2sss_94: -468735477
+      Layer 2sss_95: -1938376318
+      Layer 2sss_96: -1566987758
+      Layer 2sss_97: 560126004
+      Layer 2sss_98: 1569109390
+      Layer 2sss_99: 1071174246
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
