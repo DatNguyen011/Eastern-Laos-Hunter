@@ -63,12 +63,10 @@ public class Bot : BaseBot
         if (angle >= -90 && angle <= 90)
         {
             transform.localScale = new Vector3(-1, 1, 1);
-
         }
         else
         {
             transform.localScale = new Vector3(1, 1, 1);
-
         }
     }
 
@@ -81,7 +79,6 @@ public class Bot : BaseBot
 
         if (distance < 5f)
         {
-
             if (distance <= 1.5f)
             {
                 ChangeState(new IdleState());
@@ -150,13 +147,13 @@ public class Bot : BaseBot
 
     public override void OnDead()
     {
+        ChangeState(null);
         ChangeAnim("Dead");
+        gameObject.tag = "Untagged";
+        gameObject.layer = 0;
         if (!isDead) {
             isDead = true;
         } 
-        ChangeState(null);
-        gameObject.tag = "Untagged";
-        gameObject.layer = 0;
         botCollider.enabled = false;
         rb.velocity = Vector2.zero;
         GameController.Instance.StartCoroutine(WaitDead());
@@ -195,11 +192,10 @@ public class Bot : BaseBot
     public Vector2 RandomPoint()
     {
         Vector2 currentPosition = transform.position;
-        float randomAngle = Random.Range(0f, 360f);
-        float angleInRadians = randomAngle * Mathf.Deg2Rad;
+        float angle = Random.Range(0f, 360f) * Mathf.Deg2Rad;
         Vector2 randomPoint = new Vector2(
-            currentPosition.x + Mathf.Cos(angleInRadians) * 3f,
-            currentPosition.y + Mathf.Sin(angleInRadians) * 3f
+            currentPosition.x + Mathf.Cos(angle) * 3f,
+            currentPosition.y + Mathf.Sin(angle) * 3f
         );
         return randomPoint;
     }
@@ -245,6 +241,7 @@ public class Bot : BaseBot
     {
         if (haveTarget == true)
         {
+
             ChangeState(new AttackState());
             yield return new WaitForSeconds(5f);
             StartCoroutine(AttackWait());

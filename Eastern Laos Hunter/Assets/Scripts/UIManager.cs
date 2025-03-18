@@ -19,7 +19,7 @@ public class UIManager : Singleton<UIManager>
     public Button btnReplay;
     public GameObject settingPanel;
     public GameObject endGamePanel;
-    private static float elapsedTime;
+    public static float gameTime;
     public static float deadNumber;
     private bool isPaused = false;
 
@@ -33,9 +33,17 @@ public class UIManager : Singleton<UIManager>
 
     public void OpenMainMenu()
     {
-        SceneManager.LoadScene(0,LoadSceneMode.Single);
-        PlayerPrefs.SetFloat("time", elapsedTime);
+        AsyncLoader.Instance.LoadStart(0);
+        PlayerPrefs.SetFloat("time", gameTime);
         PlayerPrefs.SetFloat("dead_number", deadNumber);
+        PlayerPrefs.Save();
+        Pause();
+    }
+
+    public void GameOver()
+    {
+        AsyncLoader.Instance.LoadStart(0);
+        PlayerPrefs.SetInt("sceneNumber", 0);
         PlayerPrefs.Save();
         Pause();
     }
@@ -52,8 +60,8 @@ public class UIManager : Singleton<UIManager>
 
     private void Update()
     {
-        elapsedTime += Time.unscaledDeltaTime;
-        TimeSpan timeSpan = TimeSpan.FromSeconds(elapsedTime);
+        gameTime += Time.unscaledDeltaTime;
+        TimeSpan timeSpan = TimeSpan.FromSeconds(gameTime);
         tmpTime.text = string.Format("{0:D2}:{1:D2}:{2:D2}", timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds);
         tmpdeadNumber.text=deadNumber.ToString();
     }
@@ -82,7 +90,7 @@ public class UIManager : Singleton<UIManager>
     {
         if (PlayerPrefs.HasKey("time"))
         {
-            elapsedTime = PlayerPrefs.GetFloat("time");
+            gameTime = PlayerPrefs.GetFloat("time");
         }
         gold.text = PlayerPrefs.GetString("gold");
 

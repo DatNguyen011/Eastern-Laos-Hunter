@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.SearchService;
+
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class SwitchLevel : Singleton<SwitchLevel>
 {
@@ -17,7 +14,6 @@ public class SwitchLevel : Singleton<SwitchLevel>
             PlayerPrefs.SetInt("sceneNumber", screenNumber);
             PlayerPrefs.SetFloat("posX", playerPos.x);
             PlayerPrefs.SetFloat("posY", playerPos.y);
-            
             posValue.initPosValue=playerPos;
             PlayerPrefs.Save();
             AsyncLoader.Instance.LoadStart(screenNumber);

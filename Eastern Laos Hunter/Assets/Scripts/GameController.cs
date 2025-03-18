@@ -97,12 +97,7 @@ public class GameController : Singleton<GameController>
                 }
             }
         }
-        else if(!IsScenePlayed(sceneIndex))
-        {
-            Debug.Log("fail");
-        }
-
-
+        else if(!IsScenePlayed(sceneIndex)) return;
     }
 
     public IEnumerator WaitPlayVFX(int i)
@@ -115,9 +110,13 @@ public class GameController : Singleton<GameController>
 
     public void OpenNextLevel()
     {
+
         if (listBot.Count <= 0)
         {
+            Hero.Instance.SaveHP();
             PlayerPrefs.SetInt("scene_" + SceneManager.GetActiveScene().buildIndex, 1);
+            PlayerPrefs.SetFloat("time", UIManager.gameTime);
+
             PlayerPrefs.Save();
             switchLevel.SetActive(true);
             if (wall != null)
@@ -125,7 +124,6 @@ public class GameController : Singleton<GameController>
                 wall.SetActive(false);
 
             }
-
         }
     }
 }

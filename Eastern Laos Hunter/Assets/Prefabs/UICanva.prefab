@@ -3953,7 +3953,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3896200998856122674}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenMainMenu
+        m_MethodName: GameOver
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4974,9 +4974,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gold: {fileID: 4494321579056846344}
   tmpTime: {fileID: 2537391372450821691}
-  tmpTimeOver: {fileID: 0}
   tmpdeadNumber: {fileID: 1289513180649767302}
-  tmpdeadNumberOver: {fileID: 0}
   btnSettings: {fileID: 8649278911103790544}
   btnClose: {fileID: 5898218321477962294}
   btnMainMenu: {fileID: 3391485597636755607}

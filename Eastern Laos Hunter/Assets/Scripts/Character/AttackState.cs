@@ -9,9 +9,10 @@ public class AttackState : IState<Bot>
     {
         if(bot.attackArea!=null)
         {
+            
+
             bot.ChangeAnim("Attack");
             bot.attackArea.SetActive(true);
-
         }
     }
 

@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
 
 public class PatrolState : IState<Bot>
 {
@@ -24,7 +23,6 @@ public class PatrolState : IState<Bot>
             }
             else
             {
-                
                 if (Vector2.Distance(bot.transform.position, pos) < 0.01f)
                 {
                     bot.ChangeState(new IdleState());
@@ -36,7 +34,6 @@ public class PatrolState : IState<Bot>
                 }
                 else if (Vector2.Distance(Hero.Instance.transform.position, bot.transform.position) > 5f)
                 {
-                    //bot.botVFX.SetActive(true);
                     bot.SetDestination(pos);
                 }
             }

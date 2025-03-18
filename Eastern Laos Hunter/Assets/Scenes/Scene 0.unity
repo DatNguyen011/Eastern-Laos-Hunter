@@ -33654,7 +33654,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 1.5405135, y: 0.3769666}
@@ -60260,13 +60260,15 @@ MonoBehaviour:
   - {fileID: 262773357}
   - {fileID: 40964936}
   - {fileID: 1510544310}
+  - {fileID: 1510544310}
   listBotPrefabs:
   - {fileID: 5863811154870869293, guid: 59b31707ed4019548a441b557a1d2fb6, type: 3}
   - {fileID: 5863811154870869293, guid: 59b31707ed4019548a441b557a1d2fb6, type: 3}
   - {fileID: 1317390422410283881, guid: 0e17876089373cd4595ccc0a49697a38, type: 3}
   - {fileID: 1317390422410283881, guid: 0e17876089373cd4595ccc0a49697a38, type: 3}
   - {fileID: 7642065275647447480, guid: 780b82ecc7c5b5e47b85d582879c0038, type: 3}
-  - {fileID: 5863811154870869293, guid: 59b31707ed4019548a441b557a1d2fb6, type: 3}
+  - {fileID: 7642065275647447480, guid: 780b82ecc7c5b5e47b85d582879c0038, type: 3}
+  - {fileID: 7642065275647447480, guid: 780b82ecc7c5b5e47b85d582879c0038, type: 3}
   listBossPrefabs: []
   listBoxPrefabs:
   - {fileID: 5736708629558959572, guid: f9d061ae455aea347a971eecd8c8475c, type: 3}
@@ -77066,6 +77068,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FillAmount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8653509846654513417, guid: 008bb05d4e3483644b2db52ccf0b2583,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GameOver
       objectReference: {fileID: 0}
     - target: {fileID: 8816119579709518151, guid: 008bb05d4e3483644b2db52ccf0b2583,
         type: 3}

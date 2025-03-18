@@ -27,18 +27,7 @@ public class IdleState : IState<Bot>
 
             }
         }
-        
-        //else if (bot.haveTarget == true)
-        //{
-        //    Debug.Log("Idle Change At");
-        //    if(time > 2f)
-        //    {
-        //        bot.ChangeState(new AttackState());
-        //        time = 0f;
-        //        bot.ChangeState(new IdleState());
-        //    }   
-            
-        //}
+
     }
 
     

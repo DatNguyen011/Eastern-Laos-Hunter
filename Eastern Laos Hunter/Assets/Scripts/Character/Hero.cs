@@ -49,7 +49,7 @@ public class Hero : Singleton<Hero>
     public Transform heroVfxParent;
     void Start()
     {
-        OnInit();
+        OnInit("hp", "mp");
     }
     void Update()
     {
@@ -126,15 +126,6 @@ public class Hero : Singleton<Hero>
         }
     }
 
-
-
-
-    //public void ReverseDirection()
-    //{
-    //    directionRotation *= -1;
-    //}
-
-
     private Transform FindNearestTarget()
     {
         float minDistance = float.MaxValue;
@@ -174,11 +165,8 @@ public class Hero : Singleton<Hero>
         Destroy(newBullet, 2f);
         
         isAttack = false;
-        //StartCoroutine(ThrowAttack());
         StartCoroutine(Cooldown(3f, 1));
     }
-
-
 
     public IEnumerator ThrowAttack()
     {
@@ -192,7 +180,6 @@ public class Hero : Singleton<Hero>
         rb.velocity = Vector2.zero;
         isHit = true;
         healthBar.SetHealthByImage(maxHp, this.hp);
-
         ChangeAnim("Hit");
         AudioManager.Instance.PlaySFX(AudioManager.Instance.hitSound);
         StartCoroutine(HitToIdle());
@@ -200,6 +187,13 @@ public class Hero : Singleton<Hero>
         {
             OnDead();
         }
+    }
+
+    public void SaveHP()
+    {
+        PlayerPrefs.SetFloat("hp", hp);
+        PlayerPrefs.SetFloat("mp", mp);
+        PlayerPrefs.Save();
     }
 
     public IEnumerator HitToIdle()
@@ -221,7 +215,6 @@ public class Hero : Singleton<Hero>
     }
     public void AddMp(float mp)
     {
-
         this.mp += mp;
         if (this.mp > maxMp)
         {
@@ -233,7 +226,6 @@ public class Hero : Singleton<Hero>
         }
         GameObject healthAnim = Instantiate(healthAnimPrefab, heroParent.transform.position, Quaternion.identity, heroParent);
         healthBar.SetManaByImage(maxMp, this.mp);
-
     }
     public void AddHp(float hp)
     {
@@ -246,16 +238,15 @@ public class Hero : Singleton<Hero>
         healthBar.SetHealthByImage(maxHp, this.hp);
     }
 
-    public void OnInit()
+    public void OnInit(string hp, string mp)
     {
         gameObject.tag = "Hero";
-
         rb = GetComponent<Rigidbody2D>();
-        isDead = false;
-        this.hp = PlayerPrefs.GetFloat("maxhp");
-        this.mp = PlayerPrefs.GetFloat("maxmp");
+        this.hp = PlayerPrefs.GetFloat(hp);
+        this.mp = PlayerPrefs.GetFloat(mp);
         this.maxHp = PlayerPrefs.GetFloat("maxhp");
         this.maxMp = PlayerPrefs.GetFloat("maxmp");
+        isDead = false;
         healthBar.SetHealthByImage(this.maxHp, this.hp);
         healthBar.SetManaByImage(this.maxMp, this.mp);
         positionValue.initPosValue = new Vector2(PlayerPrefs.GetFloat("posX"), PlayerPrefs.GetFloat("posY"));
@@ -266,6 +257,7 @@ public class Hero : Singleton<Hero>
 
     public void FinalAttack()
     {
+        heroCollider.enabled = false;
         ChangeAnim("FinalAttack");
         AudioManager.Instance.PlaySFX(AudioManager.Instance.finalAttackSound);
         isAttack = true;
@@ -276,8 +268,8 @@ public class Hero : Singleton<Hero>
 
     IEnumerator WaitFinalAttack()
     {
-        yield return new WaitForSeconds(0.6f); 
-
+        yield return new WaitForSeconds(1f);
+        heroCollider.enabled = true;
         Vector2 attackDirection = facingRight ? Vector2.right : Vector2.left; 
         float attackRange = 3f; 
         Vector2 boxSize = new Vector2(3f, 2f); 
@@ -303,12 +295,12 @@ public class Hero : Singleton<Hero>
                 hit.collider.GetComponent<Treasure>()?.OpenTreasure();
             }
         }
-
         isAttack = false;
     }
 
     public void Attack()
     {
+        heroCollider.enabled = false;
         AudioManager.Instance.PlaySFX(AudioManager.Instance.attackSound);
         if (atkNumber > 3)
         {
@@ -322,9 +314,7 @@ public class Hero : Singleton<Hero>
         StartCoroutine(PerformAttack());
         StartCoroutine(Cooldown(.5f, 0));
     }
-
     
-
     IEnumerator PerformAttack()
     {
         yield return new WaitForSeconds(0.4f); 
@@ -355,13 +345,13 @@ public class Hero : Singleton<Hero>
                 hit.collider.GetComponent<Treasure>()?.OpenTreasure();
             }
         }
-
+        heroCollider.enabled = true;
         isAttack = false;
     }
 
     public void Dash()
     {
-
+        heroCollider.enabled = false;
         ChangeAnim("Tele1");
 
         skillCooldowns[2] = true;
@@ -405,13 +395,10 @@ public class Hero : Singleton<Hero>
             elapsedTime += Time.deltaTime;
             yield return null;
         }
-
+        heroCollider.enabled = true;
         ReduceMp(10f);
         isAttack = false;
     }
-
-
-
 
     public void OnDead()
     {
@@ -438,7 +425,7 @@ public class Hero : Singleton<Hero>
         yield return new WaitForSeconds(2f);
         heroCollider.gameObject.SetActive(false);
         yield return new WaitForSeconds(2f);
-        OnInit();
+        OnInit("maxhp", "maxmp");
     }
 
     public void ChangeAnim(string animName)

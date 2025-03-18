@@ -4,6 +4,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class MainMenu : Singleton<MainMenu>
 {
@@ -19,10 +22,9 @@ public class MainMenu : Singleton<MainMenu>
     [SerializeField] GameObject yesNoQuestion;
     [SerializeField] GameObject settingPanel;
 
-    
-    // Start is called before the first frame update
     void Start()
     {
+
         startBtn.onClick.AddListener(() => YesNoQuestion(1));
         resumeBtn.onClick.AddListener(() => ResumeGame());
         settingBtn.onClick.AddListener(() => SettingGame());
@@ -53,8 +55,11 @@ public class MainMenu : Singleton<MainMenu>
 
     public void ExitGame()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
-        Application.Quit();
+    #if UNITY_EDITOR
+        EditorApplication.isPlaying = false;  
+    #else
+        Application.Quit();  
+    #endif
     }
 
     public void OpenMenu()
